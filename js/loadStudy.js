@@ -71,7 +71,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
                 for (var i = 0; i < numberOfFrames; i++) {
                     var imageId = series.instanceList[0].imageId + "?frame=" + i;
                     if (imageId.substr(0, 4) !== 'http') {
-                        imageId = "http://cornerstonetech.org/images/ClearCanvas/" + imageId;
+                        imageId = "dicomweb://github.com/CarnivorousRex/cornerstone-radiology/" + imageId;
                     }
                     stack.imageIds.push(imageId);
                 }
@@ -81,7 +81,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
                     var imageId = image.imageId;
 
                     if (image.imageId.substr(0, 4) !== 'http') {
-                        imageId = "dicomweb://cornerstonetech.org/images/ClearCanvas/" + image.imageId;
+                        imageId = "dicomweb://github.com/CarnivorousRex/cornerstone-radiology/" + image.imageId;
                     }
                     stack.imageIds.push(imageId);
                 });

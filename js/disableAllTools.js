@@ -14,5 +14,7 @@ function disableAllTools() {
         cornerstoneTools.zoomTouchDrag.deactivate(element);
         cornerstoneTools.panTouchDrag.deactivate(element);
         cornerstoneTools.stackScrollTouchDrag.deactivate(element);
+		// Remove button highlight
+		$("button").removeClass("btn-active");
     });
 }

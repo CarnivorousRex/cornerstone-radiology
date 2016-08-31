@@ -13,6 +13,9 @@ function displayThumbnail(seriesList, seriesElement, element, stack, loaded) {
     if (enabledImage.image) {
         // Stop clip from if playing on element
         cornerstoneTools.stopClip(element);
+		// Hack to turn off the active state of the Play button, if active
+		document.getElementById("playButton").className = 
+		"btn btn-sm btn-default";
         // Disable stack scrolling
         cornerstoneTools.stackScroll.disable(element);
         // Enable stackScroll on selected series

@@ -11,6 +11,7 @@ function setupButtons(studyViewer) {
         forEachViewport(function(element) {
             cornerstoneTools.wwwc.activate(element, 1);
             cornerstoneTools.wwwcTouchDrag.activate(element);
+			$(buttons[0]).addClass("btn-active");
         });
     });
 
@@ -22,8 +23,10 @@ function setupButtons(studyViewer) {
             // Toggle invert
             if (viewport.invert === true) {
                 viewport.invert = false;
+				$(buttons[1]).removeClass("btn-inverse");
             } else {
                 viewport.invert = true;
+				$(buttons[1]).addClass("btn-inverse");
             }
             cornerstone.setViewport(element, viewport);
         });
@@ -35,6 +38,7 @@ function setupButtons(studyViewer) {
         forEachViewport(function(element) {
             cornerstoneTools.zoom.activate(element, 5); // 5 is right mouse button and left mouse button
             cornerstoneTools.zoomTouchDrag.activate(element);
+			$(buttons[2]).addClass("btn-active");
         });
     });
 
@@ -44,6 +48,7 @@ function setupButtons(studyViewer) {
         forEachViewport(function(element) {
             cornerstoneTools.pan.activate(element, 3); // 3 is middle mouse button and left mouse button
             cornerstoneTools.panTouchDrag.activate(element);
+			$(buttons[3]).addClass("btn-active");
         });
     });
 
@@ -53,6 +58,7 @@ function setupButtons(studyViewer) {
         forEachViewport(function(element) {
             cornerstoneTools.stackScroll.activate(element, 1);
             cornerstoneTools.stackScrollTouchDrag.activate(element);
+			$(buttons[4]).addClass("btn-active");
         });
     });
 
@@ -61,6 +67,7 @@ function setupButtons(studyViewer) {
         disableAllTools();
         forEachViewport(function(element) {
             cornerstoneTools.length.activate(element, 1);
+			$(buttons[5]).addClass("btn-active");
         });
     });
 
@@ -69,6 +76,7 @@ function setupButtons(studyViewer) {
         disableAllTools();
         forEachViewport(function(element) {
             cornerstoneTools.angle.activate(element, 1);
+			$(buttons[6]).addClass("btn-active");
         });
     });
 
@@ -77,6 +85,7 @@ function setupButtons(studyViewer) {
         disableAllTools();
         forEachViewport(function(element) {
             cornerstoneTools.probe.activate(element, 1);
+			$(buttons[8]).addClass("btn-active");
         });
     });
 
@@ -85,6 +94,7 @@ function setupButtons(studyViewer) {
         disableAllTools();
         forEachViewport(function(element) {
             cornerstoneTools.ellipticalRoi.activate(element, 1);
+			$(buttons[8]).addClass("btn-active");
         });
     });
 
@@ -93,11 +103,18 @@ function setupButtons(studyViewer) {
         disableAllTools();
         forEachViewport(function (element) {
             cornerstoneTools.rectangleRoi.activate(element, 1);
+			$(buttons[9]).addClass("btn-active");
         });
     });
 
+	// Fullscreen
+	$(buttons[10]).on('click touchstart', function() {
+		$(buttons[10]).addClass("btn-fullscreen");
+		$('.studycontainer').fullscreen();
+	});	
+	
     // Play clip
-    $(buttons[10]).on('click touchstart', function() {
+    $(buttons[11]).on('click touchstart', function() {
         forEachViewport(function(element) {
           var stackState = cornerstoneTools.getToolState(element, 'stack');
           var frameRate = stackState.data[0].frameRate;
@@ -106,15 +123,20 @@ function setupButtons(studyViewer) {
             frameRate = 10;
           }
           cornerstoneTools.playClip(element, frameRate);
+		  $(buttons[11]).addClass("btn-active");
         });
     });
-
+	
     // Stop clip
-    $(buttons[11]).on('click touchstart', function() {
+    $(buttons[12]).on('click touchstart', function() {
         forEachViewport(function(element) {
             cornerstoneTools.stopClip(element);
+			$(buttons[11]).removeClass("btn-active");
         });
     });
+	
+
+
 
     // Tooltips
     $(buttons[0]).tooltip();
@@ -130,5 +152,6 @@ function setupButtons(studyViewer) {
     $(buttons[10]).tooltip();
     $(buttons[11]).tooltip();
     $(buttons[12]).tooltip();
+	$(buttons[13]).tooltip();
 
 };

@@ -117,6 +117,8 @@ function loadStudy(studyViewer, viewportModel, studyId) {
 
         // Get series list from the series thumbnails (?)
         var seriesList = $(studyViewer).find('.thumbnails')[0];
+		
+
         imageViewer.stacks.forEach(function(stack, stackIndex) {
 
             // Create series thumbnail item
@@ -182,12 +184,55 @@ function loadStudy(studyViewer, viewportModel, studyId) {
         function resizeStudyViewer() {
             var studyRow = $(studyViewer).find('.studyContainer')[0];
             var height = $(studyRow).height();
-            var width = $(studyRow).width();console.log($(studyRow).innerWidth(),$(studyRow).outerWidth(),$(studyRow).width());
-            $(seriesList).height("100%");
-            $(parentDiv).width(width - $(studyViewer).find('.thumbnailSelector:eq(0)').width());
-            $(parentDiv).css({height : '100%'});
-            $(imageViewerElement).css({height : $(parentDiv).height() - $(parentDiv).find('.text-center:eq(0)').height()});
+            var width = $(studyRow).width();
+			
 
+				
+            $(seriesList).height("100%");
+
+            $(parentDiv).width(width - $(studyViewer).find('.thumbnailSelector:eq(0)').width());
+			
+            $(parentDiv).css({height : '100%'});
+			
+            $(imageViewerElement).css({height : $(parentDiv).height() - $(parentDiv).find('.text-center:eq(0)').height()});
+			
+			
+			// Take off header on xs screensize and resize thumbnail/viewport
+			if ($(window).width() < 787) {
+				console.log("Width is smaller than 767");
+				$(".main").height("100%");
+				$("#tabContent").height("100%");
+				$(".thumbnails").height("100%");
+				$(".list-group").height("100%");
+			
+            	$(seriesList).height(height-28);
+				$(parentDiv).css({height : height-28});
+				var seriesList = $(studyViewer).find('.thumbnails')[0];
+				seriesList.style.height = "94.5%";
+				var viewPort = $(studyViewer).find('.viewport')[0];
+				element.style.height = "100%";
+				$("div.viewer").get(0).style.height = "88%";
+				$("div.imageViewer").get(0).style.height = "100%";
+			} else {
+				$(".main").height("100%");
+				$("#tabContent").height("100%");
+				$(".thumbnails").height("100%");
+				$(".list-group").height("100%");
+			
+            	$(seriesList).height(height-78);
+				$(parentDiv).css({height : height-78});
+				var seriesList = $(studyViewer).find('.thumbnails')[0];
+				seriesList.style.height = "87%";
+				var viewPort = $(studyViewer).find('.viewport')[0];
+				element.style.height = "100%";
+				$("div.viewer").get(0).style.height = "88%";
+				$("div.imageViewer").get(0).style.height = "93%";
+			}
+			
+
+		
+			
+			
             imageViewer.forEachElement(function(el, vp) {
                 cornerstone.resize(el, true);
 

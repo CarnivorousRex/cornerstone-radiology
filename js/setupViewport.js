@@ -28,6 +28,15 @@ function setupViewport(element, stack, image) {
     cornerstoneTools.addToolState(element, 'stack', stack);
     cornerstoneTools.stackScrollWheel.activate(element);
     cornerstoneTools.stackPrefetch.enable(element);
-
-
+	
+	// Keyboard tools
+	cornerstoneTools.keyboardInput.enable(element);
+	cornerstoneTools.stackScrollKeyboard.activate(element);
+	
+	
+	// Put tabindex on viewport - must click anywhere once to enable up/down arrow scrolling
+	$(window).click(function() {
+		$(element).attr("tabindex", 0).focus();
+	});
+	
 }

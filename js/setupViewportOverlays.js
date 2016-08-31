@@ -11,7 +11,7 @@ function setupViewportOverlays(element, data) {
     // Set the overlay text
     $(topLeft[0]).text(data.patientName);
     $(topLeft[1]).text(data.patientId);
-    $(topRight[0]).text(data.studyDescription);
+    
     $(topRight[1]).text(data.studyDate);
 
 
@@ -40,7 +40,7 @@ function setupViewportOverlays(element, data) {
             return;
         }
         var stack = toolData.data[0];
-
+		$(topRight[0]).text(stack.seriesDescription);
         // Update Image number overlay
         $(bottomLeft[2]).text("Image # " + (stack.currentImageIdIndex + 1) + "/" + stack.imageIds.length);
     }
@@ -59,6 +59,7 @@ function setupViewportOverlays(element, data) {
     }
     // Add a CornerstoneImageRendered event listener on the 'element' (viewer) (?)
     $(element).on("CornerstoneImageRendered", onImageRendered);
+	
 
 
 }

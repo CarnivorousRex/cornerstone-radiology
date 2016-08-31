@@ -8,7 +8,7 @@ html {
 body {
     height: 100%;
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
     color: #888888;
     background-color: #060606;
 }
@@ -27,13 +27,19 @@ body {
   border-color: #424242;
 }
 
+.btn-active, .btn-inverse, .btn-fullscreen {
+	color: #424242;
+	background: #ffffff;
+/*	background-color: #7a0019;*/
+}
+
 /* images are displayed in viewports */
 .viewport {
     width:100%;
     height:100%;
     top:0px;
-    left:0px;
-    position:absolute
+/*    left:0px;*/
+/*    position:absolute*/
 }
 
 .overlay {
@@ -42,6 +48,7 @@ body {
 }
 
 .imageViewer {
+	height:100%;
 }
 
 .myNav {
@@ -51,8 +58,13 @@ body {
 
 .viewportWrapper {
     box-sizing: border-box;
-    border: 2px solid #777;
+    border: 0px solid #777;
 }
+
+.viewportWrapper:focus, .viewport:focus {
+	outline: none;
+}
+
 .renderTime {}
 .fps {}
 
@@ -76,12 +88,14 @@ body {
     float:left;
     margin-left:0px;
     height: 100%;
+	overflow: auto;
 }
 body, html {height:100%}
 
 #wrap {height:100%}
 
 .studyContainer {
+	background: black;
     margin-top: 2px;
     margin-left:0px;
     margin-right:0px;
@@ -119,7 +133,7 @@ body, html {height:100%}
 
 .studyRow {
     margin-left: 0px;
-    margin-rigth: 0px;
+    margin-right: 0px;
     height:100%;
 }
 .row {
@@ -151,10 +165,17 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     background-color: #424242;
     border-color: #424242;
-    color: #ffffff;
+    color: #ffcc33;
     padding: 3px 10px;
 }
 
 .dropdown-menu {
   min-width: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+    nav.navbar {
+		min-height: 0px;
+        height:0px;
+    }
 }

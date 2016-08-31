@@ -71,7 +71,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
                 for (var i = 0; i < numberOfFrames; i++) {
                     var imageId = series.instanceList[0].imageId + "?frame=" + i;
                     if (imageId.substr(0, 4) !== 'http') {
-                        imageId = "dicomweb://cornerstonetech.org/images/ClearCanvas/" + imageId;
+                        imageId = "http://cornerstonetech.org/images/ClearCanvas/" + imageId;
                     }
                     stack.imageIds.push(imageId);
                 }

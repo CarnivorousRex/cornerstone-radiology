@@ -6,8 +6,8 @@
 		"studyDate" : "20090512",
 		"modality" : "MR",
 		"studyDescription" : "HEAD^ADULT BRAIN",
-		"numImages" : 196,
-		"studyId" : "project101"
+		"numImages" : 195,
+		"studyId" : "MSCase"
 		}
 	]
 }

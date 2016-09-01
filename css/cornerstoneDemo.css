@@ -173,6 +173,12 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
   min-width: 40px;
 }
 
+.fullscreen-style {
+	width: 100% !important;
+	overflow: visible !important;
+	height: auto !important;
+}
+
 @media only screen and (max-width: 767px) {
     nav.navbar {
 		min-height: 0px;

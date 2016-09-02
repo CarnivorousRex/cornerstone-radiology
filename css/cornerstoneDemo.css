@@ -17,6 +17,11 @@ body {
     display: none;
 }
 
+.bottom {
+	bottom: 30%;
+	position:relative;
+}
+
 .modal-content {
     background-color: #202020;
 }
@@ -31,6 +36,22 @@ body {
 	color: #424242;
 	background: #ffffff;
 /*	background-color: #7a0019;*/
+}
+
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding:4px 9px;
+    font-size:90%;
+    line-height: 1.2;
+  }
 }
 
 /* images are displayed in viewports */

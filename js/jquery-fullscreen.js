@@ -97,7 +97,7 @@ FullScreenAbstract.prototype = {
 			this._fullScreenElement = null;
 			console.log(document);
 			document.getElementById("fullscreen").className = 
-				"btn btn-sm btn-default";
+				"btn btn-responsive btn-default";
 		} else {
 			this._preventDocumentScroll();
 			this._triggerEvents();

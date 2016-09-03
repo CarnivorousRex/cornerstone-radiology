@@ -2,6 +2,10 @@ function setupViewport(element, stack, image) {
     // Display the image on the viewer element
     cornerstone.displayImage(element, image);
 
+	// Enable touch input for thumbnails
+	var foo = $(".thumbnails").get(0);
+	cornerstoneTools.touchInput.enable(foo);
+	
     // If it's a movie (has frames), then play the clip
     if (stack.frameRate !== undefined) {
         cornerstone.playClip(element, stack.frameRate);

@@ -26,10 +26,17 @@ body {
     background-color: #202020;
 }
 
+.btn-group {
+	background: #424242;
+	width:100%;
+	margin:0px;
+}
+
 .btn-default {
   color: #ffffff;
   background-color: #424242;
   border-color: #424242;
+  margin-left:0px;
 }
 
 .btn-active, .btn-inverse, .btn-fullscreen {
@@ -38,19 +45,30 @@ body {
 /*	background-color: #7a0019;*/
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .btn-responsive {
-    padding:2px 4px;
-    font-size:80%;
-    line-height: 1;
+	width: calc(100% / 11);
+	padding:0px;
+    font-size:70%;
+    line-height: 2;
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width:481px) and (max-width: 767px) {
   .btn-responsive {
-    padding:4px 9px;
+	width: calc(100% / 11);
+	padding:0px;
+    font-size:80%;
+    line-height: 3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .btn-responsive {
+    width: calc(100% / 14);
+	padding:0px;
     font-size:90%;
-    line-height: 1.2;
+    line-height: 3.5;
   }
 }
 
@@ -186,7 +204,7 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     background-color: #424242;
     border-color: #424242;
-    color: #ffcc33;
+    color: #ffffff;
     padding: 3px 10px;
 }
 

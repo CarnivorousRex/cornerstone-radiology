@@ -21,7 +21,8 @@
     "image-jpeg2000": "~0.3.1",
     "bootstrap": "~3.3.4",
     "hammerjs": "~2.0.4",
-    "jquery" : "~2.1.1"
+    "jquery" : "~2.1.1",
+	"jquery-hammerjs": "jquery.hammer.js#^2.0.0"
   },
   "devDependencies": {
     "qunit": "~1.14.0"

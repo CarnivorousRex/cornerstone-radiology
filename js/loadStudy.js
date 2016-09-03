@@ -198,8 +198,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
 			
 			
 			// Take off header on xs screensize and resize thumbnail/viewport
-			if ($(window).width() < 787) {
-				console.log("Width is smaller than 767");
+			if ($(window).width() < 767) {
 				$(".main").height("100%");
 				$("#tabContent").height("100%");
 				$(".thumbnails").height("100%");

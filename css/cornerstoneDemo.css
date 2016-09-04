@@ -17,10 +17,10 @@ body {
     display: none;
 }
 
-.bottom {
+/*.bottom {
 	bottom: 30%;
 	position:relative;
-}
+}*/
 
 .modal-content {
     background-color: #202020;

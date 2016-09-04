@@ -42,5 +42,6 @@ function setupViewport(element, stack, image) {
 	$(window).click(function() {
 		$(element).attr("tabindex", 0).focus();
 	});
-	
+
+	$('#scrollButton').click();
 }

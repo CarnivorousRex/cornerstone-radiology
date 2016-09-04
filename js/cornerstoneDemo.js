@@ -85,5 +85,5 @@ resizeMain();
 
 // Prevent scrolling on iOS
 document.body.addEventListener('touchmove', function(e) {
-  e.preventDefault();
+	e.preventDefault();
 });

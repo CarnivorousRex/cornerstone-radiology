@@ -95,7 +95,6 @@ FullScreenAbstract.prototype = {
 			this._revertStyles();
 			this._triggerEvents();
 			this._fullScreenElement = null;
-			console.log(document);
 			document.getElementById("fullscreen").className = 
 				"btn btn-responsive btn-default";
 		} else {

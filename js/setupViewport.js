@@ -1,10 +1,6 @@
 function setupViewport(element, stack, image) {
     // Display the image on the viewer element
     cornerstone.displayImage(element, image);
-
-	// Enable touch input for thumbnails
-	var foo = $(".thumbnails").get(0);
-	cornerstoneTools.touchInput.enable(foo);
 	
     // If it's a movie (has frames), then play the clip
     if (stack.frameRate !== undefined) {
@@ -15,6 +11,10 @@ function setupViewport(element, stack, image) {
     cornerstoneTools.mouseInput.enable(element);
     cornerstoneTools.mouseWheelInput.enable(element);
     cornerstoneTools.touchInput.enable(element);
+	
+	var foo = $(".thumbnails").get(0);
+	cornerstoneTools.touchInput.enable(foo);
+	
 
     // Enable all tools we want to use with this element
     cornerstoneTools.wwwc.activate(element, 1); // ww/wc is the default tool for left mouse button
@@ -42,6 +42,12 @@ function setupViewport(element, stack, image) {
 	$(window).click(function() {
 		$(element).attr("tabindex", 0).focus();
 	});
+	
+	$("#fullscreen").click(function() {
+		console.log("fullscreen button pushed");
+		cornerstoneTools.makeFullscreen();
+	});
 
-	$('#scrollButton').click();
+	$("#scrollButton").click();
+	
 }

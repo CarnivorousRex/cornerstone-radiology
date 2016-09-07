@@ -12,8 +12,8 @@ function setupViewport(element, stack, image) {
     cornerstoneTools.mouseWheelInput.enable(element);
     cornerstoneTools.touchInput.enable(element);
 	
-	var foo = $(".thumbnails").get(0);
-	cornerstoneTools.touchInput.enable(foo);
+	var foo = $(".thumbnailSelector").get(0);
+	//cornerstoneTools.touchInput.enable(foo);
 	
 
     // Enable all tools we want to use with this element
@@ -44,10 +44,14 @@ function setupViewport(element, stack, image) {
 	});
 	
 	$("#fullscreen").click(function() {
-		console.log("fullscreen button pushed");
 		cornerstoneTools.makeFullscreen();
 	});
 
 	$("#scrollButton").click();
-	
+
+	// Doubleclick a thumbnail to enter fullscreen mode
+	var mc = new Hammer(foo);
+	mc.on("doubletap", function(ev) {
+		cornerstoneTools.makeFullscreen();
+	});
 }

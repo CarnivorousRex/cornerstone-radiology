@@ -8,7 +8,7 @@ html {
 body {
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     color: #888888;
     background-color: #060606;
 }

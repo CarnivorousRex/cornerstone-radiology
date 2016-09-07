@@ -54,4 +54,7 @@ function setupViewport(element, stack, image) {
 	mc.on("doubletap", function(ev) {
 		cornerstoneTools.makeFullscreen();
 	});
+	mc.on("pan", function(ev) {
+		ev.stopPropagation();	
+	});
 }

@@ -51,10 +51,24 @@ function setupViewport(element, stack, image) {
 
 	// Doubleclick a thumbnail to enter fullscreen mode
 	var mc = new Hammer(foo);
-	mc.on("doubletap", function(ev) {
-		cornerstoneTools.makeFullscreen();
+	mc.on("doubletap pan", function(ev) {
+		if (ev.type == 'doubletap') cornerstoneTools.makeFullscreen();
+		//if (ev.type == 'pan') ev.stopPropagation();	
 	});
-	mc.on("pan", function(ev) {
-		ev.stopPropagation();	
-	});
+	
+	
+/*var viewer = $("viewer");
+console.log(viewer);
+viewer.addEventListener('touchmove', function(e) {
+	e.preventDefault();
+});
+var myNav = document.getElementById("myNav");
+myNav.addEventListener('touchmove', function(e) {
+	e.preventDefault();
+});
+var tabs = document.getElementById("tabs");
+tabs.addEventListener('touchmove', function(e) {
+	e.preventDefault();
+});*/
+	
 }

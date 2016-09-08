@@ -148,14 +148,13 @@ body, html {height:100%}
 .thumbnails {
     margin:0px;
     margin-bottom: 0px;
-    overflow-y:scroll;
+    overflow-y:auto;
     overflow-x:hidden;
-	overflow-scrolling: touch;
-	touch-action: pan-y !important;
+	
 }
 
 .list-group-item, .list-group, .thumbnailSelector, div.thumbnails.list-group{
-	touch-action: pan-y !important;
+	
 }
 
 .table {

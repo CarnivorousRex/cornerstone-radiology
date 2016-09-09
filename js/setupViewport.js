@@ -50,7 +50,6 @@ function setupViewport(element, stack, image) {
 	$("#scrollButton").click();
 
 var viewer = $(".viewer").get(0);
-console.log(viewer);
 var navTabs = $(".nav-tabs").get(0);
 var myNav = $(".myNav").get(0);
 

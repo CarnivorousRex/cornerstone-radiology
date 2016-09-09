@@ -17,6 +17,11 @@ function setupButtons(studyViewer) {
 
     // Invert
     $(buttons[1]).on('click touchstart', function() {
+		$(buttons[1]).off('click');
+		setTimeout(function(){
+			$(buttons[1]).on('click');
+		},1000);		
+		
         disableAllTools();
         forEachViewport(function(element) {
             var viewport = cornerstone.getViewport(element);

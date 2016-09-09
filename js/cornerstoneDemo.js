@@ -89,6 +89,22 @@ document.body.addEventListener('touchmove', function(e) {
 	//Shutting off preventDefault to get the left hand slider to move without breaking stuff
 	//e.preventDefault();
 });
+var viewer = $(".viewer").get(0);
+var nav-tabs = $(".nav-tabs").get(0);
+var myNav = $(".myNav").get(0);
+
+viewer.addEventListener('touchmove', function(e) {
+	//Shutting off preventDefault to get the left hand slider to move without breaking stuff
+	e.preventDefault();
+});
+nav-tabs.addEventListener('touchmove', function(e) {
+	//Shutting off preventDefault to get the left hand slider to move without breaking stuff
+	e.preventDefault();
+});
+myNav.addEventListener('touchmove', function(e) {
+	//Shutting off preventDefault to get the left hand slider to move without breaking stuff
+	e.preventDefault();
+});
 /*var viewer = $("viewer");
 viewer.addEventListener('touchmove', function(e) {
 	e.preventDefault();

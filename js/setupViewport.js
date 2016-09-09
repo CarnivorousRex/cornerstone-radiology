@@ -13,7 +13,7 @@ function setupViewport(element, stack, image) {
     cornerstoneTools.touchInput.enable(element);
 	
 	var foo = $(".thumbnailSelector").get(0);
-	//cornerstoneTools.touchInput.enable(foo);
+	cornerstoneTools.touchInput.enable(foo);
 	
 
     // Enable all tools we want to use with this element
@@ -50,11 +50,26 @@ function setupViewport(element, stack, image) {
 	$("#scrollButton").click();
 
 	// Doubleclick a thumbnail to enter fullscreen mode
-	var mc = new Hammer(foo);
-	mc.on("doubletap pan", function(ev) {
-		if (ev.type == 'doubletap') cornerstoneTools.makeFullscreen();
-		//if (ev.type == 'pan') ev.stopPropagation();	
-	});
+	//var mc = new Hammer(foo);
+	//mc.on("doubletap", function(evt) {
+		//if (evt.type == 'doubletap') cornerstoneTools.makeFullscreen();
+/*		if (evt.type == 'pan') {
+			var el = evt.target;
+			startY = evt.touches ? evt.touches[0].screenY : evt.screenY;
+			var curY = evt.touches ? evt.touches[0].screenY : evt.screenY;
+
+			// Determine if the user is trying to scroll past the top or bottom
+			// In this case, the window will bounce, so we have to prevent scrolling completely
+			var isAtTop = (startY <= curY && el.scrollTop === 0);
+			var isAtBottom = (startY >= curY && el.scrollHeight - el.scrollTop === height);
+
+			// Stop a bounce bug when at the bottom or top of the scrollable element
+			if (isAtTop || isAtBottom) {
+				evt.preventDefault();
+			}
+			return;
+	}*/
+	//});
 	
 	
 /*var viewer = $("viewer");

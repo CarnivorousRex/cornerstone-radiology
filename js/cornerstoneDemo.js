@@ -84,9 +84,10 @@ resizeMain();
 
 
 // Prevent scrolling on iOS
+
 document.body.addEventListener('touchmove', function(e) {
 	//Shutting off preventDefault to get the left hand slider to move without breaking stuff
-	e.preventDefault();
+	//e.preventDefault();
 });
 /*var viewer = $("viewer");
 viewer.addEventListener('touchmove', function(e) {

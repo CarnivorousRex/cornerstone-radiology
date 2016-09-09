@@ -124,6 +124,7 @@ body {
     margin-left:0px;
     height: 100%;
 	overflow: auto;
+	
 }
 body, html {height:100%}
 
@@ -154,7 +155,13 @@ body, html {height:100%}
 }
 
 .list-group-item, .list-group, .thumbnailSelector, div.thumbnails.list-group{
-	
+	touch-action: pan-y !important;
+}
+
+.center {
+  position: relative;
+  
+  transform: translateY(0%);
 }
 
 .table {

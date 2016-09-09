@@ -49,6 +49,23 @@ function setupViewport(element, stack, image) {
 
 	$("#scrollButton").click();
 
+var viewer = $(".viewer").get(0);
+console.log(viewer);
+var navTabs = $(".nav-tabs").get(0);
+var myNav = $(".myNav").get(0);
+
+viewer.addEventListener('touchmove', function(e) {
+	//Shutting off preventDefault to get the left hand slider to move without breaking stuff
+	e.preventDefault();
+});
+navTabs.addEventListener('touchmove', function(e) {
+	//Shutting off preventDefault to get the left hand slider to move without breaking stuff
+	e.preventDefault();
+});
+myNav.addEventListener('touchmove', function(e) {
+	//Shutting off preventDefault to get the left hand slider to move without breaking stuff
+	e.preventDefault();
+});	
 	// Doubleclick a thumbnail to enter fullscreen mode
 	//var mc = new Hammer(foo);
 	//mc.on("doubletap", function(evt) {

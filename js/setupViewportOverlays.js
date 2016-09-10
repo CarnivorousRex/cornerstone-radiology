@@ -14,7 +14,10 @@ function setupViewportOverlays(element, data) {
     
     $(topRight[1]).text(data.studyDate);
 
-
+	if (data.modality == "CT") {
+		console.log("I am a CT!");
+	}
+	
     // On new image (displayed?)
     function onNewImage(e, eventData) {
         // If we are currently playing a clip then update the FPS

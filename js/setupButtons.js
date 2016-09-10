@@ -17,9 +17,9 @@ function setupButtons(studyViewer) {
 
     // Invert
     $(buttons[1]).on('click touchstart', function() {
-		$(buttons[1]).off('click');
+		$("#invert").off('click');
 		setTimeout(function(){
-			$(buttons[1]).on('click');
+			$("#invert").on('click');
 		},1000);		
 		
         disableAllTools();
@@ -114,8 +114,9 @@ function setupButtons(studyViewer) {
 
 	// Fullscreen
 	$(buttons[10]).on('click touchstart', function() {
-		$(buttons[10]).addClass("btn-fullscreen");
-		$('.studycontainer').fullscreen();
+		cornerstoneTools.makeFullscreen();
+		/*$(buttons[10]).addClass("btn-fullscreen");
+		$('.studycontainer').fullscreen();*/
 	});	
 	
     // Play clip

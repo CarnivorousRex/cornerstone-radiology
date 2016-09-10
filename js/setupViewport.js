@@ -45,6 +45,7 @@ function setupViewport(element, stack, image) {
 
 	// Auto-enable stack scroll when switching series on a small screen
 	if ($(window).width() < 767) {
+		console.log("auto enable stack scroll");
 		$("#scrollButton").click();
 	}
 

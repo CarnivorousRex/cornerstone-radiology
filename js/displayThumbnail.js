@@ -20,6 +20,9 @@ function displayThumbnail(seriesList, seriesElement, element, stack, loaded) {
         cornerstoneTools.stackScroll.disable(element);
         // Enable stackScroll on selected series
         cornerstoneTools.stackScroll.enable(element);
+		if ($(window).width() < 767) {
+			$("#scrollButton").click();
+		}		
     }
 
     // Load the first image of the selected series stack

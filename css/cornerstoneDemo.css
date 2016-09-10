@@ -25,6 +25,7 @@ body {
 	background: #424242;
 	width:100%;
 	margin:0px;
+	z-index: 99;
 }
 
 .btn-default {
@@ -72,8 +73,6 @@ body {
     width:100%;
     height:100%;
     top:0px;
-/*    left:0px;*/
-/*    position:absolute*/
 }
 
 .overlay {
@@ -113,9 +112,8 @@ body {
 }
 
 .viewer {
-    /*position: absolute;left: 110px;width: 100%;*/
     float: left;
-    box-sizing: border-box;
+	box-sizing: border-box;*/
 }
 
 .thumbnailSelector {
@@ -160,8 +158,7 @@ body, html {height:100%}
 
 .center {
   position: relative;
-  
-  transform: translateY(0%);
+  transform: translateY(-15%);
 }
 
 .table {

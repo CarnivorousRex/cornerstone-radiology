@@ -18,9 +18,7 @@ function setupButtons(studyViewer) {
     // Invert
     $(buttons[1]).on('click touchstart', function() {
 		$("#invert").off('click');
-		setTimeout(function(){
-			$("#invert").on('click');
-		},1000);		
+
 		
         disableAllTools();
         forEachViewport(function(element) {
@@ -35,6 +33,9 @@ function setupButtons(studyViewer) {
             }
             cornerstone.setViewport(element, viewport);
         });
+		setTimeout(function(){
+			$("#invert").on('click');
+		},1000);				
     });
 
     // Zoom

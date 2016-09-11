@@ -64,4 +64,10 @@ function setupViewport(element, stack, image) {
 		e.preventDefault();
 	});	// End preventDefaults
 	
+	$("#upArrow").click(function() {
+		cornerstoneTools.scroll(element, 1);
+	});
+	$("#downArrow").click(function() {
+		cornerstoneTools.scroll(element, -1);
+	});	
 }

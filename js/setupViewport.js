@@ -64,10 +64,18 @@ function setupViewport(element, stack, image) {
 		e.preventDefault();
 	});	// End preventDefaults
 	
-	$("#upArrow").click(function() {
+	// Up and Down arrow scrolling buttons
+	//var hammerOptions = {touchAction: none};
+	var upArrow = $("#upArrow").get(0);
+	var hammertime = new Hammer(upArrow);
+	hammertime.set({ touchAction: 'none'});
+	hammertime.on('tap', function(ev) {
 		cornerstoneTools.scroll(element, 1);
-	});
-	$("#downArrow").click(function() {
-		cornerstoneTools.scroll(element, -1);
 	});	
+	var downArrow = $("#downArrow").get(0);
+	var hammertime2 = new Hammer(downArrow);
+	hammertime2.on('tap', function(ev) {
+		cornerstoneTools.scroll(element, -1);
+	});		
+	
 }

@@ -34,9 +34,9 @@ function setupButtons(studyViewer) {
             }
             cornerstone.setViewport(element, viewport);
         });
-		setTimeout(function(){
+/*		setTimeout(function(){
 			$("#invert").on('click');
-		},1000);				
+		},1000);	*/			
     });
 
     // Zoom

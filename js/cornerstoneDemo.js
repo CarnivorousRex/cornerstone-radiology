@@ -89,16 +89,3 @@ document.body.addEventListener('touchmove', function(e) {
 	//Shutting off preventDefault to get the left hand slider to move without breaking stuff
 	//e.preventDefault();
 });
-
-/*var viewer = $("viewer");
-viewer.addEventListener('touchmove', function(e) {
-	e.preventDefault();
-});
-var myNav = document.getElementById("myNav");
-myNav.addEventListener('touchmove', function(e) {
-	e.preventDefault();
-});
-var tabs = document.getElementById("tabs");
-tabs.addEventListener('touchmove', function(e) {
-	e.preventDefault();
-});*/

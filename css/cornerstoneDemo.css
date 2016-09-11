@@ -229,6 +229,8 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
     }
 }
 
-#upArrowDiv > #upArrow {
-	touch-action: none;
+.arrows {
+    padding: 15px 20px;
+    font-size: 30px;
+    border-radius: 10px;
 }

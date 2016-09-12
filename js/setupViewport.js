@@ -75,11 +75,15 @@ function setupViewport(element, stack, image) {
 	var startPressEvent;
 	hammertime.on('press pressup', function(ev) {
 		console.log(ev.type);
+		var counter = 0;
 		switch (ev.type) {
 			case 'press':
+				
 				cornerstoneTools.scroll(element, 1);
 				startPressEvent = window.setInterval( function() {
 					cornerstoneTools.scroll(element, 1);
+					counter++;
+					console.log("Counter: " + counter);
 				},250);
 				break;
 			case 'pressup':
@@ -95,10 +99,14 @@ function setupViewport(element, stack, image) {
 	});		
 	hammertime2.on('press pressup', function(ev) {
 		console.log(ev.type);
+		var counter2 = 0;
 		switch (ev.type) {
 			case 'press':
+				
 				cornerstoneTools.scroll(element, -1);
 				startPressEvent = window.setInterval( function() {
+					counter2--;
+					console.log("Counter2: " + counter2);
 					cornerstoneTools.scroll(element, -1);
 				},250);
 				break;

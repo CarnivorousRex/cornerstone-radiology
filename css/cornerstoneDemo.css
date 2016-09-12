@@ -110,9 +110,10 @@ body {
     padding: 0px;
 }
 
-.viewer {
+#viewer {
     float: left;
 	box-sizing: border-box;*/
+	height: 100% !important;
 }
 
 .thumbnailSelector {
@@ -233,4 +234,6 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
     padding: 15px 20px;
     font-size: 30px;
     border-radius: 10px;
+	border-color: transparent;
+	
 }

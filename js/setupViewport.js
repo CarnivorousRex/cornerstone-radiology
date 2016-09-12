@@ -78,7 +78,7 @@ function setupViewport(element, stack, image) {
 		var counter = 0;
 		switch (ev.type) {
 			case 'press':
-				
+				//cornerstoneTools.preventGhostClick(upArrow);
 				cornerstoneTools.scroll(element, 1);
 				startPressEvent = window.setInterval( function() {
 					cornerstoneTools.scroll(element, 1);
@@ -87,6 +87,7 @@ function setupViewport(element, stack, image) {
 				},250);
 				break;
 			case 'pressup':
+				$("#upArrow").removeClass("btn-active");
 				window.clearInterval(startPressEvent);
 				break;
 		}
@@ -98,11 +99,12 @@ function setupViewport(element, stack, image) {
 		cornerstoneTools.scroll(element, -1);
 	});		
 	hammertime2.on('press pressup', function(ev) {
+		
 		console.log(ev.type);
 		var counter2 = 0;
 		switch (ev.type) {
 			case 'press':
-				
+				cornerstoneTools.preventGhostClick(downArrow);
 				cornerstoneTools.scroll(element, -1);
 				startPressEvent = window.setInterval( function() {
 					counter2--;
@@ -112,6 +114,7 @@ function setupViewport(element, stack, image) {
 				break;
 			case 'pressup':
 				window.clearInterval(startPressEvent);
+				$("#downArrow").removeClass("btn-active");
 				break;
 		}
 	});		

@@ -72,23 +72,23 @@ function setupViewport(element, stack, image) {
 	hammertime.on('tap', function(ev) {
 		cornerstoneTools.scroll(element, 1);
 	});	
-	var startPressEvent;
+	var startPressEventUp;
+	var startPressEventDown;
 	hammertime.on('press pressup', function(ev) {
 		console.log(ev.type);
 		var counter = 0;
 		switch (ev.type) {
 			case 'press':
-				//cornerstoneTools.preventGhostClick(upArrow);
 				cornerstoneTools.scroll(element, 1);
-				startPressEvent = window.setInterval( function() {
+				startPressEventUp = window.setInterval( function() {
 					cornerstoneTools.scroll(element, 1);
 					counter++;
 					console.log("Counter: " + counter);
 				},250);
 				break;
 			case 'pressup':
-				$("#upArrow").removeClass("btn-active");
-				window.clearInterval(startPressEvent);
+				$("#upArrow").removeClass("btn-active btn-inverse");
+				window.clearInterval(startPressEventUp);
 				break;
 		}
 	});		
@@ -104,17 +104,16 @@ function setupViewport(element, stack, image) {
 		var counter2 = 0;
 		switch (ev.type) {
 			case 'press':
-				cornerstoneTools.preventGhostClick(downArrow);
 				cornerstoneTools.scroll(element, -1);
-				startPressEvent = window.setInterval( function() {
+				startPressEventDown = window.setInterval( function() {
 					counter2--;
 					console.log("Counter2: " + counter2);
 					cornerstoneTools.scroll(element, -1);
 				},250);
 				break;
 			case 'pressup':
-				window.clearInterval(startPressEvent);
-				$("#downArrow").removeClass("btn-active");
+				window.clearInterval(startPressEventDown);
+				$("#downArrow").removeClass("btn-active btn-inverse");
 				break;
 		}
 	});		

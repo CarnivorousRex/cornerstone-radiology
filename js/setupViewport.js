@@ -69,9 +69,24 @@ function setupViewport(element, stack, image) {
 	var upArrow = $("#upArrow").get(0);
 	var hammertime = new Hammer(upArrow);
 	hammertime.set({ touchAction: 'none'});
-	hammertime.on('tap', function(ev) {
+/*	hammertime.on('tap', function(ev) {
 		cornerstoneTools.scroll(element, 1);
-	});	
+	});	*/
+	var startPressEvent;
+	hammertime.on('press pressup', function(ev) {
+		console.log(ev.type);
+		switch (ev.type) {
+			case 'press':
+				startPressEvent = window.setInterval( function() {
+					cornerstoneTools.scroll(element, 1);
+				},250);
+				break;
+			case 'pressup':
+				window.clearInterval(startPressEvent);
+				break;
+		}
+	});		
+	
 	var downArrow = $("#downArrow").get(0);
 	var hammertime2 = new Hammer(downArrow);
 	hammertime2.on('tap', function(ev) {

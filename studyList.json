@@ -1,13 +1,58 @@
 {
 	"studyList": [
 		{
-		"patientName" : "case 14",
-		"patientId" : "ANON-307-540-92",
-		"studyDate" : "20090512",
-		"modality" : "MR",
-		"studyDescription" : "HEAD^ADULT BRAIN",
-		"numImages" : 195,
-		"studyId" : "MSCase"
+		"patientName" : "King^Maria^F^^",
+		"patientId" : "14F849F8",
+		"studyDate" : "20160912",
+		"modality" : "CR",
+		"studyDescription" : "Upper Extremity",
+		"numImages" : 2,
+		"studyId" : "Elbow"
+		},
+		{
+		"patientName" : "Callahan^Kathryn^P^^",
+		"patientId" : "DE64E555",
+		"studyDate" : "20060513",
+		"modality" : "CT",
+		"studyDescription" : "Children^007_AbdPelRoutine",
+		"numImages" : 94,
+		"studyId" : "PAT_0000"
+		},
+		{
+		"patientName" : "Capri^Denise^S^^",
+		"patientId" : "CE61F532",
+		"studyDate" : "20090320",
+		"modality" : "CR",
+		"studyDescription" : "CHEST",
+		"numImages" : 2,
+		"studyId" : "PAT_0001"
+		},
+		{
+		"patientName" : "Capri^Denise^S^^",
+		"patientId" : "CE61F532",
+		"studyDate" : "20090321",
+		"modality" : "CT",
+		"studyDescription" : "Thorax^01_ThoraxRoutine (Adult)",
+		"numImages" : 309,
+		"studyId" : "PAT_0002"
+		},
+		{
+		"patientName" : "Carmichael^Frank^W^^",
+		"patientId" : "F4BA6CA2",
+		"studyDate" : "20060106",
+		"modality" : "CT",
+		"studyDescription" : "Children^03 Chest",
+		"numImages" : 115,
+		"studyId" : "PAT_0003"
+		},
+		{
+		"patientName" : "Carreira^Ricardo^A^^",
+		"patientId" : "95977248",
+		"studyDate" : "20101004",
+		"modality" : "CT",
+		"studyDescription" : "Thorax^1Thorax_PE (Adult)",
+		"numImages" : 513,
+		"studyId" : "PAT_0004"
 		}
 	]
 }

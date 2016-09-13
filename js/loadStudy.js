@@ -71,7 +71,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
                 for (var i = 0; i < numberOfFrames; i++) {
                     var imageId = series.instanceList[0].imageId + "?frame=" + i;
                     if (imageId.substr(0, 4) !== 'http') {
-                        imageId = "dicomweb://carnivorousrex.github.io/cornerstone-radiology/" + imageId;
+                        imageId = "dicomweb://cornerstonetech.org/images/ClearCanvas/" + imageId;
                     }
                     stack.imageIds.push(imageId);
                 }
@@ -81,7 +81,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
                     var imageId = image.imageId;
 
                     if (image.imageId.substr(0, 4) !== 'http') {
-                        imageId = "dicomweb://carnivorousrex.github.io/cornerstone-radiology/" + image.imageId;
+                        imageId = "dicomweb://cornerstonetech.org/images/ClearCanvas/" + image.imageId;
                     }
                     stack.imageIds.push(imageId);
                 });
@@ -205,7 +205,6 @@ function loadStudy(studyViewer, viewportModel, studyId) {
 				$("#tabContent").height("100%");
 				$(".thumbnails").height("100%");
 				$(".list-group").height("100%");
-			
             	$(seriesList).height(height-28);
 				$(parentDiv).css({height : height-28});
 				var seriesList = $(studyViewer).find('.thumbnails')[0];

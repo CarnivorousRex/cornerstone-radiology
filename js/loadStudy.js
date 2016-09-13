@@ -71,7 +71,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
                 for (var i = 0; i < numberOfFrames; i++) {
                     var imageId = series.instanceList[0].imageId + "?frame=" + i;
                     if (imageId.substr(0, 4) !== 'http') {
-                        imageId = "dicomweb://carnivorousrex.github.io/cornerstone-radiology/" + imageId;
+                        imageId = "dicomweb://cornerstonetech.org/images/ClearCanvas/" + imageId;
                     }
                     stack.imageIds.push(imageId);
                 }
@@ -81,7 +81,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
                     var imageId = image.imageId;
 
                     if (image.imageId.substr(0, 4) !== 'http') {
-                        imageId = "dicomweb://carnivorousrex.github.io/cornerstone-radiology/" + image.imageId;
+                        imageId = "dicomweb://cornerstonetech.org/images/ClearCanvas/" + image.imageId;
                     }
                     stack.imageIds.push(imageId);
                 });
@@ -123,16 +123,18 @@ function loadStudy(studyViewer, viewportModel, studyId) {
 
             // Create series thumbnail item
             var seriesEntry = '<a class="list-group-item" + ' +
+				'style="touch-action: pan-y"' +
                 'oncontextmenu="return false"' +
                 'unselectable="on"' +
                 'onselectstart="return false;"' +
                 'onmousedown="return false;">' +
                 '<div class="csthumbnail"' +
+				'style="touch-action: pan-y"' +
                 'oncontextmenu="return false"' +
                 'unselectable="on"' +
                 'onselectstart="return false;"' +
                 'onmousedown="return false;"></div>' +
-                "<div class='text-center small'>" + stack.seriesDescription + '</div></a>';
+                "<div class='text-center small' style='touch-action: none'>" + stack.seriesDescription + '</div></a>';
 
             // Add to series list
             var seriesElement = $(seriesEntry).appendTo(seriesList);
@@ -197,13 +199,12 @@ function loadStudy(studyViewer, viewportModel, studyId) {
             $(imageViewerElement).css({height : $(parentDiv).height() - $(parentDiv).find('.text-center:eq(0)').height()});
 			
 			
-			// Take off header on xs screensize and resize thumbnail/viewport
+			// Take off header on xs and sm screensize and resize thumbnail/viewport
 			if ($(window).width() < 767) {
 				$(".main").height("100%");
 				$("#tabContent").height("100%");
 				$(".thumbnails").height("100%");
 				$(".list-group").height("100%");
-			
             	$(seriesList).height(height-28);
 				$(parentDiv).css({height : height-28});
 				var seriesList = $(studyViewer).find('.thumbnails')[0];

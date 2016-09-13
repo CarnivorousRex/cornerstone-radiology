@@ -1,0 +1,25 @@
+{
+	"patientName" : "King^Maria^F^^",
+	"patientId" : "14F849F8",
+	"studyDate" : "20160912",
+	"modality" : "CR",
+	"studyDescription" : "Upper Extremity",
+	"numImages" : "2",
+	"studyId" : "Elbow",
+	"seriesList" : [
+		{
+			"seriesDescription": "Elbow LAT",
+			"seriesNumber": "1",
+			"instanceList": [
+				{"imageId" : "MedStudentCases/Elbow/SER_0003/IM_0001.dcm"}
+			]
+		},
+		{
+			"seriesDescription": "Elbow AP",
+			"seriesNumber": "2",
+			"instanceList": [
+				{"imageId" : "MedStudentCases/Elbow/SER_0004/IM_0001.dcm"}
+			]
+		}
+	]
+}

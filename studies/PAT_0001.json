@@ -1,0 +1,19 @@
+{
+	"patientName" : "Capri^Denise^S^^",
+	"patientId" : "CE61F532",
+	"studyDate" : "20090320",
+	"modality" : "CR",
+	"studyDescription" : "CHEST",
+	"numImages" : "2",
+	"studyId" : "PAT_0001",
+	"seriesList" : [
+		{
+			"seriesDescription": "2 VIEW PA LAT",
+			"seriesNumber": "1",
+			"instanceList": [
+				{"imageId" : "MedStudentCases/PAT_0001/STD_0000/IM_0001.dcm"},
+				{"imageId" : "MedStudentCases/PAT_0001/STD_0000/IM_0001.dcm"}
+			]
+		}
+	]
+}

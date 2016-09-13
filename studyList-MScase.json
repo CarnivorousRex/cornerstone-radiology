@@ -1,0 +1,13 @@
+{
+	"studyList": [
+		{
+		"patientName" : "case 14",
+		"patientId" : "ANON-307-540-92",
+		"studyDate" : "20090512",
+		"modality" : "MR",
+		"studyDescription" : "HEAD^ADULT BRAIN",
+		"numImages" : 195,
+		"studyId" : "MSCase"
+		}
+	]
+}

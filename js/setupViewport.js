@@ -122,9 +122,15 @@ function setupViewport(element, stack, image) {
 		}
 	});	
 	
-	$("#stopButton").click(function() {
-		window.clearInterval(startPressEventUp);
-		window.clearInterval(startPressEventDown);
-	});
+	$("#stopButton").click(onRelease);
 	
+	function onRelease(e) {
+		window.clearInterval(startPressEventUp);
+		window.clearInterval(startPressEventDown);		
+	}
+	
+	document.getElementById("upArrow").addEventListener("mouseup", onRelease);
+	document.getElementById("upArrow").addEventListener("touchend", onRelease);
+	document.getElementById("downArrow").addEventListener("mouseup", onRelease);
+	document.getElementById("downArrow").addEventListener("touchend", onRelease);
 }

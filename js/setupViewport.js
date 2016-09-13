@@ -47,6 +47,8 @@ function setupViewport(element, stack, image) {
 	if ($(window).width() < 767) {
 		console.log("auto enable stack scroll");
 		$("#scrollButton").click();
+	} else { // Otherwise, light up the WW/WC button -> tool is already L mouse button default
+		$("#wwWL").addClass("btn-active");
 	}
 
 	//  preventDefault all but the left hand slider (to allow native thumbnail scroll behavior)
@@ -89,7 +91,6 @@ function setupViewport(element, stack, image) {
 				},250);
 				break;
 			case 'pressup':
-				$("#upArrow").removeClass("btn-active btn-inverse");
 				window.clearInterval(startPressEventUp);
 				break;
 		}
@@ -117,10 +118,10 @@ function setupViewport(element, stack, image) {
 				break;
 			case 'pressup':
 				window.clearInterval(startPressEventDown);
-				$("#downArrow").removeClass("btn-active btn-inverse");
 				break;
 		}
 	});	
+	
 	$("#stopButton").click(function() {
 		window.clearInterval(startPressEventUp);
 		window.clearInterval(startPressEventDown);

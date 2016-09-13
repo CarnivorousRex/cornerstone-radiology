@@ -116,13 +116,13 @@ body {
 	height: 100% !important;
 }
 
-.thumbnailSelector {
+#thumbnailSelector.thumbnailSelector {
     width:106px;
     float:left;
     margin-left:0px;
     height: 100%;
 	overflow: auto;
-	
+	touch-action: pan-y !important;
 }
 body, html {height:100%}
 

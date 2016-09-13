@@ -33,10 +33,7 @@ function setupButtons(studyViewer) {
 				$(buttons[1]).addClass("btn-inverse");
             }
             cornerstone.setViewport(element, viewport);
-        });
-/*		setTimeout(function(){
-			$("#invert").on('click');
-		},1000);	*/			
+        });		
     });
 
     // Zoom
@@ -117,8 +114,6 @@ function setupButtons(studyViewer) {
 	// Fullscreen
 	$(buttons[10]).on('click touchstart', function() {
 		cornerstoneTools.makeFullscreen();
-		/*$(buttons[10]).addClass("btn-fullscreen");
-		$('.studycontainer').fullscreen();*/
 	});	
 	
     // Play clip

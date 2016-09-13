@@ -18,7 +18,7 @@ function displayThumbnail(seriesList, seriesElement, element, stack, loaded) {
 		"btn btn-responsive btn-default";
         // Disable stack scrolling
         cornerstoneTools.stackScroll.disable(element);
-        // Enable stackScroll on selected series
+        // Enable stackScroll on switching series on xs and sm screens
         cornerstoneTools.stackScroll.enable(element);
 		if ($(window).width() < 767) {
 			$("#scrollButton").click();

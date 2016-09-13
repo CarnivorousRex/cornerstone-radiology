@@ -6,7 +6,7 @@
 		"studyDate" : "20160912",
 		"modality" : "CR",
 		"studyDescription" : "Upper Extremity",
-		"numImages" : 2,
+		"numImages" : 4,
 		"studyId" : "Elbow"
 		},
 		{
@@ -15,7 +15,7 @@
 		"studyDate" : "20060513",
 		"modality" : "CT",
 		"studyDescription" : "Children^007_AbdPelRoutine",
-		"numImages" : 94,
+		"numImages" : 98,
 		"studyId" : "PAT_0000"
 		},
 		{
@@ -24,7 +24,7 @@
 		"studyDate" : "20090320",
 		"modality" : "CR",
 		"studyDescription" : "CHEST",
-		"numImages" : 2,
+		"numImages" : 5,
 		"studyId" : "PAT_0001"
 		},
 		{
@@ -33,7 +33,7 @@
 		"studyDate" : "20090321",
 		"modality" : "CT",
 		"studyDescription" : "Thorax^01_ThoraxRoutine (Adult)",
-		"numImages" : 309,
+		"numImages" : 316,
 		"studyId" : "PAT_0002"
 		},
 		{
@@ -42,7 +42,7 @@
 		"studyDate" : "20060106",
 		"modality" : "CT",
 		"studyDescription" : "Children^03 Chest",
-		"numImages" : 115,
+		"numImages" : 119,
 		"studyId" : "PAT_0003"
 		},
 		{
@@ -51,7 +51,7 @@
 		"studyDate" : "20101004",
 		"modality" : "CT",
 		"studyDescription" : "Thorax^1Thorax_PE (Adult)",
-		"numImages" : 513,
+		"numImages" : 519,
 		"studyId" : "PAT_0004"
 		}
 	]

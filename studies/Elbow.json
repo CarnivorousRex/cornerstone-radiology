@@ -4,13 +4,14 @@
 	"studyDate" : "20160912",
 	"modality" : "CR",
 	"studyDescription" : "Upper Extremity",
-	"numImages" : "2",
+	"numImages" : "4",
 	"studyId" : "Elbow",
 	"seriesList" : [
 		{
 			"seriesDescription": "Elbow LAT",
 			"seriesNumber": "1",
 			"instanceList": [
+				{"imageId" : "MedStudentCases/Elbow/SER_0003/.DS_Store"},
 				{"imageId" : "MedStudentCases/Elbow/SER_0003/IM_0001.dcm"}
 			]
 		},
@@ -18,6 +19,7 @@
 			"seriesDescription": "Elbow AP",
 			"seriesNumber": "2",
 			"instanceList": [
+				{"imageId" : "MedStudentCases/Elbow/SER_0004/.DS_Store"},
 				{"imageId" : "MedStudentCases/Elbow/SER_0004/IM_0001.dcm"}
 			]
 		}

@@ -123,16 +123,18 @@ function loadStudy(studyViewer, viewportModel, studyId) {
 
             // Create series thumbnail item
             var seriesEntry = '<a class="list-group-item" + ' +
+				'style="touch-action: pan-y"' +
                 'oncontextmenu="return false"' +
                 'unselectable="on"' +
                 'onselectstart="return false;"' +
                 'onmousedown="return false;">' +
                 '<div class="csthumbnail"' +
+				'style="touch-action: pan-y"' +
                 'oncontextmenu="return false"' +
                 'unselectable="on"' +
                 'onselectstart="return false;"' +
                 'onmousedown="return false;"></div>' +
-                "<div class='text-center small'>" + stack.seriesDescription + '</div></a>';
+                "<div class='text-center small' style='touch-action: none'>" + stack.seriesDescription + '</div></a>';
 
             // Add to series list
             var seriesElement = $(seriesEntry).appendTo(seriesList);
@@ -197,7 +199,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
             $(imageViewerElement).css({height : $(parentDiv).height() - $(parentDiv).find('.text-center:eq(0)').height()});
 			
 			
-			// Take off header on xs screensize and resize thumbnail/viewport
+			// Take off header on xs and sm screensize and resize thumbnail/viewport
 			if ($(window).width() < 767) {
 				$(".main").height("100%");
 				$("#tabContent").height("100%");

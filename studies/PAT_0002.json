@@ -11,7 +11,6 @@
 			"seriesDescription": "Chest",
 			"seriesNumber": "1",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0002/SER_0000/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0000/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0000/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0000/IM_0003.dcm"},
@@ -70,7 +69,6 @@
 			"seriesDescription": "CHEST LUNG",
 			"seriesNumber": "2",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0002/SER_0001/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0001/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0001/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0001/IM_0003.dcm"},
@@ -129,7 +127,6 @@
 			"seriesDescription": "CHEST",
 			"seriesNumber": "3",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0002/SER_0002/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0002/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0002/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0002/IM_0003.dcm"},
@@ -188,7 +185,6 @@
 			"seriesDescription": "CHEST",
 			"seriesNumber": "4",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0002/SER_0003/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0003/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0003/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0003/IM_0003.dcm"},
@@ -247,7 +243,6 @@
 			"seriesDescription": "CORONAL MPR",
 			"seriesNumber": "5",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0002/SER_0004/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0004/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0004/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0004/IM_0003.dcm"},
@@ -309,7 +304,6 @@
 			"seriesDescription": "MIP LUNG CORONALS",
 			"seriesNumber": "6",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0002/SER_0005/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0005/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0005/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0002/SER_0005/IM_0003.dcm"},

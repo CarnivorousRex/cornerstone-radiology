@@ -11,7 +11,6 @@
 			"seriesDescription": "Topogram  0.6  T20s",
 			"seriesNumber": "1",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0004/SER_0003/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0003/IM_0001.dcm"}
 			]
 		},
@@ -19,7 +18,6 @@
 			"seriesDescription": "PE Chest  3.0  B31f",
 			"seriesNumber": "2",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0004/SER_0004/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0004/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0004/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0004/IM_0003.dcm"},
@@ -107,7 +105,6 @@
 			"seriesDescription": "PE Chest  3.0  B60f",
 			"seriesNumber": "3",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0004/SER_0005/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0005/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0005/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0005/IM_0003.dcm"},
@@ -184,7 +181,6 @@
 			"seriesDescription": "PE Chest  1.0  B31f",
 			"seriesNumber": "4",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0004/SER_0006/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0006/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0006/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0006/IM_0003.dcm"},
@@ -434,7 +430,6 @@
 			"seriesDescription": "Coronals  3.0  B31f",
 			"seriesNumber": "5",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0004/SER_0007/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0007/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0007/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0007/IM_0003.dcm"},
@@ -515,7 +510,6 @@
 			"seriesDescription": "Axial MIP  20  B31f",
 			"seriesNumber": "6",
 			"instanceList": [
-				{"imageId" : "MedStudentCases/PAT_0004/SER_0008/.DS_Store"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0008/IM_0001.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0008/IM_0002.dcm"},
 				{"imageId" : "MedStudentCases/PAT_0004/SER_0008/IM_0003.dcm"},

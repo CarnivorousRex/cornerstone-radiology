@@ -17,10 +17,6 @@ body {
     display: none;
 }
 
-.modal-content {
-    background-color: #202020;
-}
-
 .btn-group {
 	background: #424242;
 	width:100%;
@@ -234,6 +230,17 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
     padding: 15px 20px;
     font-size: 30px;
     border-radius: 10px;
-	border-color: transparent;
-	
+	border-color: transparent;	
+}
+
+.modal-content {
+    background-color: #202020;
+}
+tr:hover {
+	background-color:#3d3d5c;
+}
+
+.btn-modal {
+	padding: 5px 50px 5px;
+	width: 80%;
 }

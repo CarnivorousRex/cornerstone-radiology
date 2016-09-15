@@ -14,6 +14,10 @@ function setupButtons(studyViewer) {
 			$(buttons[0]).addClass("btn-active");
         });
     });
+	
+    $(buttons[0]).on('dblclick', function() {
+		$("#wwWLModal").modal();
+    });	
 
     // Invert
     $(buttons[1]).on('click touchstart', function() {
@@ -157,4 +161,14 @@ function setupButtons(studyViewer) {
     $(buttons[12]).tooltip();
 	$(buttons[13]).tooltip();
 
+	// Modal buttons
+	$("tr").click(function() {
+		var string = $(':nth-child(3)', this).text().split("/");
+		var element = $("div.viewport.ui-droppable").get(0);
+		var viewport = cornerstone.getViewport(element);	
+		viewport.voi.windowWidth = string[0];
+		viewport.voi.windowCenter = string[1];
+		cornerstone.setViewport(element, viewport);	
+	})
+	
 };

@@ -122,15 +122,30 @@ function setupViewport(element, stack, image) {
 		}
 	});	
 	
-	$("#stopButton").click(onRelease);
+	var wwWL = $("#wwWL").get(0);
+	var hammertimeWWWL = new Hammer(wwWL);
+	hammertimeWWWL.on('press', function(ev) {
+		//launch modal
+loadTemplate("/templates/wwWL.html", function(element) {
+    $('body').append(element);
+    //$("#wwWL").on("dblclick", (function() {
+		console.log("pressed");
+        $("#wwWLModal").modal();
+    //});
+});
+		
+	});
 	
+	//$("#stopButton").click(onRelease);  Probably don't need this anymore.
+	
+	// If touch event falls of scroll buttons, cancel the setInterval() autoscroll
 	function onRelease(e) {
 		window.clearInterval(startPressEventUp);
 		window.clearInterval(startPressEventDown);		
 	}
-	
 	document.getElementById("upArrow").addEventListener("mouseup", onRelease);
 	document.getElementById("upArrow").addEventListener("touchend", onRelease);
 	document.getElementById("downArrow").addEventListener("mouseup", onRelease);
 	document.getElementById("downArrow").addEventListener("touchend", onRelease);
+	// End of cancel scrolling
 }

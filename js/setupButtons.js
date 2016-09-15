@@ -18,6 +18,13 @@ function setupButtons(studyViewer) {
     $(buttons[0]).on('dblclick', function() {
 		$("#wwWLModal").modal();
     });	
+	
+	//launch WW/WL modal when long press on WW/WL button
+	var wwWL = $("#wwWL").get(0);
+	var hammertimeWWWL = new Hammer(wwWL);
+	hammertimeWWWL.on('press', function(ev) {
+        $("#wwWLModal").modal();
+	});	
 
     // Invert
     $(buttons[1]).on('click touchstart', function() {

@@ -122,20 +122,6 @@ function setupViewport(element, stack, image) {
 		}
 	});	
 	
-	var wwWL = $("#wwWL").get(0);
-	var hammertimeWWWL = new Hammer(wwWL);
-	hammertimeWWWL.on('press', function(ev) {
-		//launch modal
-loadTemplate("/templates/wwWL.html", function(element) {
-    $('body').append(element);
-    //$("#wwWL").on("dblclick", (function() {
-		console.log("pressed");
-        $("#wwWLModal").modal();
-    //});
-});
-		
-	});
-	
 	//$("#stopButton").click(onRelease);  Probably don't need this anymore.
 	
 	// If touch event falls of scroll buttons, cancel the setInterval() autoscroll

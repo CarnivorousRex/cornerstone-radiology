@@ -233,6 +233,9 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 	border-color: transparent;	
 }
 
+body .modal {
+	z-index: 2147483649;
+}
 .modal-content {
     background-color: #202020;
 }

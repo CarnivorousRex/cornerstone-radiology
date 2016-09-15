@@ -227,7 +227,7 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 }
 
 .arrows {
-    padding: 15px 20px;
+    padding: 10% 15%;
     font-size: 30px;
     border-radius: 10px;
 	border-color: transparent;	

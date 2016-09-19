@@ -11,7 +11,6 @@
 			"seriesDescription": "Topogram",
 			"seriesNumber": "1",
 			"instanceList": [
-				{"imageId" : "Assignment1/PAT_0003/SER_0000/.DS_Store"},
 				{"imageId" : "Assignment1/PAT_0003/SER_0000/IM_0001.dcm"}
 			]
 		},
@@ -19,7 +18,6 @@
 			"seriesDescription": "Chest 5.0 B30f",
 			"seriesNumber": "2",
 			"instanceList": [
-				{"imageId" : "Assignment1/PAT_0003/SER_0001/.DS_Store"},
 				{"imageId" : "Assignment1/PAT_0003/SER_0001/IM_0001.dcm"},
 				{"imageId" : "Assignment1/PAT_0003/SER_0001/IM_0002.dcm"},
 				{"imageId" : "Assignment1/PAT_0003/SER_0001/IM_0003.dcm"},
@@ -83,7 +81,6 @@
 			"seriesDescription": "Chest 5.0 B60f",
 			"seriesNumber": "3",
 			"instanceList": [
-				{"imageId" : "Assignment1/PAT_0003/SER_0002/.DS_Store"},
 				{"imageId" : "Assignment1/PAT_0003/SER_0002/IM_0001.dcm"},
 				{"imageId" : "Assignment1/PAT_0003/SER_0002/IM_0002.dcm"},
 				{"imageId" : "Assignment1/PAT_0003/SER_0002/IM_0003.dcm"},

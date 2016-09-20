@@ -1,0 +1,25 @@
+{
+	"patientName" : "3132893192",
+	"patientId" : "3132893192",
+	"studyDate" : "20130121",
+	"modality" : "CR",
+	"studyDescription" : "Abdomen",
+	"numImages" : "2",
+	"studyId" : "PAT_0005",
+	"seriesList" : [
+		{
+			"seriesDescription": "DECUB PA ABD SMALL",
+			"seriesNumber": "1",
+			"instanceList": [
+				{"imageId" : "Assignment1-Peds/PAT_0005/STD_0000/SER_0003/IM_0001.dcm"}
+			]
+		},
+		{
+			"seriesDescription": "SUPINE ABDOMEN SMALL",
+			"seriesNumber": "2",
+			"instanceList": [
+				{"imageId" : "Assignment1-Peds/PAT_0005/STD_0000/SER_0004/IM_0001.dcm"}
+			]
+		}
+	]
+}

@@ -4,21 +4,23 @@
 	"studyDate" : "19950708",
 	"modality" : "CR",
 	"studyDescription" : "CHEST",
-	"numImages" : "7",
+	"numImages" : "4",
 	"studyId" : "PAT_0001",
 	"seriesList" : [
 		{
 			"seriesDescription": "2 VIEW PA LAT",
 			"seriesNumber": "1",
 			"instanceList": [
-				{"imageId" : "Assignment1/PAT_0001/LAT/IM_0001.dcm"}
+				{"imageId" : "Assignment1-Peds/PAT_0001/STD_0000/LAT/IM_0001-no-phi.dcm"},
+				{"imageId" : "Assignment1-Peds/PAT_0001/STD_0000/LAT/IM_0001.dcm"}
 			]
 		},
 		{
 			"seriesDescription": "2 VIEW PA PA",
 			"seriesNumber": "2",
 			"instanceList": [
-				{"imageId" : "Assignment1/PAT_0001/PA/IM_0001.dcm"}
+				{"imageId" : "Assignment1-Peds/PAT_0001/STD_0000/PA/IM_0001-no-phi.dcm"},
+				{"imageId" : "Assignment1-Peds/PAT_0001/STD_0000/PA/IM_0001.dcm"}
 			]
 		}
 	]

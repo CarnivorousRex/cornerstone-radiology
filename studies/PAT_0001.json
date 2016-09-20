@@ -1,0 +1,25 @@
+{
+	"patientName" : "5443020125",
+	"patientId" : "5443020125",
+	"studyDate" : "19950708",
+	"modality" : "CR",
+	"studyDescription" : "CHEST",
+	"numImages" : "7",
+	"studyId" : "PAT_0001",
+	"seriesList" : [
+		{
+			"seriesDescription": "2 VIEW PA LAT",
+			"seriesNumber": "1",
+			"instanceList": [
+				{"imageId" : "Assignment1/PAT_0001/LAT/IM_0001.dcm"}
+			]
+		},
+		{
+			"seriesDescription": "2 VIEW PA PA",
+			"seriesNumber": "2",
+			"instanceList": [
+				{"imageId" : "Assignment1/PAT_0001/PA/IM_0001.dcm"}
+			]
+		}
+	]
+}

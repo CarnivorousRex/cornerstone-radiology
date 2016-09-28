@@ -12,7 +12,7 @@ loadTemplate("templates/studyViewer.html", function(element) {
 
 // Get study list from JSON manifest
 var showCase = window.location.search.split("=")[1];
-$.getJSON('explore/cases/' + showCase + studyList.json', function(data) {
+$.getJSON('explore/cases/' + showCase + 'studyList.json', function(data) {
   data.studyList.forEach(function(study) {
 
     // Create one table row for each study in the manifest

@@ -3,6 +3,7 @@
 function loadStudy(studyViewer, viewportModel, studyId) {
 
 	var showCase = window.location.search.split("=")[1];
+	console.log("fetching:" + 'explore/cases' + showCase + '/../studies/' + studyId);
     // Get the JSON data for the selected studyId
     $.getJSON('explore/cases' + showCase + '/../studies/' + studyId, function(data) {
 

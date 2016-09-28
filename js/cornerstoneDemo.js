@@ -56,7 +56,7 @@ $.getJSON('studyList.json', function(data) {
       });
 
       // Now load the study.json
-      loadStudy(studyViewerCopy, viewportTemplate, study.studyId + ".json");
+      loadStudy(studyViewerCopy, viewportTemplate, "../../studies/" + study.studyId + ".json");
     });
   });
 });

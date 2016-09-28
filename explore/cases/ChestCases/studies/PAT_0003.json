@@ -1,0 +1,25 @@
+{
+	"patientName" : "2197248671",
+	"patientId" : "2197248671",
+	"studyDate" : "20010407",
+	"modality" : "CR",
+	"studyDescription" : "",
+	"numImages" : "2",
+	"studyId" : "PAT_0003",
+	"seriesList" : [
+		{
+			"seriesDescription": "Chest pa",
+			"seriesNumber": "1",
+			"instanceList": [
+				{"imageId" : "ChestCases/PAT_0003/STD_0000/SER_0000/IM_0001.dcm"}
+			]
+		},
+		{
+			"seriesDescription": "Chest lat",
+			"seriesNumber": "2",
+			"instanceList": [
+				{"imageId" : "ChestCases/PAT_0003/STD_0000/SER_0001/IM_0001.dcm"}
+			]
+		}
+	]
+}

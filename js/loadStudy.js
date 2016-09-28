@@ -2,8 +2,9 @@
 // Load JSON study information for each study
 function loadStudy(studyViewer, viewportModel, studyId) {
 
+	var showCase = window.location.search.split("=")[1];
     // Get the JSON data for the selected studyId
-    $.getJSON('studies/' + studyId, function(data) {
+    $.getJSON('explore/cases' + showCase + '/../studies/' + studyId, function(data) {
 
         var imageViewer = new ImageViewer(studyViewer, viewportModel);
         imageViewer.setLayout('1x1'); // default layout
@@ -71,7 +72,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
                 for (var i = 0; i < numberOfFrames; i++) {
                     var imageId = series.instanceList[0].imageId + "?frame=" + i;
                     if (imageId.substr(0, 4) !== 'http') {
-                        imageId = "dicomweb://carnivorousrex.github.io/cornerstone-radiology/" + imageId;
+                        imageId = "dicomweb://carnivorousrex.github.io/cornerstone-radiology/explore/cases/" + imageId;
                     }
                     stack.imageIds.push(imageId);
                 }
@@ -81,7 +82,7 @@ function loadStudy(studyViewer, viewportModel, studyId) {
                     var imageId = image.imageId;
 
                     if (image.imageId.substr(0, 4) !== 'http') {
-                        imageId = "dicomweb://carnivorousrex.github.io/cornerstone-radiology/" + image.imageId;
+                        imageId = "dicomweb://carnivorousrex.github.io/cornerstone-radiology/explore/cases/" + image.imageId;
                     }
                     stack.imageIds.push(imageId);
                 });

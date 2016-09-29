@@ -11,14 +11,14 @@
 			"seriesDescription": "Chest pa",
 			"seriesNumber": "1",
 			"instanceList": [
-				{"imageId" : "ChestCases/PAT_0003/STD_0000/SER_0000/IM_0001.dcm"}
+				{"imageId" : "Assignment2-Chest/PAT_0003/STD_0000/SER_0000/IM_0001.dcm"}
 			]
 		},
 		{
 			"seriesDescription": "Chest lat",
 			"seriesNumber": "2",
 			"instanceList": [
-				{"imageId" : "ChestCases/PAT_0003/STD_0000/SER_0001/IM_0001.dcm"}
+				{"imageId" : "Assignment2-Chest/PAT_0003/STD_0000/SER_0001/IM_0001.dcm"}
 			]
 		}
 	]

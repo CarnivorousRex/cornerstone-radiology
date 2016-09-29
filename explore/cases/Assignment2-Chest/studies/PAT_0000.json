@@ -11,14 +11,14 @@
 			"seriesDescription": "Chest, 2 vw Lat, Grid",
 			"seriesNumber": "1",
 			"instanceList": [
-				{"imageId" : "ChestCases/PAT_0000/STD_0000/SER_0002/IM_0001.dcm"}
+				{"imageId" : "Assignment2-Chest/PAT_0000/STD_0000/SER_0002/IM_0001.dcm"}
 			]
 		},
 		{
 			"seriesDescription": "Chest, 2 vw PA, Grid",
 			"seriesNumber": "2",
 			"instanceList": [
-				{"imageId" : "ChestCases/PAT_0000/STD_0000/SER_0003/IM_0001.dcm"}
+				{"imageId" : "Assignment2-Chest/PAT_0000/STD_0000/SER_0003/IM_0001.dcm"}
 			]
 		}
 	]

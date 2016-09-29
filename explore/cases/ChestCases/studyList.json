@@ -64,11 +64,11 @@
 		"studyId" : "PAT_0006"
 		},
 		{
-		"patientName" : "1899642574",
+		"patientName" : "30yoF-shortness of breath",
 		"patientId" : "1899642574",
 		"studyDate" : "20030428",
 		"modality" : "CR",
-		"studyDescription" : "",
+		"studyDescription" : "PA/LAT chest",
 		"numImages" : 2,
 		"studyId" : "PAT_0007"
 		}

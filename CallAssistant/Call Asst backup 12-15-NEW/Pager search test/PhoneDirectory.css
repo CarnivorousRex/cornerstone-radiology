@@ -1,0 +1,349 @@
+.title {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: black;
+}
+.subjectLabel {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: red;
+}
+
+.formLabel {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: black;
+}
+.formLabel A {
+	color: #006699;
+	text-decoration: none;
+}
+.formLabel A:hover {
+	color: #005070;
+}
+
+.subject {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #006699;
+}
+.instructions {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 8pt;
+	color: black;
+}
+
+.cell1 {
+	background-color: #ffffff;
+}
+.cell2 {
+	background-color: #eeeeee;
+}
+.cell3 {
+	background-color: #dddddd;
+}
+.cell4 {
+	background-color: #333333;
+}
+.cell5 {
+	background-color: #006699;
+}
+.cell6 {
+	background-color: #000000;
+}
+
+.go {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #006699;
+}
+.go A {
+	color: #006699;
+	text-decoration: none;
+}
+.go A:hover {
+	color: #005070;
+}
+
+.results {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 8pt;
+	color: black;
+	padding: 3px;
+}
+.results A {
+	color: #006699;
+	text-decoration: none;
+}
+.results A:hover {
+	color: #005070;
+}
+
+.resultsHeader {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #dddddd;
+	padding: 2px 3px;
+}
+.resultsHeader:first-letter {
+	font-size: 10pt;
+}
+
+.details {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 8pt;
+	color: black;
+	padding: 0px 3px;
+}
+
+.tipText {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 8pt;
+	color: black;
+	padding: 3px;
+}
+.tipLabel {
+	font-weight: bold;
+}
+.tipExample {
+	font-weight: bold;
+	color: #006699;
+}
+.tipMatch {
+	font-style: italic;
+	color: #006699;
+}
+.tipTitle {
+	font-family: Verdana,Tahoma,Georgia,sans-serif;
+	font-size: 8pt;
+	color: white;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.fvPhoneTextInput {
+	background-color: #ffffff;
+	font-size: 8pt;
+	font-weight: normal;
+}
+
+.fvPhoneForm {
+	font-size: 8pt;
+}
+.fvPhoneMessage {
+	font-size: 8pt;
+}
+.fvPhoneResults {
+	font-size: 8pt;
+	padding: 1px 3px;
+}
+.fvPhoneResultsHeader {
+	font-size: 9pt;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 1px 3px;
+}
+.fvPhoneGreeting {
+	font-size: 10px;
+	background-color: #eeeeee;
+}
+.fvPhoneGreeting B {
+	color: #006699;
+}
+.message {
+	font-size: 8pt;
+}
+input.Button {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #069;
+	border: 1px outset #069;
+	padding: 0px 10px;
+	width: auto;
+	overflow: visible;
+	margin: 1px;
+	cursor: pointer;
+}
+input.ButtonRight {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #069;
+	border: 1px outset #069;
+	padding: 0px 10px;
+	width: auto;
+	overflow: visible;
+	float: right;
+	margin: 1px;
+	cursor: pointer;
+}
+input.Text {
+	font-size: 8pt;
+	width: 160px;
+	margin: 0px;
+}
+#SearchFormTable {
+	border-collapse: collapse;
+}
+#SearchFormTable select {
+	width: 160px;
+	font-size: 8pt;
+	margin: 0px;
+}
+#SearchFormTable td {
+	padding: 0px;
+	overflow: visible;
+}
+#SearchFormTable th {
+	font-size: 8pt;
+	text-align: right;
+	padding: 0px 5px;
+}
+#PhoneSearch {
+	margin: 20px;
+}
+span.Help {
+	cursor: pointer;
+	color: #069;
+	font-weight: bold;
+}
+span.Help:hover {
+	color: #036;
+}
+#ResultsTable {
+	border: outset 2px #ccc;
+	border-collapse: collapse;
+}
+#ResultsTable tr:hover {
+	background-color: #bbb;
+}
+#ResultsTable th {
+	background-color: #333;
+	color: #eee;
+	font-size: 9pt;
+	font-variant: small-caps;
+	text-align: left;
+	padding: 1px 3px;
+	border: inset 1px #999;
+	vertical-align: bottom;
+}
+#ResultsTable td {
+	font-size: 8pt;
+	padding: 2px 3px;
+	border: solid 1px #ccc;
+}
+#ResultsTable a:link, #ResultsTable a:visited {
+	font-weight: bold;
+	text-decoration: none;
+}
+#ResultsTable a:hover {
+	text-decoration: underline;
+}
+tr.Row0 {
+	background-color: #eee;
+}
+tr.Row1 {
+	background-color: #fff;
+}
+td.Center {
+	text-align: center;
+}
+#EntityResults {
+	font-size: 8pt;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+#EntityResults th {
+	text-align: left;
+	background-color: #666;
+	color: #fff;
+	padding: 1px 10px;
+}
+#EntityResults th a:link, #EntityResults th a:visited {
+	text-decoration: none;
+	color: #fc3;
+	padding-left: 10px;
+}
+#EntityResults td {
+	text-align: left;
+	padding: 0px 10px;
+	border: solid 1px #ccc;
+}
+div.Instructions {
+	width: 600px;
+	font-size: 8pt;
+	margin: 20px 0px;
+	padding: 5px 20px;
+	border: outset 1px #999;
+	background-color: #eee;
+}
+select {
+	font-size: 8pt;
+}
+#SearchTips {
+	font-size: 8pt;
+	margin: 15px 5px;
+	border: outset 2px #999;
+	border-collapse: collapse;
+}
+#SearchTips th {
+	background-color: #333;
+	color: #fc3;
+	padding: 2px;
+}
+#SearchTips td {
+	background-color: #eee;
+	padding: 5px;
+	border: solid 1px #999;
+}
+q {
+	color: #c00;
+}
+samp {
+	font-weight: bold;
+	color: #069;
+	margin: 0px 5px;
+}
+#SearchTips b {
+	color: #036;
+	margin-right: 5px;
+}
+#StaffDetailsTable {
+	margin: 20px 0px;
+	border-collapse: collapse;
+	font-size: 8pt;
+}
+#StaffDetailsTable th {
+	background-color: #666;
+	color: #eee;
+	text-align: right;
+	white-space: nowrap;
+	padding: 2px 5px;
+	border: outset 2px #999;
+}
+#StaffDetailsTable td {
+	padding: 2px 5px;
+	border: solid 1px #999;
+	width: 220px;
+}
+div.BackToTop {
+	color: #069;
+	font-size: 8pt;
+	text-decoration: none;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+div.BackToTop:hover {
+	text-decoration: underline;
+	color: #036;
+}
+
+#SearchEngineOnly {
+	border: solid 1px #f00;
+	display: none;
+}

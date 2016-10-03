@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="http://applications.fairview.org/PhoneDirectory/StaffDetails.asp?IID=" + IID method="get">
+First name: <input type="text" name="IID"><br>
+Last name: <input type="text" name="lname"><br>
+<input type="submit" value="Submit">
+</form>
+
+<%Response.Write(Request.QueryString)%>
+
+</body>
+</html>

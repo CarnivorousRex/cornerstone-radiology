@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="mobileTest.css">
+    
+    
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+        <script src="mobileTest.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+    
+    
+      <div class="maroonTitle" data-role="header" data-theme="b">
+          <h1>Mobile Call Assistant</h1>
+      </div>
+        
+<body>
+    
+    
+
+<div data-role="tabs">
+    <div data-role="navbar">
+        <ul>
+        
+
+        
+            <li class="navButtons"><a href="#PagingName" style='background-color: lightgray; white-space: normal; ' >Page A Rad</a></li>  
+            <li class="navButtons"><a href="#PagingNumber" style='background-color: lightgray; white-space:normal'>Page A Number</a></li> 
+            
+            <li class="navButtons"><a href="#UList" style='background-color: #ffcc33; white-space:normal' >Univ Phones</a></li>
+            
+            <li class="navButtons"><a href="#HCMCList"  style='background-color: lightskyblue; white-space:normal' >HCMC Phones</a></li>
+            
+            
+        </ul>
+        
+
+
+        
+        
+        <div id="PagingName" class="ui-content">
+            
+            
+            <form 
+                id="sendmessage" 
+                name="sendmessage"
+                method="post"
+                action="https://myairmail.com/cgi-bin/myair_send"
+                target="test"
+                      
+
+                onsubmit="return valForm(this);">
+                
+
+                
+<div data-role="fieldcontain">
+	<label for="select-choice-1" class="select"></label>
+	<select name="gw_pin" id="select-choice-1">
+        <option>Page a Radiologist</option>
+
+        
+        <optgroup label="Staff Rads - Alphabetical">
+            <option value="6128992484">Allen 899-2484</option>
+            <option value="6128994399">Boyum 899-4399</option>
+            <option value="6128998106">Cayci 899-8106</option>
+            <option value="6128997591">Dietz,C 899-7591</option>
+            <option value="6128991242">Dietz,K 899-1242</option>
+            <option value="6128996139">D'Souza 899-6139</option>
+            
+            <option value="6122326052">Ellerman 612-232-6052</option>
+            <option value="6128991424">Emory 899-1424</option>
+            <option value="6128992441">Flanagan 899-2441</option>
+            <option value="6128992949">Frank 899-2949</option>            
+            <option value="6128997632">Froelich 899-7632</option>
+            <option value="6128996027">Golzarian 899-6027</option>
+            <option value="6128999239">Hoggard 899-9239</option>
+            <option value="6128999238">Holm 899-9238</option>
+            <option value="6128997349">Hunter 899-7349</option>
+            <option value="6128997775">Jagadeesan 899-7775</option>
+            <option value="6128997869">Kuehn-Hajder 899-7869</option>
+            <option value="6128998865">Kieffer 899-8865</option>
+            <option value="6128998333">Kirkham 899-8333</option>
+            <option value="6128996959">Marette 899-6959</option>
+            <option value="6128998808">McKinney 530-8808</option>
+            <option value="6128998543">Misselt 899-8543</option>
+            <option value="6128991226">Murati 899-1226</option>
+            <option value="6128998005">Nascene 899-8005</option>
+            <option value="6128995090">Nelson 899-5090</option>
+            <option value="6128993177">Niendorf 899-3177</option>
+            <option value="6128998198">Ott 899-8198</option>
+            
+            <option value="6128991186">Rykken 899-1186</option>
+            <option value="6128995080">Sanghvi 899-5080</option>
+            <option value="6128994134">Shrestha 899-4134</option>
+            
+            <option value="6128992526">Spilseth 899-2526</option>
+            <option value="6128997950">Steinberger 899-7950</option>
+            <option value="6128998906">Tadavarthy 899-8906</option>
+            <option value="6128994003">Takahashi 899-4003</option>     
+            <option value="6128991271">Taylor 899-1271</option>
+            <option value="6128992661">Wasserman 899-2661</option>
+            <option value="6128998966">Wong 899-8966</option>
+        
+
+        
+<optgroup label="First Year Residents">
+            <option value=“6128994876”>Ames 899-4876</option>
+            <option value=“6128994884”>Craig 899-4884</option>
+            <option value=“6128994879”>Dianat 899-4879</option><br>
+            <option value=“6128994883”>Mortazavi 899-4883</option>
+            <option value=“6128994872”>Pogatchnik 899-4872</option>
+            <option value=“6128994889”>Richards 899-4889</option><br>
+            <option value=“6128994886”>Self 899-4886</option>
+            <option value=“6128994877”>Sharma 899-4877</option>
+            <option value=“6128994893”>Smith,Chris 899-4893</option><br>
+            <option value=“6128994892”>Tanwar 899-4892</option>
+            <option value=“6128994894”>Wickre 899-4894</option>        
+        </optgroup>          
+
+
+
+
+<optgroup label="Second Year Residents">
+            <option value=“6128993774”>Al-Samaraee 899-3774</option>
+            <option value=“6128993812”>Beatty 899-3812</option>
+            <option value=“6128993800”>Benson 899-3800</option><br>
+            <option value=“6128993780”>Boegel 899-3780</option>
+            <option value=“6128993817”>Butler 899-3817</option>
+            <option value=“6128993788”>Crawford 899-3788</option><br>
+            <option value=“6128993768”>Hakkola 899-3768</option>
+            <option value=“6128993813”>Markese 899-3813</option>
+            <option value=“6128993784”>Nigam 899-3784</option><br>
+            <option value=“6128993803”>Page 899-3803</option>
+            <option value=“6128993814”>Rivard 899-3814</option>        
+            <option value=“6128991621”>Rostambeigi 899-1621</option><br>
+            <option value=“6128993797”>Schat 899-3797</option> 
+        </optgroup>
+      
+
+<optgroup label="Third Year Residents">
+            <option value=“6128991825”>Babcock 899-1825</option>
+            <option value=“6128992036”>Dahi 899-2036</option>
+            <option value=“6128992008”>Dickenson 899-2008</option><br>
+            <option value=“6128992118”>Jones 899-2118</option>
+            <option value=“6128992004”>Luchsinger 899-2004</option>
+            <option value=“6128991954”>Martin 899-1954</option><br>
+            <option value=“6128992179”>Prychyna 899-2179</option>
+            <option value=“6128992464”>Roller 899-2464</option>
+            <option value=“6128991909”>Stampe 899-1909</option>
+            <option value=“6128999670”>Stott 899-9670</option>        
+        </optgroup>
+          
+
+
+<optgroup label="Fourth Year Residents">
+            <option value=“6128999682”>Boeke 899-9682</option>
+            <option value=“6128999698”>Gill 899-9698</option>
+            <option value=“6128999663”>Hayward 899-9663</option>
+            <option value=“6128999664”>Hoven 899-9664</option>
+            <option value=“6128999665”>Jalaeian 899-9665</option>
+            <option value=“6128999666”>Kralik 899-9666</option>
+            <option value=“6128999668”>Payabvash 899-9668</option>            
+            <option value=“6128999671”>Tyan 899-9671</option><br>
+        </optgroup>
+          
+
+
+     
+<optgroup label="Neuroradiology Fellows">
+			
+
+            <option value=“6128997926”>Salmela 899-7926</option>
+            <option value=“6128992449”>Tore 899-2449</option>   
+            <option value=“6128994898”>Gencturk 899-4898</option>
+</optgroup>
+                  
+<optgroup label="Nuclear Medicine Fellow">
+            <option value=“6128991847”>Gawande 899-1847</option>      
+        </optgroup>
+<optgroup label="Breast Imaging Fellow">
+            <option value=“6128997918”>Donald 899-7918</option>      
+        </optgroup>
+<optgroup label="Interventional Radiology Fellows">
+            <option value=“6128994901”>Alper 899-4901</option>
+            <option value=“6128997927”>Talaie 899-7927</option>
+            <option value=“6128994897”>Williams 899-4897</option>
+            <option value=“6128994899”>Young 899-4899</option>
+        </optgroup>
+		
+	</select>
+    
+    
+  
+    
+    
+</div>             
+               
+
+                
+                <div id='submitField' data-role='fieldcontain'>
+                <label for="message" class="ui-hidden-accessible" >Message to send:</label>
+                    <input type="text" maxlength="240" name="mesg_to_send" id="message" placeholder="Message to send" required="required"\>
+                    
+                </div>
+                
+                    <input id='submitButton' disabled='disabled' type="submit" value="Submit">
+                
+    
+                
+            </form>
+            
+            
+            
+<!-- <a href="index.html" data-role="button" style='bottom: 0'>Page by 10 digit number</a> -->
+            
+            
+            
+        </div>
+
+         
+        
+                        <div id="PagingNumber" class="ui-content">
+            
+            
+            <form 
+                id="sendmessage" 
+                name="sendmessage"
+                method="post"
+                action="https://myairmail.com/cgi-bin/myair_send"
+                target="test"
+                      
+
+                onsubmit="return valForm(this);">
+                
+
+                
+          
+                
+                <label for="toField" class="ui-hidden-accessible" >Else enter number to page:</label>
+                    <input type="text" name="gw_pin" id="pageTo" required="required" value="612899" />                
+                
+                <label for="message2" class="ui-hidden-accessible" >Message to send:</label>
+                    <input type="text" maxlength="240" name="mesg_to_send" id="message2"  required="required" placeholder="Message to send"  />
+                                
+                    <input id='submitButton2' disabled='disabled' type="submit" value="Submit">
+                
+                 current value of pager field: <span id='foo2'></span>
+                <br>
+                current value of message field: <span id='bar2'></span>
+                
+            </form>
+            
+            
+            
+
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        <div id="UList" class="ui-content">
+            
+            <form class="ui-filterable">
+                <input id="myFilterU" data-type="search">
+            </form>
+            
+            <ul data-role="listview" data-inset="true">
+                <div data-inset="true"  data-filter="true"  data-input="#myFilterU">
+                <li data-role="list-divider" class="listDivider" >University Reading Rooms</li>
+                    
+                <li><a href="tel:612273-9620">Breast Center reading room 273-9620</a></li>
+                <li><a href="tel:612625-9947">CT/MR Reading Room 625-9947</a></li>
+                <li><a href="tel:612273-5868">Chest Reading Room 273-5868</a></li>
+                <li><a href="tel:612273-5871">GI/GU Reading Room 273-5871</a></li>
+                <li><a href="tel:612273-7771">MSK Reading Room 273-7771</a></li>
+                <li><a href="tel:612273-3547">Neuro Reading Room 273-3547</a></li>
+                <li><a href="tel:612273-5867">Nuc Med Reading Room 273-5867</a></li>
+                <li><a href="tel:612273-4824">Peds Reading Room 273-4824</a></li>
+                <li><a href="tel:612273-5306">Ultrasound Reading Room 273-5306</a></li>
+                <li><a href="tel:612273-6749">IR Reading Room 273-6749</a></li>
+                <li><a href="tel:612273-5044">Non-Invasive Reading Room 273-5044</a></li>
+                    
+                <li data-role="list-divider" class="listDivider">University Tech areas</li>
+                <li><a href="tel:612273-5690">X-ray desk (Diane) 273-5690</a></li>
+                <li><a href="tel:612273-7432">Univ CT (64 and FLASH) 273-7432</a></li>
+                <li><a href="tel:612273-6829">Univ East Bank MRI 273-6829</a></li>
+                <li><a href="tel:612273-3532">Univ Aera(Cardia1.5T) MRI 273-3532</a></li>
+                <li><a href="tel:612273-8947">PET/CT 273-8947</a></li>
+                <li><a href="tel:612273-1933">Nuclear Medicine Techs 273-1933</a></li>
+                <li><a href="tel:612273-0643">Ultrasound Techs 273-0643</a></li>
+                <li><a href="tel:612625-9942">UIC MRI Techs 273-0643</a></li>
+                <li><a href="tel:612625-9943">UIC CT Techs 273-0643</a></li>
+                    
+                    
+            
+                <li data-role="list-divider" class="listDivider">University Care Areas</li>
+                <li><a href="tel:612273-4220">IR Nursing Desk 273-4220</a></li>
+                <li><a href="tel:612273-8860">2A Nursing Desk 273-8860</a></li>
+                <li><a href="tel:612273-2700">University Emergency Dept 273-2700</a></li>
+                <li><a href="tel:612273-3100">University PACU (3A) 273-3100</a></li>
+            
+                <li data-role="list-divider" class="listDivider">CCIR</li>
+                <li><a href="tel:612626-6586">CCIR PET/CT 626-6586</a></li>
+                <li><a href="tel:612626-6900">CCIR Main Desk 626-6900</a></li>
+                <li><a href="tel:612624-3310">CCIR Reading Room 624-3310</a></li>
+            
+                <li data-role="list-divider" class="listDivider">Masonic Peds Hosp / West Bank</li>
+                <li><a href="tel:612273-4824">Masonic Reading Room 273-4824</a></li>
+                <li><a href="tel:612273-4267">Masonic IR Reading Room 273-4267</a></li>
+                <li><a href="tel:612273-4317">Masonic Ultrasound 273-4317</a></li>
+                <li><a href="tel:612273-4260">Masonic X-ray techs 273-4260</a></li>
+                <li><a href="tel:612273-4270">Masonic IR Techs 273-4270</a></li>
+                <li><a href="tel:612273-5527">Masonic CT (Peds - FLASH) 273-5527</a></li>
+                <li><a href="tel:612273-4623">Masonic CT (Adult 64 slice) 273-4623</a></li>
+                <li><a href="tel:612273-3346">Masonic 3T MRI 273-3346</a></li>
+                <li><a href="tel:612273-6646">Masonic 1.5T MRI 273-6646</a></li>
+                <li><a href="tel:612273-7764">West Bank Ortho/Outpt 3T MRI 273-7764</a></li>
+                <li><a href="tel:612273-4353">Masonic Nuc Med 273-4353</a></li>
+                <li><a href="tel:612273-4885">Masonic Film File 273-4885</a></li>
+            
+                <li><a href="tel:612273-7032">Masonic NICU 273-7032</a></li>
+                <li><a href="tel:612365-9110">Masonic Emergency Dept 365-9110</a></li>
+                <li><a href="tel:612365-3100">Masonic PICU-365-3100</a></li>
+                <li><a href="tel:612365-2200">Masonic Peds Sedation 365-2200</a></li>
+            
+                <li data-role="list-divider" class="listDivider">Maple Grove</li>
+                <li><a href="tel:763-898-1206">Maple Grove Reading room 763-898-1206</a></li>
+                <li><a href="tel:763-898-1213">Maple Grove CT/MR 763-898-1213</a></li>
+                <li><a href="tel:763-898-1282">Maple Grove Nuc Med 763-898-1282</a></li>
+        
+                </div>
+            </ul>
+        </div>
+    
+        <div id="HCMCList" class="ui-content">
+            
+            <form class="ui-filterable">
+                <input id="myFilterH" data-type="search">
+            </form>
+            
+            <ul data-role="listview" data-inset="true">
+                <div data-inset="true"  data-filter="true"  data-input="#myFilterH">
+                <li data-role="list-divider" class="listDividerHCMC" >HCMC Reading Rooms</li>
+                    
+                <li><a href="tel:612873-2791">CT/MR Reading room P4 873-2791</a></li>
+                <li><a href="tel:612873-6033">Neuro 873-6033 </a></li>
+                <li><a href="tel:612873-4150">Nuc Med / Ultrasound 873-4150</a></li>
+                <li><a href="tel:612873-2083">Interventional 873-2083</a></li>
+                <li><a href="tel:612873-7836">Whittier 873-7836</a></li>
+                <li><a href="tel:612873-7107">ED Radiology Reading Room 873-7107</a></li>    
+ 
+                <li data-role="list-divider" class="listDividerHCMC">HCMC Tech areas</li>              
+                <li><a href="tel:612873-9339">3T MRI 873-9339</a></li>    
+                <li><a href="tel:612873-3674">1.5T MRI 873-3674</a></li>
+                <li><a href="tel:612873-3674">P4 CT 873-9313</a></li>
+                <li><a href="tel:612873-5783">IR Tech Area 873-5783</a></li>
+                <li><a href="tel:612873-2771">ED Radiology Desk 873-2771</a></li>    
+                    
+                <li data-role="list-divider" class="listDividerHCMC">HCMC Misc Numbers</li>                    
+                <li><a href="tel:612873-2036">Pamela Thompson 873-2036</a></li>
+                <li><a href="tel:612873-2718">Hiltje Loyd 873-2718</a></li>
+                <li><a href="tel:612873-2083">Computer team pager 873-2083</a></li>    
+                <li><a href="tel:612873-3138">Team Center A 873-3138</a></li>
+                <li><a href="tel:612873-2772">Team Center B 873-2772</a></li>
+                <li><a href="tel:612873-3160">Team Center C 873-3160</a></li>
+                    
+
+   
+                </div>
+            </ul>
+        </div>        
+        </div>
+    
+    
+<!--   HIDE THIS FOR NOW..... page by number           
+        
+                <div id="PagingNumber" class="ui-content">
+            
+            
+            <form 
+                id="sendmessage" 
+                name="sendmessage"
+                method="post"
+                action="https://myairmail.com/cgi-bin/myair_send"
+                target="test"
+                      
+
+                onsubmit="return valForm(this);">
+                
+
+                
+          
+                
+                <label for="toField" class="ui-hidden-accessible" >Else enter number to page:</label>
+                    <input type="text" name="gw_pin2" id="pageTo" placeholder="Number to Page" />                
+                
+                <label for="message" class="ui-hidden-accessible" >Message to send:</label>
+                    <input type="text" maxlength="240" name="mesg_to_send" id="message" placeholder="Message to send" />
+                                
+                    <input type="submit" value="Submit">
+                
+            </form>
+            
+            
+            
+
+            
+        </div>
+        -->
+
+    
+    </div>
+
+
+
+
+
+
+
+
+</div>
+                
+       <div data-role='footer' data-position="fixed" style='background-color: #ffcc33'>
+           <h4 class='footer'><a href="https://dl.dropboxusercontent.com/u/13853510/CallAssistant/CallAssistant-noRedirect.html" target="_blank" style='color:black'>Click for the Desktop Site</a></h4>
+           
+        </div>        
+    </body>
+</html>

@@ -1,0 +1,329 @@
+	body
+	{
+		font-family: Arial,Helvetica,sans-serif;
+		background-color: white;
+		color: #7a0019 ;
+	}
+	texarea   {font-family: Arial,Helvetica;}
+
+	pre       {font-family: Courier; font-size:100%}
+	code      {font-family: Courier; font-size:100%}
+
+	.error
+	{
+		font-size: large;
+		color: darkred;
+		background-color: white;
+	}
+
+button {
+    width:180px;
+    text-align:center;
+
+}
+
+select
+{
+width:200px
+}
+
+.whiteish
+	{
+    background-color: #ffcc33;
+    color: black;
+    border-left:1px solid black;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+    box-shadow: 5px 5px 5px #888888;
+	}
+
+#protocolQuestion {
+    background-color: #7a0019;
+    border:2px inset;
+    text-align: center;
+    color: white;
+}
+
+#urgentResult {
+    background-color: #7a0019;
+    border:2px inset;
+    text-align: center;
+    color: white;
+}
+
+#nonUrgentResult {
+    background-color: #7a0019;
+    border:2px inset;
+    text-align: center;
+    color: white;
+}
+
+div.inline {
+    float:left;
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:1px;
+    padding-bottom:1px;
+    background-color: #7a0019;
+    border:2px inset;
+    text-align: center;
+    color: white;    
+}
+
+div.inlineCODE {
+    float:left;
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color: red;
+    border:2px inset;
+    text-align: center;
+    color: black;    
+}
+
+#pageSwitchTable {
+
+position:absolute;
+    padding-right:20px;
+    text-align:left;
+    top:0px;
+    right:10px;
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+    box-shadow: 3px 3px 3px #444;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.6em;
+    /* overflow:auto; */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+        
+}
+
+#header {
+    position: relative;
+    top: 0px;
+    align-content:center; 
+    background-color: #7a0019 ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	height: 40px;
+}
+
+
+h1 {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;;
+    color: #ffcc33;
+    text-align: center;
+}
+
+#wrapper {
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    position: relative;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 500px;
+    padding-right: 5px;
+    box-shadow: 3px 3px 3px #444;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.8em;
+    overflow:auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+    
+strong {
+ padding-left:5px;   
+}
+#textBox {
+    float:left;
+    margin-right:7px;
+
+}
+
+#textbox td {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 11px;
+	color: #333333;
+}
+
+input {
+    border:1px solid black;
+}
+
+textarea {
+    border:1px solid black;
+}
+
+#accordion {
+    
+    position:absolute;
+    bottom:0px;
+    left:10px;
+    margin-top: 0em; 
+
+    line-height: 1.0;
+        font-size: 0.9em;
+}
+    
+#accordion2 {
+
+    position:absolute;
+    bottom:0px;
+    left:50%; 
+    margin-top: 0em;
+
+    line-height: 1.0;
+        font-size: 0.9em;
+}
+
+#accordion3 {
+        
+    position:absolute;
+    bottom :0px;
+    left:30%; 
+    margin-top: 0em;
+
+    line-height: 1.0;
+        font-size: 0.9em;
+}
+
+
+#clearButton {
+    background-color: #7a0019;
+    border:2px inset;
+    text-align: center;
+    color: white;
+    width: 110px;
+}
+
+#PagerSearchButton {
+    background-color: #7a0019;
+
+    border:2px inset;
+    text-align: center;
+        color: black;
+    width:200px;
+        
+
+}
+
+#PagerSearchButton2 {
+    background-color: #7a0019;
+
+    border:2px inset;
+    text-align: center;
+        color: black;
+    width:200px;
+        
+
+}
+
+#pagerSearchTable {
+    margin-left:10px;
+    margin-right:15px;
+    padding-right:10px;
+    padding-left:10px;
+    background-color: #ffcc33;
+    box-shadow: 5px 5px 5px #888888;
+    color:#7a0019;
+    border-left:1px solid black;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+}
+
+#pagerSearchTable td {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 15px;
+	color: #7a0019;
+
+    vertical-align:top;
+}
+
+
+
+    
+body {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 11px;
+	color: #333333;
+}
+
+
+th {
+   color: #7a0019;  
+}
+
+/* smart image enlarger starts here */
+/* If your images are not linking to other pages leave the links as <a href="#nogo"> Otherwise enlarger won't work in IE6 */
+
+.ienlarger {
+	float: left;
+	clear: none; /* set to left or right if needed */
+	padding-bottom: 1px; /* space between thumbs. Don't change this to margin */
+	padding-right: 1px; /* space between thumbs and wrapping text when there is any text around it */
+}
+
+.ienlarger a { 
+	display:block;
+	text-decoration: none;
+/* add cursor:default; to this rule to disable the hand cursor */
+}
+
+.ienlarger a:hover{ /* don't move this positioning to normal state */
+ 	position:relative;
+}
+
+.ienlarger span img {
+	border: 1px solid #FFFFFF; /* adds a border around the image */
+	margin-bottom: 8px; /* pushes the text down from the image */
+}
+
+.ienlarger a span {  /* this is for the large image and the caption */
+	position: absolute;
+	display:none;
+	color: #FFCC00; /* caption text colour */
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px; /* caption text size */
+	background-color: #000000;
+	font-weight: bold;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+}
+
+.ienlarger img { /* leave or IE puts a border around links */
+border-width: 0;
+}
+
+.ienlarger a:hover span { 
+	display:block;
+	top: 10px; /* means the pop-up's top is 50px away from thumb's top */
+	right: 90px; /* means the pop-up's left is 90px far from the thumb's left */
+	z-index: 100;
+	
+/* If you want the pop-up open to the left of thumb, remove the left: 90px; and add  
+right: 90px; This would mean the right side of the pop-up is 90px far from the right side of thumb */	
+
+/* If you want the pop-up open above the thumb, remove the top: 50px; and add  
+bottom: 50px; This would mean the bottom of the pop-up is 50px far from the bottom of thumb */	
+
+/* add cursor:default; to this rule to disable the hand cursor only for the large image */
+}
+
+.resize_thumb {
+	width: 150px; /* enter desired thumb width here */
+	height : auto;
+}
+
+/* smart image enlarger ends here */

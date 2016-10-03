@@ -1,0 +1,136 @@
+	body
+	{
+		font-family: Arial,Helvetica,sans-serif;
+		background-color: white;
+		color: #7a0019 ;
+	}
+	texarea   {font-family: Arial,Helvetica;}
+	th        {font-family: Arial,Helvetica; color: white}
+	pre       {font-family: Courier; font-size:100%}
+	code      {font-family: Courier; font-size:100%}
+
+	.error
+	{
+		font-size: large;
+		color: darkred;
+		background-color: white;
+	}
+
+button {
+    width:180px;
+    text-align:center;
+
+}
+
+#header {
+    position: relative;
+    top: -5px;
+    background-color: #7a0019 ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	height: 30px;
+}
+
+
+h1 {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;;
+    color: #ffcc33;
+    text-align: center;
+}
+
+#wrapper {
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    position: relative;
+    top: -10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    box-shadow: 3px 3px 3px #444;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.8em;
+}
+    
+
+#textBox {
+    float:inherit;
+    position:absolute;
+    right:0px;
+}
+
+input {
+    border:1px solid black;
+}
+
+textarea {
+    border:1px solid black;
+}
+
+#accordion {
+    position:absolute;
+    bottom:0px;
+    left:0;
+    margin-top: 0em; */
+    margin-bottom: 2em; 
+    line-height: 1.0;
+        font-size: 0.9em;
+}
+    
+#accordion2 {
+    position:absolute;
+    bottom:0px;
+    right:0px; 
+    margin-top: 0em;
+    margin-bottom: 2em;
+    line-height: 1.0;
+        font-size: 0.9em;
+}
+
+#accordion3 {
+    position:absolute;
+    bottom :0px;
+    left:40%; 
+    margin-top: 0em;
+    margin-bottom: 2em;
+    line-height: 1.0;
+        font-size: 0.9em;
+}
+
+
+#clearButton {
+    background-color: #7a0019;
+    border:2px inset;
+    text-align: center;
+    color: white;
+    width: 100px
+}
+
+#PagerSearchButton {
+    background-color: #7a0019;
+    margin-left:2px;
+    margin-right:2px;
+    border:2px inset;
+    text-align: center;
+        color: white;
+}
+
+
+	.whiteish
+	{
+		background-color: #ffcc33;
+		color: black;
+        position:relative;
+	}
+    
+body {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 11px;
+	color: #333333;
+}
+
+td {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 11px;
+	color: #333333;
+}

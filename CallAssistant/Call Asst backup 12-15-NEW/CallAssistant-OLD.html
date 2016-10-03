@@ -1,0 +1,339 @@
+<html>
+<META http-equiv="Content-type" CONTENT="text/html; charset=iso-8859-1">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+	"http://www.w3.org/TR/REC=html40/loose/dtd">
+<!
+  ________________________________________________________________________
+ 
+ 
+                       $RCSfile: index.shtml $
+                      $Revision: 1.1 $
+ 
+              Last change $Date: 2006-12-15 15:50:05-06 $
+            Last change $Author: jmscott $
+                         $State: Exp $
+                        $Locker:  $
+ 
+                Original author: John Scott
+ 
+              Copyright (C) American Messaging, 2006
+ 
+  ________________________________________________________________________
+>
+<head>
+<title>
+	University of Minnesota Radiology Call Assistant
+</title>
+
+<link
+	type="text/css" 
+	href="common.css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="common.js">
+	    </script>
+
+</head>
+
+
+  <body bgcolor="##ffcc33"
+        marginheight="0"
+        marginwidth="0"
+        leftmargin="0"
+        topmargin="0"
+	>
+   
+      <script src="menu.js"
+      type="text/javascript">
+</script>
+<script language="javascript"
+      type="text/javascript">
+function myaccount(url) {
+    window.open(url,"ecare_popup","toolbar=yes,status=yes,resizable=yes,scrollbars=yes,menubar=yes,width=0,height=0,top=0,left=0");
+}
+
+
+</script><script type="text/javascript">
+
+<div id="textBox">      
+      
+oCMenu.construct()              
+</script>
+    <div style="position:absolute; top:0px;">
+
+    </div>
+
+          <form name="sendmessage"
+                method="post"
+                action="http://myairmail.com/cgi-bin/myair_send"
+                onsubmit="return valForm(this);">
+            <table width="0"
+                   border="0"
+                   cellspacing="0"
+                   cellpadding="0">
+
+<table class=whiteish
+ valign=top border=0 cellpadding=0  cellspacing=0>
+
+
+		<!
+  ________________________________________________________________________
+ 
+ 
+                       $RCSfile: quick1.inc $
+                      $Revision: 1.1 $
+ 
+              Last change $Date: 2006-12-15 15:50:05-06 $
+            Last change $Author: jmscott $
+                         $State: Exp $
+                        $Locker: jmscott $
+ 
+                Original author: John Scott
+ 
+              Copyright (C) American Mesasaging, 2006
+ 
+  ________________________________________________________________________
+>
+
+<tr cellpadding=0 cellspacing=0>
+	<th style="
+		color: black;
+		padding-top:	0px;
+	" align=right valign=middle>
+		To:&nbsp;
+	</th>
+
+	<td 
+		style="
+			padding-top:	0px;
+		"
+		align=left valign=middle>
+	<input tabindex=0001 type=text
+	       name=gw_pin
+		style="
+			width:		250px;
+		"
+	       value="">
+	</td>
+
+</tr>
+<tr>
+	<td></td>
+	<td valign="top">
+		<font size=-2>
+		Separate multiple names/numbers 
+		with commas.
+		</font>
+	</td>
+</tr>
+<tr>
+	<th align=right style="color: black;" valign=middle>
+		<b>Subject:&nbsp;</b>
+	</th>
+
+	<td align=left valign=middle>
+		<input 
+			tabindex=0002 type=text
+		       name=subject_string
+			style="
+				width:		250px;
+			" value="Radiology Issue"
+		        maxlength=256
+		       onChange="countCharacters(); return true;"
+		       onFocus="countCharacters(); return true;"
+		       onBlur="countCharacters(); return true;"
+		       onKeyPress="countCharacters(); return true;"
+		       value="" />
+	</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td valign="top">
+		<font size=-2>(optional)</font>
+	</td>
+</tr>
+<tr>
+	<th align="center" 
+		style="
+			color:		black;
+		" valign=top>
+	<span
+		style="
+			display:	block;
+			padding-top:	2em;
+			text-align:	center;
+		">
+	Your Message:&nbsp;</span>
+	</th>
+
+	<td align=left valign=top>
+		<textarea 
+			style="
+				width:		250px;
+			"
+			tabindex=0003 name=mesg_to_send
+		  onChange="countCharacters(); return true;"
+		  onFocus="countCharacters(); return true;"
+		  onBlur="countCharacters(); return true;"
+		       onKeyPress="countCharacters(); return true;"
+		  xcols=29 rows=6 wrap></textarea>
+
+</tr>
+<tr>
+	<th align=right 
+		style="
+			color:		black;
+		" valign=top>
+		<b>From:&nbsp;</b>
+	</th>
+	<td align=left valign=top>
+		<input tabindex=0004 type=text value="273-5867"
+			style="
+				width:		250px;
+			"
+		       name=from_string
+		       maxlength=256
+		       onChange="countCharacters(); return true;"
+		       onFocus="countCharacters(); return true;"
+		       onBlur="countCharacters(); return true;"
+		       onKeyPress="countCharacters(); return true;"
+		       value="">
+	</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td valign="top">
+		<font size=-2>(optional)</font>
+	</td>
+</tr>
+
+<tr>
+	<td colspan="2" align="center">
+		<input 
+			tabindex=0900 
+			style="
+				color:	 black;
+				font-weight:	bold;
+			"
+			class="redish submit" type=submit name="send" 
+		 value="Send Message">
+		
+
+
+	</td>
+</tr>
+
+<tr>
+	<td colspan="2" align="center">
+		<font size=-1>
+		Character Counter (max 240)
+		<input type=text name=count value="0"
+		       size=4 onFocus="blur()">
+		</font>
+	</td>
+</tr>
+
+
+		</table>
+		</form>
+	</td>
+</tr>
+</table>
+</div>
+
+<!--**** PHONE BOOK STARTS HERE *****
+<table class="phoneBook" border="1px">
+
+        <tr>
+            <td><strong>Location</strong></td>
+            <td><strong>Phone Number</strong></td>
+        </tr>    
+
+    <tr>
+        <td>Amplatz Reading room</td>
+        <td>612-273-4824</td>
+    </tr>
+    <tr>
+        <td>Amplatz IR</td>
+        <td>612-273-4270</td>
+    </tr>
+</table>
+-->
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+          collapsible: true
+    });
+
+  });
+  </script>
+
+<body>
+ 
+<div id="accordion">
+  <h3>University</h3>
+  <div>
+      <ul>
+        <li>Breast Center reading room 273-9620</li>  
+        <li>CT/MR Reading Room 625-9947 </li>
+        <li>Chest Reading Room 273-5868</li>
+        <li>GI/GU 273-5871</li>
+        <li>MSK Reading Room 273-7771</li>
+        <li>Neuro 273-3551</li>
+          
+        <li>Nuclear Medicine Reading Room</li>
+        <li>Ultrasound 273-5306</li>
+        <li>IR Reading room 273-6749</li>
+        <li>Non-Invasive 273-5044</li>
+        <li>IR Nursing Desk 273-4220</li>
+        <li>2A Nursing Desk 273-8860</li>
+        <li>X-ray desk (Diane) 273-5690</li>
+        <li>CT 273-7432</li>
+        <li>MRI 273-6829</li> 
+        <li>Alyssa Dox (results coordinator) - ? </li>
+        <li>University Emergency Dept 273-2700</li>
+        <li>University PACU (3A) 273-3100</li>
+        <li>Ward Phone numbers 273-30XY  X=floor Y=Unit (A=1, B=2, etc.)</li>
+
+      </ul>
+  </div>
+    <h3>Amplatz Phone numbers</h3>
+  <div> 
+      <ul>
+        <li>Amplatz Reading Room  273-4824</li>
+        <li>Amplatz Ultrasound  273-4317</li>
+        <li>Amplatz X-ray techs 273-4260</li>
+        <li>Amplatz IR 273-4270</li>
+        <li>Amplatz CT 273-2557</li>
+        <li>Amplatz 3T MRI 273-3346</li>
+        <li>Amplatz 1.5T MRI 273-6646</li>
+        <li>Amplatz NICU 273-7032</li>
+        <li>Amplatz Emergency Dept 365-9110</li>  
+      </ul>
+      </div>
+  
+  <h3>Maple Grove</h3>
+  <div>
+    <ul>
+      <li>Maple Grove Reading room 763-898-1206</li>
+      <li>Maple Grove CT/MR 763-898-1213</li>
+      <li>Do we ever call any other numbers?</li>
+    </ul>
+  </div>
+  <h3>UIC</h3>
+  <div>
+    <ul>
+      <li>UIC CT/MR Reading room 625-9947</li>
+      <li>UIC MR 625-9942</li>
+      <li>UIC CT 624-9943</li>
+        <li>West Bank UIC 3T MRI 273-7764 *NEW*</li>
+    </ul>
+  </div>
+</div>
+ 
+
+</body>
+</html>

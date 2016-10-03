@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/lightbox.css" rel="stylesheet">
+	<link href="css/test.css" rel="stylesheet">
+    
+	
+	<title>University of Minnesota Reading Room Assistant</title>
+
+    <!-- Bootstrap Core CSS -->
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+	
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	  <style>
+  body {
+      position: relative;
+  }
+  ul.nav-pills {
+      top: 20px;
+      position: fixed;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+  }
+  #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section41 {color: #fff; background-color: #00bcd4;}
+  #section42 {color: #fff; background-color: #009688;}
+  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+  }
+  </style>
+	
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="nav-bar">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Reading Room Assistant</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+        			<li class="dropdown">   <!--START OF LINKS DROPDOWN-->
+          				<a href="#" class="dropdown-toggle"> 
+						   <!--data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"-->
+						   
+						   Links</a>
+          				<ul class="dropdown-menu">
+			  				<li class="dropdown-header">Local Links</li>
+							<li><a href="http://www.radiology.umn.edu" target="_blank">Department Website</a></li>
+
+							<li><a href="http:tinyurl.com/umnrad" target="_blank">Rad Sched</a> <a href="https://www.google.com/url?q=https://www.google.com/calendar/embed?src%3Diopno97nohmrfveslr750cp698%2540group.calendar.google.com%26ctz%3DAmerica/Chicago&sa=D&ust=1452902378734000&usg=AFQjCNF8XN2pY1FImlSXVsChaSXtW3_3PA" target="_blank">Didactic Sched</a> </li> 
+
+
+							<li><a href="http://www.moodle.umn.edu" target="_blank">Moodle</a>
+							<a href="https://my.statdx.com" target="_blank">StatDx</a><a href="https://app.radprimer.com/login" target="_blank">Rad Primer</a></li>   
+
+							<li><a href="http://securegateway.fairview.org" target="_blank">Secure Gateway -off campus Fairview access</a></li>
+
+							<li><a href="http://ir4d.fairview.org" target="_blank">IR 4D (off campus, use Secure Gateway/Intranet)</a></li>
+
+							<li><a href="Q:\Central-Metro-Shares\UMMC-Clinical\SHAREDIR\XRIS" target="_blank">U Share Dir (copy link and paste into browser)</a></li>
+							
+							<li class="dropdown-header">General Links</li>
+							
+							<li><a href="./files/RECIST_measurement_form_Jul_3_2013_Final_GA.docx" target="_blank">RECIST criteria form</a></li>
+
+							<li><a href="http://radiologyreviewarticles.com" target="_blank">RadiologyReviewArticles.com</a></li>
+
+							<li><a href="http://www.headneckbrainspine.com" target="_blank">HeadNeckBrainSpine.com</a></li>
+
+							<li><a href="http://roentgenrayreader.blogspot.com/2010/03/lung-segments-for-vq-scans.html">Segments of the Lungs</a></li>
+
+							<li><a href="http://www.freitasrad.net/" target="_blank">Freitasrad.net - MSK Atlas</a></li>
+
+							<li><a href="http://www.ncbi.nlm.nih.gov/sites/entrez?db=pubmed&otool=umnbmlib" target="_blank">PubMed - FindIt enabled (U of MN login)</a></li>
+
+							<li><a href="http://www.aast.org/library/traumatools/injuryscoringscales.aspx" target="_blank">Traumatic injury grading - AAST</a></li>
+
+							<li><a href="https://aotrauma.aofoundation.org/Structure/education/self-directed-learning/reference-materials/ao-surgery-reference/Pages/ao-surgery-reference.aspx" target='_blank'>AO Foundation Fracture Classification</a></li>
+
+							<li><a href="http://www.lib.umn.edu/get/18438" target="_blank">Clinical Key (U of MN login)</a></li>
+							
+							<li><a href="http://www.ohsu.edu/xd/education/schools/school-of-medicine/departments/clinical-departments/diagnostic-radiology/pediatric-radiology-normal-measurements/" target="_blank">Pediatric Ultrasound Measurements</a></li>
+
+							<li><a href="http://www.xrayrisk.com" target="_blank">X-ray risk</a> </li>
+							
+						</ul> <!-- END OF LINKS -->
+			
+        			<li class="dropdown">   <!--START OF Images DROPDOWN-->
+          				<a href="#" class="dropdown-toggle" >Images</a>
+          				<ul class="dropdown-menu">
+			  	
+							<li><a href="../files/Fleischner.jpg" data-lightbox="fleischner" data-title="Fleischner Criteria">Fleischner Criteria</a></li>
+			  
+							<li>foo</li>
+          
+						</ul> <!-- END OF LINKS -->
+					</li>
+				</ul>            
+			</div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	
+	
+	
+	
+	
+	
+	
+    <!-- Page Content -->
+    <div class="container">
+   Some Content
+		 <!-- end middle container -->
+	</div>
+		
+<!--		Bottom Row-->
+	<div class="hidden-xs bottom-row">
+<!--First Accordion-->
+		<div class="panel-group col-sm-4 pull-down" id="accordion">
+  			<div class="panel panel-default">
+    			<div class="panel-heading gold" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+      				<h4 class="panel-title">
+        				<a class="accordion-toggle">
+          				 	<img src="../files/UofMicon.bmp"><strong>      U Reading rooms</strong>
+        				</a>
+      				</h4>
+    			</div>
+				<div id="collapseOne" class="panel-collapse collapse">
+			  		<div class="panel-body">
+						  <ul>
+							<li>CSC Body Room 612-676-5140</li> 
+							<li>CSC MSK Room 612-676-5150</li>  
+							<li>CSC Neuro Room 612-676-5130</li>  
+
+							<li>Breast Center 273-9620</li>  
+							<li>CT/MR Room 625-9947 </li>
+							<li>Chest Room 273-5868</li>
+							<li>GI/GU 273-5871</li>
+							<li>Neuro 273-3547</li>
+							<li>NucMed Room 273-5867</li>
+							<li>Ultrasound 273-5306</li>
+							<li>IR Reading room 273-6749</li>
+							<li>Non-Invasive 273-2530</li>
+
+							<li>Shirley Yeary 273-2529</li>
+							<li>Shari Johnston 626-5589</li>
+
+						  </ul>
+			  		</div>
+				</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading gold">
+      				<h4 class="panel-title"  data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+        				<a class="accordion-toggle">
+          				 	<img src="../files/UofMicon.bmp"><strong>      CSC/Hospital Techs</strong>
+        				</a>
+      				</h4>
+    			</div>
+    			<div id="collapseTwo" class="panel-collapse collapse">
+      				<div class="panel-body">
+						<ul>
+							<li>CSC MRI (all) 612-676-5195</li>    
+							<li>CSC CT (all) 612-676-5190</li>
+							<li>CSC US 612-676-5185</li>
+							<li>CSC X-Ray 612-676-5160</li>
+							<li>X-ray desk (Diane) 273-5690</li>
+							<li>Film File (East Bank) 273-5777</li>
+							<li>University CT (64 slice and FLASH) 273-7432</li>
+							<li>University CT - Interventional 273-6632</li>
+							<li>University East Bank MRI 273-6829</li> 
+							<li>University <i>Aera</i> (Cardiac 1.5T) MRI 273-3532</li>
+							<li>PET/CT 273-8947</li>
+							<li>Nuclear Medicine 273-1933</li>
+							<li>Ultrasound Tech room 273-0643</li>
+							<li>University C-Arm room 273-6306</li>
+							<li>IR Nursing Desk 273-4220</li>
+							<li>IR Scheduling (Cheryl) 273-7553</li>
+							<li>2A Nursing Desk 273-8860</li>
+							<li>University Emergency Dept 273-2700</li>
+							<li>University PACU (3A) 273-3100</li>
+							<li>Ward Phone numbers 273-30XY (e.g. 7C 3-3073)</li>
+							<li><i>X=floor Y=Unit (A=1, B=2, etc.)</i></li>
+							<li>CCIR PET/CT 626-6586</li>
+							<li>CCIR Main Desk 626-6900</li>
+							<li>CCIR Reading Room 624-3310</li>
+							</ul>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading gold">
+      				<h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
+        				<a class="accordion-toggle">
+          				 	<img src="../files/UofMicon.bmp"><strong>      Masonic/MapleGrove</strong>
+						</a>
+      				</h4>
+    			</div>
+    			<div id="collapseThree" class="panel-collapse collapse">
+      				<div class="panel-body">
+						<ul>
+							<li>Masonic Reading Room  273-4824</li>
+							<li>Masonic IR Reading Room  273-4267</li>
+							<li>Masonic Ultrasound  273-4317</li>
+							<li>Masonic X-ray techs 273-4260</li>
+							<li>Masonic IR 273-4270</li>
+							<li>Masonic CT (Peds - FLASH) 273-5527</li>
+							<li>Masonic CT (Adult 64 slice) 273-4623</li>
+							<li>Masonic 3T MRI 273-3346</li>
+							<li>Masonic 1.5T MRI 273-6646</li>
+							<li>Masonic Film File 273-4885</li>
+							<li>Masonic Scheduling (Dana Morris) 273-6378</li>
+
+							<li>Masonic Ortho Clinc / Outpatient 3T MRI 273-7764</li>
+							<hr>
+							<li>Masonic NICU 273-7032</li>
+							<li>Masonic Emergency Dept 365-9110</li>  
+							<li>Masonic PICU-365-3100</li>
+							<li>Masonic Peds Sedation 365-2200</li>
+							<hr>
+							<li>Maple Grove Reading room 763-898-1206</li>
+							<li>Maple Grove CT/MR 763-898-1213</li>
+							<li>Maple Grove Nuc Med 763-898-1282  </li>
+							<hr>
+							<li>Ridges Peds Reading room 952-892-2053</li>
+						</ul>		
+      				</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading blue">
+      				<h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour">
+        				<a class="accordion-toggle">
+          				 	<img src="../files/UofMicon.bmp"><strong>      HCMC</strong>
+						</a>
+      				</h4>
+    			</div>
+    			<div id="collapseFour" class="panel-collapse collapse">
+      				<div class="panel-body">
+						<ul>
+						  <li>CT/MR Reading room P4 873-2791</li>
+						  <li>Neuro 873-6033</li>
+						  <li>Nuc Med / Ultrasound 873-4150</li>
+							<li>Interventional 873-2083</li>
+							<li>Whittier 873-7836</li>        
+							<li>Computer team pager 873-2083</li>
+							<li>ED Radiology 873-2771</li>            
+							<li>Interventional 873-2083</li>  
+							<li>Interventional 873-2083</li>
+							<li>Pamela Thompson 873-2036 </li>
+							<li>Hiltje Loyd 873-2718 </li>
+							<li>Team Center A 873-3138</li>
+							<li>Team Center B 873-2772</li>
+							<li>Team Center C 873-3160</li>
+							<li>ED Reading room 873-7107</li>
+							<li>ED Radiology Desk 873-2771</li>
+							<li>3T MRI 873-9339</li>
+							<li>1.5T MRI 873-3674</li>
+							<li>CT P4 873-9313</li>
+							<li>IR Tech Area 873-5783</li>
+						  </ul>				
+      				</div>
+    			</div>
+  			</div>		
+		</div> <!-- End of first accordion-->
+		
+			
+			
+			
+			
+			
+<!--			Start of second accordion-->
+		<div class="panel-group col-sm-4 pull-down" id="accordion2">
+  			<div class="panel panel-default">
+    			<div class="panel-heading gold" data-toggle="collapse" data-parent="#accordion2" data-target="#collapseOne2">
+      				<h4 class="panel-title">
+        				<a class="accordion-toggle">
+          				Collapsible Group Item #1
+        				</a>
+      				</h4>
+    			</div>
+				<div id="collapseOne2" class="panel-collapse collapse">
+			  		<div class="panel-body">
+						VHS.
+			  		</div>
+				</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading">
+      				<h4 class="panel-title"  data-toggle="collapse" data-parent="#accordion2" data-target="#collapseTwo2">
+        				<a class="accordion-toggle">
+          				Collapsible Group Item #2
+        				</a>
+      				</h4>
+    			</div>
+    			<div id="collapseTwo2" class="panel-collapse collapse">
+      				<div class="panel-body">
+						VHS.
+      				</div>
+    			</div>
+  			</div>
+  			<div class="panel panel-default">
+    			<div class="panel-heading">
+      				<h4 class="panel-title" data-toggle="collapse" data-parent="#accordion2" data-target="#collapseThree2">
+        				<a class="accordion-toggle">
+          				Collapsible#3
+						</a>
+      				</h4>
+    			</div>
+    			<div id="collapseThree2" class="panel-collapse collapse">
+      				<div class="panel-body">
+						VHS.
+      				</div>
+    			</div>
+  			</div>
+		</div>
+<!--			End of second Accordion-->
+			
+			
+			
+<!--			Start of third accordion-->
+			<div class="panel-group col-sm-4 pull-down" id="accordion3">
+  				<div class="panel panel-default">
+    				<div class="panel-heading" data-toggle="collapse" data-parent="#accordion3" data-target="#collapseOne3">
+      					<h4 class="panel-title">
+        					<a class="accordion-toggle">
+          					U Reading rooms
+        					</a>
+      					</h4>
+    				</div>
+    				<div id="collapseOne3" class="panel-collapse collapse">
+      					<div class="panel-body">
+							<ul>
+							<li>CSC Body Room 612-676-5140</li> 
+							<li>CSC MSK Room 612-676-5150</li>  
+							<li>CSC Neuro Room 612-676-5130</li>  
+
+							<li>Breast Center 273-9620</li>  
+							<li>CT/MR Room 625-9947 </li>
+							<li>Chest Room 273-5868</li>
+							<li>GI/GU 273-5871</li>
+							<li>Neuro 273-3547</li>
+							<li>NucMed Room 273-5867</li>
+							<li>Ultrasound 273-5306</li>
+							<li>IR Reading room 273-6749</li>
+							<li>Non-Invasive 273-2530</li>
+
+							<li>Shirley Yeary 273-2529</li>
+							<li>Shari Johnston 626-5589</li>
+
+						  </ul>
+      					</div>
+    				</div>
+  				</div>
+  				<div class="panel panel-default">
+    				<div class="panel-heading gold">
+      					<h4 class="panel-title"  data-toggle="collapse" data-parent="#accordion3" data-target="#collapseTwo3">
+        					<a class="accordion-toggle">
+							  CSC/Hospital Techs
+							</a>
+      					</h4>
+    				</div>
+    			<div id="collapseTwo3" class="panel-collapse collapse">
+      				<div class="panel-body">
+					  <ul>
+						<li>CSC MRI (all) 612-676-5195</li>    
+						<li>CSC CT (all) 612-676-5190</li>
+						<li>CSC US 612-676-5185</li>
+						<li>CSC X-Ray 612-676-5160</li>
+
+						<li>X-ray desk (Diane) 273-5690</li>
+						<li>Film File (East Bank) 273-5777</li>
+						<li>University CT (64 slice and FLASH) 273-7432</li>
+						<li>University CT - Interventional 273-6632</li>
+						<li>University East Bank MRI 273-6829</li> 
+						<li>University <i>Aera</i> (Cardiac 1.5T) MRI 273-3532</li>
+						<li>PET/CT 273-8947</li>
+						<li>Nuclear Medicine 273-1933</li>
+						<li>Ultrasound Tech room 273-0643</li>
+						<li>University C-Arm room 273-6306</li>
+						<li>IR Nursing Desk 273-4220</li>
+						<li>IR Scheduling (Cheryl) 273-7553</li>
+						<li>2A Nursing Desk 273-8860</li>
+						<li>University Emergency Dept 273-2700</li>
+						<li>University PACU (3A) 273-3100</li>
+						<li>Ward Phone numbers 273-30XY (e.g. 7C 3-3073)</li>
+						<li><i>X=floor Y=Unit (A=1, B=2, etc.)</i></li>
+						<li>CCIR PET/CT 626-6586</li>
+						<li>CCIR Main Desk 626-6900</li>
+						<li>CCIR Reading Room 624-3310</li>
+						</ul>
+    				</div>
+  				</div>
+  				<div class="panel panel-default">
+    				<div class="panel-heading">
+      					<h4 class="panel-title" data-toggle="collapse" data-parent="#accordion3" data-target="#collapseThree3">
+							<a class="accordion-toggle">
+							  Collapsible Group Item #3
+							</a>
+      					</h4>
+    				</div>
+    				<div id="collapseThree3" class="panel-collapse collapse">
+				  		<div class="panel-body">
+							VHS.
+				  		</div>
+    				</div>
+  				</div>
+			</div>
+
+		</div> <!--	End of third accordion-->
+	
+    
+	
+	</div>   <!-- /.bottom-row -->
+
+<footer class="hidden-rest">
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <div class="navbar-collapse collapse" id="footer-body">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Browse Our Library</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">User Review</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+          	<div class="navbar-header">
+				                    
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-warning btn-med" data-toggle="modal" data-target="#myModal-U">
+				   U Directory
+				</button>
+				<button type="button" class="btn btn-primary btn-med" data-toggle="modal" data-target="#myModal-HCMC">
+				   HCMC Directory
+				</button>				
+                    
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footer-body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+<!--                <ul class="footer-bar-btns visible-xs">
+                    <li><a href="#" class="btn" title="History"><i class="fa fa-2x fa-clock-o blue-text"></i></a></li>
+                    <li><a href="#" class="btn" title="Favourites"><i class="fa fa-2x fa-star yellow-text"></i></a></li>
+                    <li><a href="#" class="btn" title="Subscriptions"><i class="fa fa-2x fa-rss-square orange-text"></i></a></li>
+                </ul>-->
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/my-js.js"></script>
+
+</body>
+	
+	<!-- Modal -->
+<div class="modal fade" id="myModal-U" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">University Phone Numbers</h4>
+      </div>
+      <div class="modal-body">
+            <ul data-role="listview" data-inset="true">
+                <div data-inset="true"  data-filter="true"  data-input="#myFilterU">
+                <li data-role="list-divider" class="listDivider" >University Reading Rooms</li>
+                    
+                <li><a href="tel:612273-9620">Breast Center reading room 273-9620</a></li>
+                <li><a href="tel:612625-9947">CT/MR Reading Room 625-9947</a></li>
+                <li><a href="tel:612273-5868">Chest Reading Room 273-5868</a></li>
+                <li><a href="tel:612273-5871">GI/GU Reading Room 273-5871</a></li>
+                <li><a href="tel:612273-7771">MSK Reading Room 273-7771</a></li>
+                <li><a href="tel:612273-3547">Neuro Reading Room 273-3547</a></li>
+                <li><a href="tel:612273-5867">Nuc Med Reading Room 273-5867</a></li>
+                <li><a href="tel:612273-4824">Peds Reading Room 273-4824</a></li>
+                <li><a href="tel:612273-5306">Ultrasound Reading Room 273-5306</a></li>
+                <li><a href="tel:612273-6749">IR Reading Room 273-6749</a></li>
+                <li><a href="tel:612273-5044">Non-Invasive Reading Room 273-5044</a></li>
+                    
+                <li data-role="list-divider" class="listDivider">University Tech areas</li>
+                <li><a href="tel:612273-5690">X-ray desk (Diane) 273-5690</a></li>
+                <li><a href="tel:612273-7432">Univ CT (64 and FLASH) 273-7432</a></li>
+                <li><a href="tel:612273-6829">Univ East Bank MRI 273-6829</a></li>
+                <li><a href="tel:612273-3532">Univ Aera(Cardia1.5T) MRI 273-3532</a></li>
+                <li><a href="tel:612273-8947">PET/CT 273-8947</a></li>
+                <li><a href="tel:612273-1933">Nuclear Medicine Techs 273-1933</a></li>
+                <li><a href="tel:612273-0643">Ultrasound Techs 273-0643</a></li>
+                <li><a href="tel:612625-9942">UIC MRI Techs 273-0643</a></li>
+                <li><a href="tel:612625-9943">UIC CT Techs 273-0643</a></li>
+                    
+                    
+            
+                <li data-role="list-divider" class="listDivider">University Care Areas</li>
+                <li><a href="tel:612273-4220">IR Nursing Desk 273-4220</a></li>
+                <li><a href="tel:612273-8860">2A Nursing Desk 273-8860</a></li>
+                <li><a href="tel:612273-2700">University Emergency Dept 273-2700</a></li>
+                <li><a href="tel:612273-3100">University PACU (3A) 273-3100</a></li>
+            
+                <li data-role="list-divider" class="listDivider">CCIR</li>
+                <li><a href="tel:612626-6586">CCIR PET/CT 626-6586</a></li>
+                <li><a href="tel:612626-6900">CCIR Main Desk 626-6900</a></li>
+                <li><a href="tel:612624-3310">CCIR Reading Room 624-3310</a></li>
+            
+                <li data-role="list-divider" class="listDivider">Masonic Peds Hosp / West Bank</li>
+                <li><a href="tel:612273-4824">Masonic Reading Room 273-4824</a></li>
+                <li><a href="tel:612273-4267">Masonic IR Reading Room 273-4267</a></li>
+                <li><a href="tel:612273-4317">Masonic Ultrasound 273-4317</a></li>
+                <li><a href="tel:612273-4260">Masonic X-ray techs 273-4260</a></li>
+                <li><a href="tel:612273-4270">Masonic IR Techs 273-4270</a></li>
+                <li><a href="tel:612273-5527">Masonic CT (Peds - FLASH) 273-5527</a></li>
+                <li><a href="tel:612273-4623">Masonic CT (Adult 64 slice) 273-4623</a></li>
+                <li><a href="tel:612273-3346">Masonic 3T MRI 273-3346</a></li>
+                <li><a href="tel:612273-6646">Masonic 1.5T MRI 273-6646</a></li>
+                <li><a href="tel:612273-7764">West Bank Ortho/Outpt 3T MRI 273-7764</a></li>
+                <li><a href="tel:612273-4353">Masonic Nuc Med 273-4353</a></li>
+                <li><a href="tel:612273-4885">Masonic Film File 273-4885</a></li>
+            
+                <li><a href="tel:612273-7032">Masonic NICU 273-7032</a></li>
+                <li><a href="tel:612365-9110">Masonic Emergency Dept 365-9110</a></li>
+                <li><a href="tel:612365-3100">Masonic PICU-365-3100</a></li>
+                <li><a href="tel:612365-2200">Masonic Peds Sedation 365-2200</a></li>
+            
+                <li data-role="list-divider" class="listDivider">Maple Grove</li>
+                <li><a href="tel:763-898-1206">Maple Grove Reading room 763-898-1206</a></li>
+                <li><a href="tel:763-898-1213">Maple Grove CT/MR 763-898-1213</a></li>
+                <li><a href="tel:763-898-1282">Maple Grove Nuc Med 763-898-1282</a></li>
+        
+                </div>
+            </ul>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  <!--	End of U - modal-->
+
+<div class="modal fade" id="myModal-HCMC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">HCMC Phone Numbers</h4>
+      </div>
+      <div class="modal-body">
+            <ul data-role="listview" data-inset="true">
+                <div data-inset="true"  data-filter="true"  data-input="#myFilterH">
+                <li data-role="list-divider" class="listDividerHCMC" >HCMC Reading Rooms</li>
+                    
+                <li><a href="tel:612873-2791">CT/MR Reading room P4 873-2791</a></li>
+                <li><a href="tel:612873-6033">Neuro 873-6033 </a></li>
+                <li><a href="tel:612873-4150">Nuc Med / Ultrasound 873-4150</a></li>
+                <li><a href="tel:612873-2083">Interventional 873-2083</a></li>
+                <li><a href="tel:612873-7836">Whittier 873-7836</a></li>
+                <li><a href="tel:612873-7107">ED Radiology Reading Room 873-7107</a></li>    
+ 
+                <li data-role="list-divider" class="listDividerHCMC">HCMC Tech areas</li>              
+                <li><a href="tel:612873-9339">3T MRI 873-9339</a></li>    
+                <li><a href="tel:612873-3674">1.5T MRI 873-3674</a></li>
+                <li><a href="tel:612873-3674">P4 CT 873-9313</a></li>
+                <li><a href="tel:612873-5783">IR Tech Area 873-5783</a></li>
+                <li><a href="tel:612873-2771">ED Radiology Desk 873-2771</a></li>    
+                    
+                <li data-role="list-divider" class="listDividerHCMC">HCMC Misc Numbers</li>                    
+                <li><a href="tel:612873-2036">Pamela Thompson 873-2036</a></li>
+                <li><a href="tel:612873-2718">Hiltje Loyd 873-2718</a></li>
+                <li><a href="tel:612873-2083">Computer team pager 873-2083</a></li>    
+                <li><a href="tel:612873-3138">Team Center A 873-3138</a></li>
+                <li><a href="tel:612873-2772">Team Center B 873-2772</a></li>
+                <li><a href="tel:612873-3160">Team Center C 873-3160</a></li>
+                    
+
+   
+                </div>
+            </ul>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>	  <!--	End of HCMC modal-->
+	
+	
+</html>

@@ -1,0 +1,113 @@
+body {
+	padding-top: 70px;
+	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */      	
+}
+
+.panel-body ul li {
+	font-size: 0.7em;
+}
+
+.panel-body > ul {
+	padding-left: 2px;
+	margin-bottom: 0px;
+	list-style: square inside url("http://www.w3schools.com/cssref/sqpurple.gif")
+}
+
+li:before {
+    /*content: "•";  Insert content that looks like bullets */
+    /*padding-right: 4px;
+    color: pink; /* Or a color you prefer */
+}
+
+.gold {
+	background-color: gold;
+	transition: all .2s ease-in-out;
+	
+}
+
+.gold:hover {
+	background: #F4C60B;
+	transform: scale(1.1); 
+}
+
+.blue {
+	background-color: #2772f1;
+	transition: all .2s ease-in-out;
+}
+
+.blue:hover {
+	background-color: #0a69c7;
+	transform: scale(1.1); 
+}
+
+/*div.panel-heading.gold::after, div.panel-heading.blue::after {
+	content: '';
+	position: absolute;
+	top: -10%;
+	right: -10%;
+	bottom: -10%;
+	left: -10%;
+	background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+	transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+div.panel-heading.gold:hover::after, div.panel-heading.gold:focus::after {
+  animation: sheen 1s forwards;
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}*/
+
+.footer {
+    bottom: 0px;
+	position: absolute;
+	width: 100%;  
+}
+
+hr {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.panel-group {
+	margin-bottom: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.panel-heading {
+	padding: 5px 5px 5px 5px;
+	bottom: 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+.bottom-row {
+	bottom: 5px;
+	position:fixed;
+	width: 100%;
+	height: auto;
+}
+
+a.accordion-toggle {
+	text-decoration: none;
+}
+
+#nav-bar {
+	background-color: rgb(122, 0, 25); background: radial-gradient(circle, rgb(122, 0, 25) 70%, black);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	background-color: black;
+}
+
+
+@media (max-width:767px){.hidden-xs{display:none!important}}
+@media (min-width:768px){.hidden-rest{display:none!important}}

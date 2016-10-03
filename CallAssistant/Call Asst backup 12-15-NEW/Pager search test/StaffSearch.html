@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Fairview Directory</title>
+
+<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+
+<!--files needed for the ftp'd/automatic menu process developed. This file is content managed on UCMSTAGE with Content ID: FV_NOLEFTNAV_CSS-->
+<link href="https://applications.fairview.org/PhoneDirectory/styles.css" rel="stylesheet" type="text/css" />
+<link href="https://applications.fairview.org/PhoneDirectory/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="https://applications.fairview.org/PhoneDirectory/fv_jquery_ui_css.css" rel="stylesheet" type="text/css" />
+<link href="https://applications.fairview.org/PhoneDirectory/intranet_print_styles.css" rel="stylesheet" type="text/css" media="print" />
+
+<!--IE specific mods-->
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="<link href="/fv/groups/ssadminview/documents/web_assets/styles-iefix.css" rel="stylesheet" type="text/css" />" /><![endif]-->
+<!--//IE specific mods-->
+
+
+<script type="text/javascript" src="https://applications.fairview.org/PhoneDirectory/fv_jquery_library.js"></script>
+<script src="https://applications.fairview.org/PhoneDirectory/fv_jquery_ui_library.js" type="text/javascript"></script>
+
+<script src="json2.js" type="text/javascript"></script>
+<script src="/fv/groups/ssadminview/documents/web_assets/jquery.colorbox-min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/fv/groups/ssadminview/documents/web_assets/recentpages.js"></script>
+<script type="text/javascript">
+
+  //FAIRVIEW GLOBAL JAVASCRIPT VARIABLES (THE IDOC VERSIONS ARE SET IN INTRANET STANDARD HEAD CONTENT FRAG)
+  var urlProtocol = window.location.protocol;
+  //alert("protocol: " + urlProtocol);
+     var user = "internal";
+
+  var JiveBaseURL =  "http://intranet1.fairview.org/"; //prod
+  //var GoogleAnalyticsInstance = "fv_disabled"; //disable
+  var GoogleAnalyticsInstance = "http://fv_intranet"; //enabled
+  //var BaseUrl = urlProtocol + "//intranettest.fairview.org"; //load testing
+  //var BaseUrl = urlProtocol + "//ucm-intranet1.fairview.org/intranet"; //pre go-live
+  var BaseUrl = "http://intranet.fairview.org"; //go-live/prod
+  //var BaseDomain = urlProtocol + "//intranettest.fairview.org"; //load testing
+  //var BaseDomain = urlProtocol + "//ucm-intranet1.fairview.org"; //pre go-live
+  var BaseDomain = "http;//intranet.fairview.org"; //prod
+
+  var tickle = document.createElement("script");
+  tickle.type = "text/javascript";
+  tickle.src = BaseDomain + "/tickle/";
+    //document.getElementsByTagName('head')[0].appendChild(tickle);
+  var user = "internal";
+  var userprefsLink = document.createElement("script");
+  userprefsLink.type = "text/javascript";
+  userprefsLink.src = BaseDomain + "/userprefs/";
+  document.getElementsByTagName('head')[0].appendChild(userprefsLink);
+     var recentupdates = document.createElement("script");
+  recentupdates.type = "text/javascript";
+  recentupdates.src = BaseDomain + "/recentupdates/";
+  document.getElementsByTagName('head')[0].appendChild(recentupdates);
+  </script>
+<script type="text/javascript">
+  function getServices() {
+      $.getScript(tickle.src);
+     // $.getScript(userprefsLink.src);
+     // $.getScript(recentupdates.src);
+      getQuickLinks();
+      getRecentPages();
+      populateRecentUpdates();
+  }
+
+</script>
+		<link rel="stylesheet" type="text/css" href="PhoneDirectory.css" />
+		<link type="text/css" rel="Stylesheet" href="/2006/CSS/Intranet.css" />
+               <link rel="stylesheet" type="text/css" href="PhoneDirectoryPrint.css" media="print" />
+		<meta name="keywords" content="" />
+	</head>
+	
+<!--Body-->
+<body onload="getServices()">
+
+
+                       <div class="title">Fairview Directory: <span class="subjectLabel">In-House Pagers</span></div>
+			<div class="fvCrumbTrail">
+				<a href="OnCallSearch.asp">UMMC On-Call</a>
+			</div>
+
+			<form id="PhoneSearch" action="http://applications.fairview.org/PhoneDirectory/StaffSearch.asp" method="get">
+				<table id="SearchFormTable">
+					<tr><th>Last Name:</th>
+                                               <td><input type="text" class="Text" name="Last" value="" onfocus="this.select()" /></td>
+					</tr>
+					<tr><th>First Name:</th>
+						<td><input type="text" class="Text" name="First" value="" /></td>
+					</tr>
+
+					<tr><th>Phone Number:</th>
+						<td><input type="text" class="Text" name="Phone" value="" /></td>
+					</tr>
+					<tr><th>Department Name:</th>
+						<td><input type="text" class="Text" name="Department" value="" /></td>
+					</tr>
+					<tr><td>&nbsp;</td>
+                                               <td><input type="Button" class="ButtonRight" value="Clear" onclick="ClearForm(this.form)" />
+                                                 
+							<input type="Submit" class="Button" value="Search" />
+						</td>
+					</tr>
+				</table>
+			</form>
+
+                       <div class="message">To search the phone directory, enter search criteria in at least one field</div>
+
+
+		<script type="text/javascript">
+			function ClearForm(fm) {
+				for (var i=0; i<fm.length; i++) {
+					if (fm[i].type == "text") fm[i].value = ""
+					if (fm[i].type == "select-one") fm[i].selectedIndex = 0
+				}
+				fm.elements[0].focus()
+			}
+			function Show(IID){
+                               window.open("http://applications.fairview.org/PhoneDirectory/StaffDetails.asp?IID=" + IID, "staffDetails", "height=300,width=400,resizable,status,toolbar,scrollbars")
+			}
+			function EntityHelp() {
+                                window.open("http://applications.fairview.org/PhoneDirectory/EntitySearch.asp","EntityPicker","height=200,width=300,scrollbars,resizable,status")
+			}
+			function SearchTips() {
+                                window.open("SearchTips.asp","SearchTips","height=270,width=500,scrollbars,resizable,status")
+			}
+
+			var TargetForm = document.getElementById("PhoneSearch"),
+				tgtField = TargetForm.elements["Entity"]
+
+			TargetForm.elements["Last"].focus()
+		</script>
+	</center>
+</div>
+</div>
+</body>
+</html>

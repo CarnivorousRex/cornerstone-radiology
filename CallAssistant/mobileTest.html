@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="mobileTest.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+    
+    
+      <div class="maroonTitle" data-role="header" data-theme="b">
+          <h1>Mobile Call Assistant</h1>
+      </div>
+    
+<body>
+    
+    
+
+<div data-role="tabs">
+    <div data-role="navbar">
+        <ul>
+            
+            <li class="navButtons"><a href="#Paging" >Paging Tool</a></li>
+            <li class="navButtons"><a href="#UList" >Univ Phones</a></li>
+            <li class="navButtons"><a href="#HCMCList" >HCMC Phone</a></li>
+            
+            
+        </ul>
+        
+        <div id="Paging" class="ui-content">
+            <h4> Paging tool not yet implemented</h4>
+        </div>
+        
+        <div id="UList" class="ui-content">
+            
+            <form class="ui-filterable">
+                <input id="myFilterU" data-type="search">
+            </form>
+            
+            <ul data-role="listview" data-inset="true">
+                <div data-inset="true"  data-filter="true"  data-input="#myFilterU">
+                <li data-role="list-divider" class="listDivider" >University Reading Rooms</li>
+                    
+                <li><a href="tel:612273-9620">Breast Center reading room 273-9620</a></li>
+                <li><a href="tel:612625-9947">CT/MR Reading Room 625-9947</a></li>
+                <li><a href="tel:612273-5868">Chest Reading Room 273-5868</a></li>
+                <li><a href="tel:612273-5871">GI/GU Reading Room 273-5871</a></li>
+                <li><a href="tel:612273-7771">MSK Reading Room 273-7771</a></li>
+                <li><a href="tel:612273-3547">Neuro Reading Room 273-3547</a></li>
+                <li><a href="tel:612273-5867">Nuc Med Reading Room 273-5867</a></li>
+                <li><a href="tel:612273-4824">Peds Reading Room 273-4824</a></li>
+                <li><a href="tel:612273-5306">Ultrasound Reading Room 273-5306</a></li>
+                <li><a href="tel:612273-6749">IR Reading Room 273-6749</a></li>
+                <li><a href="tel:612273-5044">Non-Invasive Reading Room 273-5044</a></li>
+                    
+                <li data-role="list-divider" class="listDivider">University Tech areas</li>
+                <li><a href="tel:612273-5690">X-ray desk (Diane) 273-5690</a></li>
+                <li><a href="tel:612273-7432">Univ CT (64 and FLASH) 273-7432</a></li>
+                <li><a href="tel:612273-6829">Univ East Bank MRI 273-6829</a></li>
+                <li><a href="tel:612273-3532">Univ Aera(Cardia1.5T) MRI 273-3532</a></li>
+                <li><a href="tel:612273-8947">PET/CT 273-8947</a></li>
+                <li><a href="tel:612273-1933">Nuclear Medicine Techs 273-1933</a></li>
+            
+                <li data-role="list-divider" class="listDivider">University Care Areas</li>
+                <li><a href="tel:612273-4220">IR Nursing Desk 273-4220</a></li>
+                <li><a href="tel:612273-8860">2A Nursing Desk 273-8860</a></li>
+                <li><a href="tel:612273-2700">University Emergency Dept 273-2700</a></li>
+                <li><a href="tel:612273-3100">University PACU (3A) 273-3100</a></li>
+            
+                <li data-role="list-divider" class="listDivider">CCIR</li>
+                <li><a href="tel:612626-6586">CCIR PET/CT 626-6586</a></li>
+                <li><a href="tel:612626-6900">CCIR Main Desk 626-6900</a></li>
+                <li><a href="tel:612624-3310">CCIR Reading Room 624-3310</a></li>
+            
+                <li data-role="list-divider" class="listDivider">Masonic Peds Hosp / West Bank</li>
+                <li><a href="tel:612273-4824">Masonic Reading Room 273-4824</a></li>
+                <li><a href="tel:612273-4267">Masonic IR Reading Room 273-4267</a></li>
+                <li><a href="tel:612273-4317">Masonic Ultrasound 273-4317</a></li>
+                <li><a href="tel:612273-4260">Masonic X-ray techs 273-4260</a></li>
+                <li><a href="tel:612273-4270">Masonic IR Techs 273-4270</a></li>
+                <li><a href="tel:612273-5527">Masonic CT (Peds - FLASH) 273-5527</a></li>
+                <li><a href="tel:612273-4623">Masonic CT (Adult 64 slice) 273-4623</a></li>
+                <li><a href="tel:612273-3346">Masonic 3T MRI 273-3346</a></li>
+                <li><a href="tel:612273-6646">Masonic 1.5T MRI 273-6646</a></li>
+                <li><a href="tel:612273-7764">West Bank Ortho/Outpt 3T MRI 273-7764</a></li>
+                <li><a href="tel:612273-4885">Masonic Film File 273-4885</a></li>
+            
+                <li><a href="tel:612273-7032">Masonic NICU 273-7032</a></li>
+                <li><a href="tel:612365-9110">Masonic Emergency Dept 365-9110</a></li>
+                <li><a href="tel:612365-3100">Masonic PICU-365-3100</a></li>
+                <li><a href="tel:612365-2200">Masonic Peds Sedation 365-2200</a></li>
+            
+                <li data-role="list-divider" class="listDivider">Maple Grove</li>
+                <li><a href="tel:763-898-1206">Maple Grove Reading room 763-898-1206</a></li>
+                <li><a href="tel:763-898-1213">Maple Grove CT/MR 763-898-1213</a></li>
+                <li><a href="tel:763-898-1282">Maple Grove Nuc Med 763-898-1282</a></li>
+        
+                </div>
+            </ul>
+        </div>
+    
+        <div id="HCMCList" class="ui-content">
+            
+            <form class="ui-filterable">
+                <input id="myFilterH" data-type="search">
+            </form>
+            
+            <ul data-role="listview" data-inset="true">
+                <div data-inset="true"  data-filter="true"  data-input="#myFilterH">
+                <li data-role="list-divider" class="listDividerHCMC" >HCMC Reading Rooms</li>
+                    
+                <li><a href="tel:612873-2791">CT/MR Reading room P4 873-2791</a></li>
+                <li><a href="tel:612873-6033">Neuro 873-6033 </a></li>
+                <li><a href="tel:612873-4150">Nuc Med / Ultrasound 873-4150</a></li>
+                <li><a href="tel:612873-2083">Interventional 873-2083</a></li>
+                <li><a href="tel:612873-7836">Whittier 873-7836</a></li>
+                <li><a href="tel:612873-7107">ED Radiology Reading Room 873-7107</a></li>    
+ 
+                <li data-role="list-divider" class="listDividerHCMC">HCMC Tech areas</li>              
+                <li><a href="tel:612873-9339">3T MRI 873-9339</a></li>    
+                <li><a href="tel:612873-3674">1.5T MRI 873-3674</a></li>
+                <li><a href="tel:612873-5783">IR Tech Area 873-5783</a></li>
+                <li><a href="tel:612873-2771">ED Radiology Desk 873-2771</a></li>    
+                    
+                <li data-role="list-divider" class="listDividerHCMC">HCMC Misc Numbers</li>                    
+                <li><a href="tel:612873-2036">Pamela Thompson 873-2036</a></li>
+                <li><a href="tel:612873-2718">Hiltje Loyd 873-2718</a></li>
+                <li><a href="tel:612873-2083">Computer team pager 873-2083</a></li>    
+                <li><a href="tel:612873-3138">Team Center A 873-3138</a></li>
+                <li><a href="tel:612873-2772">Team Center B 873-2772</a></li>
+                <li><a href="tel:612873-3160">Team Center C 873-3160</a></li>
+                    
+
+   
+                </div>
+            </ul>
+        </div>        
+        </div>
+    
+    
+    
+    
+    </div>
+
+
+
+
+
+
+
+
+</div>
+                
+    </body>
+</html>

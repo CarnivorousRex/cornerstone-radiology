@@ -1,0 +1,624 @@
+<html>
+<META http-equiv="Content-type" CONTENT="text/html; charset=iso-8859-1">
+<!DOCTYPE HTML>
+<!
+  ________________________________________________________________________
+ 
+ 
+                       $RCSfile: index.shtml $
+                      $Revision: 1.1 $
+ 
+              Last change $Date: 2006-12-15 15:50:05-06 $
+            Last change $Author: jmscott $
+                         $State: Exp $
+                        $Locker:  $
+ 
+                Original author: John Scott
+ 
+              Copyright (C) American Messaging, 2006
+ 
+  ________________________________________________________________________
+>
+<head>
+
+  <link rel="shortcut icon" href="http://a.umn.edu/img/favicon.ico" type="image/x-icon" />
+
+    
+    <title>
+	University of Minnesota MRI Tech Assistant
+</title>
+
+
+<link
+	type="text/css" 
+	href="common2.css" rel="stylesheet" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" language="javascript" src="common-nestWIP.js">
+    <link rel="stylesheet" type="text/css" href="common2.css">
+	    </script>
+    
+    	<script type="text/javascript">
+            var pageNames = '';
+	</script>
+
+</head>
+<body>
+    
+
+    
+    <div id="header"><h1>University of Minnesota MRI Tech Assistant</h1></div>
+        
+
+            
+<div id="wrapper">
+        
+        
+        <div id="textBox">
+
+
+                <form 
+                id="sendmessage" 
+                name="sendmessage"
+                method="post"
+                action="https://myairmail.com/cgi-bin/myair_send"
+                target="test"
+                onsubmit="return valForm(this);">
+
+
+    <iframe style='position: absolute; left:-200px; width: 100px; border: 1px solid #000000;' name='test'></iframe> 
+                    
+                    <table class=whiteish>
+
+
+                        <tr>
+                            <th>
+                                To:&nbsp;
+                                </th>
+
+                            <td>
+	                               <input id='pageTo' tabindex=0001 type=text
+	                               name=gw_pin
+		                              style="width:		250px;"
+	                                   value="">
+	                       </td>
+
+                        </tr>
+                        <tr>
+	                   <td></td>
+                            <td>
+                
+                                <div id="sixOneTwo" class="inline">(612)899-</div>
+                        </td>
+                            </tr>
+                        <tr><td></td>
+                            <td>
+                            <font size=-2>
+		                      Separate multiple names/numbers with commas.
+		                      </font>
+	                       </td>
+
+                            </tr>
+                        <tr>
+                            <th align=right style="color: #7a0019;" valign=middle>
+                                <b>Subject:&nbsp;</b>
+                            </th>
+
+                            <td align=left valign=middle>
+                                <input id="subject"
+                                       tabindex=0002 type=text
+                                       name=subject_string
+                                       style="
+                                              width:		250px;
+                                              " value=""
+                                       maxlength=256
+                                       onChange="countCharacters(); return true;"
+                                       onFocus="countCharacters(); return true;"
+                                       onBlur="countCharacters(); return true;"
+                                       onKeyPress="countCharacters(); return true;"
+                                       value="" />
+	                           </td>
+                              <th style="padding-left:15px; padding-right:15px">Recent Pages:</th>        
+                            <td></td>
+                        </tr>
+                        <tr>
+                                <td>&nbsp;</td>
+                            <td>
+                                <div id="highPriority" class="inline">High Priority</div>
+                                <div id="modPriority" class="inline">Moderate Priority</div>
+                                <div id="lowPriority" class="inline">Low Priority</div>
+                                    </td>
+                            <td style="padding-left:15px">
+                            <select id="recentPages" name="recentPages">
+                                <option value="Testing">No Recent pages</option>
+
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th align="center" 
+                                style="
+                                       color:		#7a0019;
+                                       " valign=top>
+	                       <span
+                                 style="
+                                        display:	block;
+                                        padding-top:	2em;
+			                             text-align:	center;
+                                        ">
+	                                   Message:&nbsp;</span>
+	                           </th>
+
+                            <td align=left valign=top>
+                                <textarea id="message"
+                                          style="
+                                                width:		250px;
+			                                 "
+                                          tabindex=0003 name=mesg_to_send
+		                                  onChange="countCharacters(); return true;"
+                                          onFocus="countCharacters(); return true;"
+		                                  onBlur="countCharacters(); return true;"
+		                                  onKeyPress="countCharacters(); return true;"
+		                                  xcols=29 rows=6 wrap></textarea>
+                                <td></td>
+
+                            </tr>   
+                        <tr>
+                            <td></td>
+                          <td> Populate Message field with these buttons:</td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>                            
+
+
+                                <td>
+                                <b>IR Buttons:</b><br>
+                                <div id="IRconsent" class="inline">Patient ready for consent.</div>
+                                <div id="IRready" class="inline">Patient prepped and ready.</div>
+                                <div id="IRdelay" class="inline">Case delayed.</div>
+                                    <br>                                
+                               </td>
+                        </tr>
+                        <tr>
+	                       <th align=right 
+		                      style="
+			                     color:		#7a0019;
+		                          " valign=top>
+		                          <b>From:&nbsp;</b>
+                            </th>
+	                           <td align=left valign=top>
+                                   <input id="from" tabindex=0004 type=text value=""
+                                        style="
+                                            width:		250px;
+                                               "
+                                          name=from_string
+                                          maxlength=256
+                                          onChange="countCharacters(); return true;"
+                                          onFocus="countCharacters(); return true;"
+                                          onBlur="countCharacters(); return true;"
+                                          onKeyPress="countCharacters(); return true;"
+                                          value="">
+                                </td>
+                                <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td valign="top">
+                                <font size=-2></font>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input 
+                                    tabindex=0900 
+                                       style="
+                                              color:	 black;
+                                              font-weight:	bold;
+                                              "
+                                       class="redish submit" id=sendButton type=submit name="send" 
+                                       value="Send Message" onclick="return foo();">
+                                
+<script type="text/javascript">
+    function foo() {
+
+
+    
+        
+        var currentTime = new Date();
+        var amPM = 0;
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        if (minutes < 10){
+            minutes = "0" + minutes
+        }
+        if (hours < 10){
+            hours = "0" + hours
+            
+        }
+        
+        if (hours < 12){
+            amPM = "AM";
+        }   else {
+            amPM = "PM";
+        }
+        
+        var hoursMins = hours+":"+minutes+" "+amPM;
+        
+   //     alert($('#pageTo').val()+" paged at " + hoursMins);    
+        
+        var selectMenu = document.sendmessage.recentPages;
+        if (selectMenu.options[0].value=="Testing") {
+            selectMenu.options.length=0
+        }
+        
+        if (pageNames == "") {
+        selectMenu.options[selectMenu.options.length]=new Option(($('#pageTo').val())+"   "+hoursMins+" "+($('#message').val()), "test", true, true)            
+        } else {
+        selectMenu.options[selectMenu.options.length]=new Option(pageNames +" "+ ($('#pageTo').val())+"   "+hoursMins+ " " +($('#message').val()), "test", true, true)
+        }
+        
+                if ($('#clearAllButFrom').is(':checked')) {
+                } else {
+                        $('#message').val("");
+                        $('#subject').val("");
+                        $('#pageTo').val("");
+            pageNames = '';                 //clear out the pageNames global variable
+        }
+        
+        return true;
+    }
+</script>
+                                
+                                <div id="clearButton">Clear all fields</div>
+	                       </td>
+                            <td> </td>
+
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="center">
+                                <font size=-1>
+		                          Character Counter (max 240)
+                                    <input type=text name=count value="0"
+                                           size=4 onFocus="blur()">
+                                </font>
+	                       </td>
+                        </tr>
+
+
+                    </table>
+                </form>
+    </div>
+    <!---------------------------------------------->                 
+        <table id="pagerSearchTable">
+            <th colspan=2>Pager Search Tool:</th> 
+            <tr><td colspan=2 style="color:black; font-size:12; text-align:center" >Must log into SecureGateway if off campus</td></tr>
+                <tr><th>Last Name:</th>
+                    <td><input id="PagerLastName" style="width: 150px" value+""></td>
+                </tr>
+                    <th>First Name:</th>
+                    <td><input id="PagerFirstName" style="width: 150px" value+""></td>
+                    <td style="padding-left:10px"></td>
+                </tr>
+    <tr><td></td></tr>
+                <td colspan=3 id="PagerSearchButton" style="color:white">Search Button - Use on Fairview Computers </td>
+                <tr>
+                <td colspan=3 id="PagerSearchButton2" style="color:white">Search Button - Use on Non-Fairview Computers</td>                    
+                    <tr></tr>
+                <td colspan=3 style="color:black; font-size:12; text-align:center">Launches a new window</td>
+                </tr>
+
+    </table>
+
+
+ </div>
+
+
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+          collapsible: true,
+          active:false,
+          heightStyle: "content"
+    });
+        $( "#accordion2" ).accordion({
+          collapsible: true,
+            active: false,
+            heightStyle: "content"
+    });  
+        $( "#accordion3" ).accordion({
+          collapsible: true,
+          active:false,
+            heightStyle: "content"
+    });  
+              $( "#accordion-nest" ).accordion({
+          collapsible: true,
+          active:false,
+            heightStyle: "content"
+              });
+              $( "#accordion-nest2" ).accordion({
+          collapsible: true,
+          active:false,
+            heightStyle: "content"
+              });      
+  });
+  </script>
+
+
+
+<!--  
+<div id="accordion">
+  <h3><img src="files/UofMicon.bmp"><strong>      University CT buttons</strong></h3>
+  <div>
+        <div>Test</div>
+  </div>
+
+  <h3><img src="files/UofMicon.bmp"><strong>      University Tech/Hospital Phone numbers</strong></h3>
+    <div>
+      <ul>
+
+        <li>X-ray desk (Diane) 273-5690</li>
+        <li>University CT (64 slice and FLASH) 273-7432</li>
+        <li>University East Bank MRI 273-6829</li> 
+        <li>IR Nursing Desk 273-4220</li>
+        <li>2A Nursing Desk 273-8860</li>
+          <li>Alyssa Dox (results coordinator) - ? </li>
+        <li>University Emergency Dept 273-2700</li>
+        <li>University PACU (3A) 273-3100</li>
+        <li>Ward Phone numbers 273-30XY (e.g. 7C 3-3073)</li>
+          <li style="text-indent:50px">X=floor Y=Unit (A=1, B=2, etc.)</li>
+    
+        </ul>
+    </div>
+  <h3><strong>Amplatz / Maple Grove / UIC Phone Numbers</strong></h3>
+  <div>
+    <ul>
+        <li>Amplatz Reading Room  273-4824</li>
+        <li>Amplatz Ultrasound  273-4317</li>
+        <li>Amplatz X-ray techs 273-4260</li>
+        <li>Amplatz IR 273-4270</li>
+        <li>Amplatz CT 273-5527</li>
+        <li>Amplatz 3T MRI 273-3346</li>
+        <li>Amplatz 1.5T MRI 273-6646</li>
+        <li>Amplatz Ortho Clinc / Outpatient 3T MRI 273-7764</li>
+        <hr>
+        <li>Amplatz NICU 273-7032</li>
+        <li>Amplatz Emergency Dept 365-9110</li>  
+        <hr>
+        <li>Maple Grove Reading room 763-898-1206</li>
+        <li>Maple Grove CT/MR 763-898-1213</li>
+        <hr>
+        <li>UIC CT/MR Reading room 625-9947</li>
+        <li>UIC MR 625-9942</li>
+        <li>UIC CT 624-9943</li>
+    </ul>
+  </div>
+ 
+</div>
+
+-->
+ 
+<div id="accordion2">
+  <h3><img src="files/UofMicon.bmp"><strong>      University Rads Pagers</strong></h3>
+  <div>
+      <ul>
+            <button class="phone" id="Cayci">Cayci 899-8106</button>
+            <button class="phone" id="DietzC">Dietz,C 899-7591</button>
+            <button class="phone" id="DietzK">Dietz,K 899-1242</button>
+            <button class="phone" id="Dsouza">D'Souza 899-6139</button><br>
+            
+            <button class="phone" id="Flanagan">Flanagan 899-2441</button><br>
+            <button class="phone" id="Frank">Frank 899-2949</button>
+            <button class="phone" id="Hoggard">Hoggard 899-9239</button>
+            <button class="phone" id="Holm">Holm 899-9238</button>
+            <button class="phone" id="Hunter">Hunter 899-7349</button><br>
+            <button class="phone" id="Jagadeesan">Jagadeesan 899-7775</button>
+            <button class="phone" id="Marette">Marette 899-6959</button>
+            <button class="phone" id="McKinney">McKinney 530-8808</button>
+            <button class="phone" id="Murati">Murati 899-1226</button>
+            <button class="phone" id="Nascene">Nascene 899-8005</button><br>
+            <button class="phone" id="Ott">Ott 899-8198</button>
+            <button class="phone" id="Rykken">Rykken 899-1186</button>
+            <button class="phone" id="Takahashi">Takahashi 899-4003</button>  
+          <li>Neuroradiology Fellows</li>
+            <button class="phone" id="Salmela">Salmela 899-7926</button>
+            <button class="phone" id="Tore">Tore 899-2449</button>   
+            <button class="phone" id="Gencturk">Gencturk 899-4898</button>
+            
+            
+      </ul>
+  </div>
+    
+      <h3><strong>Anesthesia Pagers</strong></h3>
+  <div>
+       
+            <button class="phone" id="Beebe">Beebe 899-8205</button>
+            <button class="phone" id="Belani">Belani 899-2612</button><br>
+            <button class="phone" id="Castro">Hess 899-8168</button>
+            <button class="phone" id="Cingi">Cingi 899-5348</button><br>
+      
+      FIX BELOW HERE
+            <button class="phone" id="Konia">Konia 899-1624</button>
+            <button class="phone" id="Kozhimannil">Kozhimannil 899-2160</button><br>
+            <button class="phone" id="Lava-Parmele">Lava-Parmele 899-9397</button>
+            <button class="phone" id="Nolan">Nolan 899-6008</button><br>
+            <button class="phone" id="Richtsfeld">Richtsfeld 899-1379</button>
+            <button class="phone" id="Summers">Summers 899-1376</button><br>
+            <button class="phone" id="Thomas">Thomas 899-5151</button>
+      
+        
+ 
+  
+
+</div>
+
+    
+    
+    
+    <!-- 
+<div id="accordion3">
+  <h3><img src="files/UofMicon.bmp"><strong>      Peds Reading Room</strong></h3>
+  <div>
+      <ul>
+        <li>NICU desk 273-9620</li> 
+        <li><a href="files/FairviewClinicsPhoneList112513.htm" target="_blank">Fairview Clinic Phone list</a></li>
+        <li><a href="files/RRPhoneLists.htm" target="_blank">Peds Radiology Phone list</a></li>
+      </ul>
+      
+  </div>
+  
+  <h3><img src="files/UofMicon.bmp"><strong>Neuro Reading Room</strong></h3>
+  <div>
+      <div id="accordion-nest2">
+        
+    
+        <h3>Neurosurgery Staff</h3>
+              <div>
+                    <button id="haines">Haines 899-8995</button>
+                    <button id="lam">Lam 899-2037</button>
+                    <button id="tummala">Tummala 899-3350</button>
+        <br>
+                    <button id="parr">Parr 899-4516</button>
+                    <button id="hunt">Hunt 899-6387</button>
+                    <button id="grande">Grande 899-7340</button>
+        <br>
+                    <button id="guillaume">Guillaume 899-9454</button>
+        </div>
+        <h3>Neurosurgery Residents</h3>
+              <div>
+                    <button id="vasquez">Vasquez 899-2954</button>
+                    <button id="das">Das 899-4160</button>
+                    <button id="siddiq">Siddiq 899-9573</button>
+        <br>
+                    <button id="kainth">Kainth 899-5878</button>
+                    <button id="terzic">Terzic 899-5888</button>
+                    <button id="zhang">Zhang 899-2967</button>        
+        <br>
+                    <button id="miller">Miller 899-4161</button>
+                    <button id="goyal">Goyal 899-7762</button>
+                    <button id="gupte">Gupte 899-4236</button>
+        <br>
+                    <button id="hubbard">Hubbard 899-1040</button>
+                    <button id="lim">Lim 899-1039</button>
+                    <button id="darrow">Darrow 899-1992</button>   
+        <br>
+                    <button id="quinn">Quinn 899-1946</button> 
+                  </div>
+        <h3>Neurology Staff</h3>
+              <div>
+                    <button id="anderson">Anderson 899-2112</button>
+                    <button id="carpenter">Carpenter 899-7442</button>
+                    <button id="beaver">Beaver 899-8263</button>
+        <br>
+                    <button id="santiago">Santiago 899-2943</button>
+                    <button id="dahlquist">Dahlquist 899-1217</button>
+                    <button id="tulloch">Tulloch 899-2270</button>
+        <br>
+                    <button id="taylor">Taylor 899-5230</button>
+                    <button id="walk">Walk 899-8712</button>
+                    <button id="tuite">Tuite 899-2127</button>
+        <br>
+                    <button id="henry">Henry 899-6373</button>
+                    <button id="sha">Sha 899-6104</button>        
+                </div>
+        <h3>Neurology Residents 4th Year</h3>
+              <div>
+                    <button id="irfan">Irfan 899-4180</button>
+                    <button id="janson">Janson 899-6564</button>
+                    <button id="jadhav">Jadhav 899-4183</button>
+        <br>
+                    <button id="mayer">Mayer 899-4185</button>
+                    <button id="roohani">Roohani 899-4187</button>
+                    <button id="tariq">Tariq 899-4189</button>
+        <br>
+                    <button id="tom">Tom 899-7936</button>
+                    <button id="willging">Willging 899-4191</button>
+        <br>
+                  </div>
+        <h3>Neurology Residents 3rd Year</h3>
+              <div>
+                    <button id="burkard">Burkard 899-9413</button>
+                    <button id="colligan">Colligan 899-7764</button>
+                    <button id="hartmann">Hartmann 899-7765</button>
+        <br>
+                    <button id="hoak">Hoak 899-7767</button>
+                    <button id="shevchenko">Shevchenko 899-7768</button>
+                    <button id="young">Young 899-7769</button>
+            </div>
+        <h3>Neurology Reidents 2nd Year</h3>
+              <div>
+            <button id="foster">Foster 899-9770</button>
+            <button id="gao">Gao 899-9771</button>
+            <button id="hassan">Hassan 899-9772</button>     
+        <br>
+            <button id="rizvi">Rizvi 899-9773</button>
+            <button id="sit">Sit 899-9774</button>
+            <button id="Starks">Starks 899-9775</button>
+        </div>
+        <h3>Neurology Residents 1st year</h3>
+              <div>
+            <button id="bhangav">Bhangav 899-1990</button>
+            <button id="metzler">Metzler 899-2315</button>
+            <button id="moussaouoi">Moussaouoi 899-1945</button>     
+        <br>
+            <button id="ortiz">Ortiz 899-2242</button>
+            <button id="patel">Patel 899-2261</button>
+            <button id="stutz">Stutz 899-2268</button>
+            </div>
+        <h3>Peds Neurosurgery / Neuro-oncology / Neurology</h3>
+              <div>
+                    <button id="moertel">Moertel 899-3380</button>
+                    <button id="dahlheimer">Dahlheimer 899-9225</button>
+                    <button id="guillaume">Guillaume 899-9454</button>
+        <br>
+                    <button id="karachunski">Karachunski 899-7635</button>
+                    <button id="macdonald">MacDonald 899-3566</button>
+                    <button id="raymond">Raymond 899-1603</button>        
+                </div>
+
+        </div>
+        
+
+  </div>
+  <h3><img src="files/UofMicon.bmp"><strong>      GI Reading Room</strong></h3>
+  <div>
+    <ul>
+      <li>CT/MR Reading room P4 873-2791</li>
+
+        
+      </ul>
+  </div>
+      <h3><img src="files/UofMicon.bmp"><strong> Chest Reading Room</strong></h3>
+  <div>
+    <ul>
+      <li>Place Holder</li>
+
+    </ul>
+  </div>
+    
+          <h3><img src="files/UofMicon.bmp"><strong> MSK Reading Room</strong></h3>
+  <div>
+    <ul>
+      <li>Place Holder</li>
+
+    </ul>
+  </div>
+<!-- and -->
+</div>
+
+    
+</body>
+</html>

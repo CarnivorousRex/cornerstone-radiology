@@ -1,0 +1,782 @@
+<html>
+<META http-equiv="Content-type" CONTENT="text/html; charset=iso-8859-1">
+<!DOCTYPE HTML>
+<!
+  ________________________________________________________________________
+ 
+ 
+                       $RCSfile: index.shtml $
+                      $Revision: 1.1 $
+ 
+              Last change $Date: 2006-12-15 15:50:05-06 $
+            Last change $Author: jmscott $
+                         $State: Exp $
+                        $Locker:  $
+ 
+                Original author: John Scott
+ 
+              Copyright (C) American Messaging, 2006
+ 
+  ________________________________________________________________________
+>
+<head>
+
+  <link rel="shortcut icon" href="http://a.umn.edu/img/favicon.ico" type="image/x-icon" />
+
+    
+<title>
+	University of Minnesota Radiology Assistant
+</title>
+
+
+<link
+	type="text/css" 
+	href="common.css" rel="stylesheet" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" language="javascript" src="common-nest.js">
+    <link rel="stylesheet" type="text/css" href="common.css">
+	    </script>
+    
+    	<script type="text/javascript">
+            var pageNames = '';
+	</script>
+
+</head>
+<body>
+    
+
+    
+    <div id="header"><h1>University of Minnesota Radiology Assistant</h1></div>
+        
+
+            
+<div id="wrapper">
+        
+        
+        <div id="textBox">
+
+
+                <form 
+                id="sendmessage" 
+                name="sendmessage"
+                method="post"
+                action="https://myairmail.com/cgi-bin/myair_send"
+                target="test"
+                onsubmit="return valForm(this);">
+
+
+    <iframe style='position: absolute; left:-200px; width: 100px; border: 1px solid #000000;' name='test'></iframe> 
+                    
+                    <table class=whiteish>
+
+
+                        <tr>
+                            <th>
+                                To:&nbsp;
+                                </th>
+
+                            <td>
+	                               <input id='pageTo' tabindex=0001 type=text
+	                               name=gw_pin
+		                              style="width:		250px;"
+	                                   value="">
+	                       </td>
+
+                        </tr>
+                        <tr>
+	                   <td></td>
+                            <td>
+                        <div id="sixOneTwo" class="inline">(612)899-</div>
+                            </td>
+                            <tr>
+                                <td></td><td>
+                            <font size=-2>
+		                      Separate multiple names/numbers with commas.
+		                      </font>
+	                       </td>
+
+                            </tr>
+                        <tr>
+                            <th align=right style="color: #7a0019;" valign=middle>
+                                <b>Subject:&nbsp;</b>
+                            </th>
+
+                            <td align=left valign=middle>
+                                <input id="subject"
+                                       tabindex=0002 type=text
+                                       name=subject_string
+                                       style="
+                                              width:		250px;
+                                              " value=""
+                                       maxlength=256
+                                       onChange="countCharacters(); return true;"
+                                       onFocus="countCharacters(); return true;"
+                                       onBlur="countCharacters(); return true;"
+                                       onKeyPress="countCharacters(); return true;"
+                                       value="" />
+	                           </td>
+                              <th style="padding-left:15px; padding-right:15px">Recent Pages:</th>        
+                            <td></td>
+                        </tr>
+                        <tr>
+                                <td>&nbsp;</td>
+                            <td valign="top">
+                                <font size=-2>(optional)</font>
+                            </td>
+                            <td style="padding-left:15px">
+                            <select id="recentPages" name="recentPages">
+                                <option value="Testing">No Recent pages</option>
+
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th align="center" 
+                                style="
+                                       color:		#7a0019;
+                                       " valign=top>
+	                       <span
+                                 style="
+                                        display:	block;
+                                        padding-top:	2em;
+			                             text-align:	center;
+                                        ">
+	                                   Message:&nbsp;</span>
+	                           </th>
+
+                            <td align=left valign=top>
+                                <textarea id="message"
+                                          style="
+                                                width:		250px;
+			                                 "
+                                          tabindex=0003 name=mesg_to_send
+		                                  onChange="countCharacters(); return true;"
+                                          onFocus="countCharacters(); return true;"
+		                                  onBlur="countCharacters(); return true;"
+		                                  onKeyPress="countCharacters(); return true;"
+		                                  xcols=29 rows=6 wrap></textarea>
+                                <td></td>
+
+                            </tr>   
+                        <tr>
+                            <td></td>
+                          <td> Populate Message field with these buttons:</td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>                            
+                            <td> 
+                                <div id="protocolQuestion" class="inline">Protocol Question</div>
+                                <div id="urgentResult" class="inline">Urgent Imaging Result</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div id="nonUrgentResult" class="inline">Non-urgent Imaging Result</div>
+                           </td>
+                        </tr>
+                        <tr>
+	                       <th align=right 
+		                      style="
+			                     color:		#7a0019;
+		                          " valign=top>
+		                          <b>From:&nbsp;</b>
+                            </th>
+	                           <td align=left valign=top>
+                                   <input id="from" tabindex=0004 type=text value=""
+                                        style="
+                                            width:		250px;
+                                               "
+                                          name=from_string
+                                          maxlength=256
+                                          onChange="countCharacters(); return true;"
+                                          onFocus="countCharacters(); return true;"
+                                          onBlur="countCharacters(); return true;"
+                                          onKeyPress="countCharacters(); return true;"
+                                          value="">
+                                </td>
+                                <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td valign="top">
+                                <font size=-2>(optional)</font>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input 
+                                    tabindex=0900 
+                                       style="
+                                              color:	 black;
+                                              font-weight:	bold;
+                                              "
+                                       class="redish submit" id=sendButton type=submit name="send" 
+                                       value="Send Message" onclick="return foo();">
+                                
+ <script type="text/javascript">
+    function foo() {
+
+
+        
+        var currentTime = new Date();
+        var amPM = 0;
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        if (minutes < 10){
+            minutes = "0" + minutes
+        }
+        if (hours < 10){
+            hours = "0" + hours
+            
+        }
+        
+        if (hours < 12){
+            amPM = "AM";
+        }   else {
+            amPM = "PM";
+        }
+        
+        var hoursMins = hours+":"+minutes+" "+amPM;
+        
+   //     alert($('#pageTo').val()+" paged at " + hoursMins);    
+        
+        var selectMenu = document.sendmessage.recentPages;
+        if (selectMenu.options[0].value=="Testing") {
+            selectMenu.options.length=0
+        }
+        
+        if (pageNames == "") {
+        selectMenu.options[selectMenu.options.length]=new Option(($('#pageTo').val())+"   "+hoursMins, "test", true, true)            
+        } else {
+        selectMenu.options[selectMenu.options.length]=new Option(pageNames +" "+ ($('#pageTo').val())+"   "+hoursMins, "test", true, true)
+        }
+        return true;
+    }
+</script>
+                                
+                                <div id="clearButton">Clear all fields</div>
+	                       </td>
+                            <td> </td>
+
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="center">
+                                <font size=-1>
+		                          Character Counter (max 240)
+                                    <input type=text name=count value="0"
+                                           size=4 onFocus="blur()">
+                                </font>
+	                       </td>
+                        </tr>
+
+
+                    </table>
+                </form>
+    </div>
+    <!---------------------------------------------->                 
+        <table id="pagerSearchTable">
+            <th colspan=2>Pager Search Tool:</th> 
+            <tr><td colspan=2 style="color:black; font-size:12; text-align:center" >Must log into SecureGateway if off campus</td></tr>
+                <tr><th>Last Name:</th>
+                    <td><input id="PagerLastName" style="width: 150px" value+""></td>
+                </tr>
+                    <th>First Name:</th>
+                    <td><input id="PagerFirstName" style="width: 150px" value+""></td>
+                    <td style="padding-left:10px"></td>
+                </tr>
+    <tr><td></td></tr>
+                <td colspan=3 id="PagerSearchButton" style="color:white">Search Button - Use on Fairview Computers </td>
+                <tr>
+                <td colspan=3 id="PagerSearchButton2" style="color:white">Search Button - Use on Non-Fairview Computers</td>                    
+                    <tr></tr>
+                <td colspan=3 style="color:black; font-size:12; text-align:center">Launches a new window</td>
+                </tr>
+
+    </table>
+
+    <div id="pageSwitchTable">
+    <table>
+        <th>Click here for:</th>
+        <tr>
+        <td>
+                    <a href="https://dl.dropboxusercontent.com/u/13853510/callassistant/CallAssistant.html" class="pagedirect">            Radiologist Assistant page</a> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <a href="https://dl.dropboxusercontent.com/u/13853510/callassistant/RadTechAssistant.html" class="pagedirect">            Rad Tech Assistant page</a> 
+        </td>
+            </tr>
+    
+        
+        </table>
+    </div>
+ </div>
+
+
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+          collapsible: true,
+          active:false,
+          heightStyle: "content"
+    });
+        $( "#accordion2" ).accordion({
+          collapsible: true,
+            active: false,
+            heightStyle: "content"
+    });  
+        $( "#accordion3" ).accordion({
+          collapsible: true,
+          active:false,
+            heightStyle: "content"
+    });  
+              $( "#accordion-nest" ).accordion({
+          collapsible: true,
+          active:false,
+            heightStyle: "content"
+              });
+              $( "#accordion-nest2" ).accordion({
+          collapsible: true,
+          active:false,
+            heightStyle: "content"
+              });      
+  });
+  </script>
+
+
+
+ 
+<div id="accordion">
+  <h3><img src="files/UofMicon.bmp"><strong>      University Reading Room Phone numbers</strong></h3>
+  <div>
+      <ul>
+        <li>Breast Center reading room 273-9620</li>  
+        <li>CT/MR Reading Room 625-9947 </li>
+        <li>Chest Reading Room 273-5868</li>
+        <li>GI/GU 273-5871</li>
+        <li>MSK Reading Room 273-7771</li>
+        <li>Neuro 273-3551</li>
+        <li>Nuclear Medicine Reading Room 273-5867</li>
+        <li>Ultrasound 273-5306</li>
+        <li>IR Reading room 273-6749</li>
+        <li>Non-Invasive 273-5044</li>
+
+        <li>Shari Johnston 626-5589</li>
+
+      </ul>
+  </div>
+
+  <h3><img src="files/UofMicon.bmp"><strong>      University Tech/Hospital Phone numbers</strong></h3>
+    <div>
+      <ul>
+
+        <li>X-ray desk (Diane) 273-5690</li>
+        <li>University CT (64 slice and FLASH) 273-7432</li>
+        <li>University East Bank MRI 273-6829</li> 
+        <li>IR Nursing Desk 273-4220</li>
+        <li>2A Nursing Desk 273-8860</li>
+          <li>Alyssa Dox (results coordinator) - ? </li>
+        <li>University Emergency Dept 273-2700</li>
+        <li>University PACU (3A) 273-3100</li>
+        <li>Ward Phone numbers 273-30XY (e.g. 7C 3-3073)</li>
+          <li style="text-indent:50px">X=floor Y=Unit (A=1, B=2, etc.)</li>
+    
+        </ul>
+    </div>
+  <h3><strong>Amplatz / Maple Grove / UIC Phone Numbers</strong></h3>
+  <div>
+    <ul>
+        <li>Amplatz Reading Room  273-4824</li>
+        <li>Amplatz Ultrasound  273-4317</li>
+        <li>Amplatz X-ray techs 273-4260</li>
+        <li>Amplatz IR 273-4270</li>
+        <li>Amplatz CT (Peds - FLASH) 273-5527</li>
+        <li>Amplatz CT (Adult 64 slice) 273-4623</li>
+        <li>Amplatz 3T MRI 273-3346</li>
+        <li>Amplatz 1.5T MRI 273-6646</li>
+        <li>Amplatz Film File 273-4885</li>
+        <li>Amplatz Ortho Clinc / Outpatient 3T MRI 273-7764</li>
+        <hr>
+        <li>Amplatz NICU 273-7032</li>
+        <li>Amplatz Emergency Dept 365-9110</li>  
+        <li>Amplatz PICU-365-3100</li>
+        <li>Amplatz Peds Sedation 365-2200</li>
+        <hr>
+        <li>Maple Grove Reading room 763-898-1206</li>
+        <li>Maple Grove CT/MR 763-898-1213</li>
+        <hr>
+        <li>UIC CT/MR Reading room 625-9947</li>
+        <li>UIC MR 625-9942</li>
+        <li>UIC CT 624-9943</li>
+    </ul>
+  </div>
+  <h3><img src="files/hcmc.jpg"><strong>      HCMC Phone Numbers</strong></h3>
+  <div>
+    <ul>
+      <li>CT/MR Reading room P4 873-2791</li>
+      <li>Neuro 873-6033</li>
+      <li>Nuc Med / Ultrasound 873-4150</li>
+        <li>Interventional 873-2083</li>
+        <li>Whittier 873-7836</li>        
+        <li>Computer team pager 873-2083</li>
+        <li>ED Radiology 873-2771</li>            
+        <li>Interventional 873-2083</li>  
+        <li>Interventional 873-2083</li>
+        <li>Pamela Thompson 873-2036 </li>
+        <li>Hiltje Loyd 873-2718 </li>
+        <li>Team Center A 873-3138</li>
+        <li>Team Center B 873-2772</li>
+        <li>Team Center C 873-3160</li>
+        <li>ED Reading room 873-7107</li>
+        <li>ED Radiology Desk 873-2771</li>
+        <li>3T MRI 873-9339</li>
+        <li>1.5T MRI 873-3674</li>
+        <li>CT ??</li>
+        <li>IR Tech Area 873-5783</li>
+      </ul>
+  </div>
+      <h3><img src="files/VA.png"><strong>VA Phone Numbers</strong></h3>
+  <div>
+    <ul>
+      <li><a href="files/VAphoneNumbers.htm" target="_blank">VA Phone list</a></li>
+
+    </ul>
+  </div>
+</div>
+ 
+<div id="accordion2">
+  <h3><img src="files/UofMicon.bmp"><strong>      University Rads Pagers</strong></h3>
+  <div>
+      <ul>
+            <button class="phone" id="Allen">Allen 899-2484</button>
+            <button class="phone" id="Cayci">Cayci 899-8106</button>
+            <button class="phone" id="DietzC">Dietz,C 899-7591</button><br>
+            <button class="phone" id="DietzK">Dietz,K 899-1242</button>
+            <button class="phone" id="Dsouza">D'Souza 899-6139</button>
+            <button class="phone" id="Duran">Duran 899-3075</button><br>
+            <button class="phone" id="Ellerman">Ellerman 612-232-6052</button>
+            <button class="phone" id="Emory">Emory 899-1424</button>
+            <button class="phone" id="Flanagan">Flanagan 899-2441</button><br>
+            <button class="phone" id="Froelich">Froelich 899-7632</button>
+            <button class="phone" id="Golzarian">Golzarian 899-6027</button>
+            <button class="phone" id="Hoggard">Hoggard 899-9239</button><br>
+            <button class="phone" id="Holm">Holm 899-9238</button>
+            <button class="phone" id="Hunter">Hunter 899-7349</button>
+            <button class="phone" id="Jagadeesan">Jagadeesan 899-7775</button><br>
+            <button class="phone" id="KuehnHajder">Kuehn-Hajder 899-7869</button>
+            <button class="phone" id="Kieffer">Kieffer 899-8865</button>
+            <button class="phone" id="Kirkham">Kirkham 899-8333</button><br>
+            <button class="phone" id="Marette">Marette 899-6959</button>
+            <button class="phone" id="McKinney">McKinney 530-8808</button>
+            <button class="phone" id="Misselt">Misselt 899-8543</button><br>
+            <button class="phone" id="Murati">Murati 899-1226</button>
+            <button class="phone" id="Nascene">Nascene 899-8005</button>
+            <button class="phone" id="Nelson">Nelson 899-5090</button><br>
+            <button class="phone" id="Nascene">Nascene 899-8005</button>
+            <button class="phone" id="Ott">Ott 899-8198</button>
+            <button class="phone" id="Rohr">Rohr 899-9067</button><br>
+            <button class="phone" id="Rykken">Rykken 899-1186</button>
+            <button class="phone" id="Snyder">Snyder 899-2586</button>
+            <button class="phone" id="Spilseth">Spilseth 899-2526</button><br>
+            <button class="phone" id="Steinberger">Steinberger 899-7950</button>
+            <button class="phone" id="Tadavarthy">Tadavarthy 899-8906</button>
+            <button class="phone" id="Taylor">Taylor 899-1271</button><br>
+            <button class="phone" id="Wasserman">Wasserman 899-2661</button>
+            <button class="phone" id="Wong">Wong 899-8966</button>
+          
+
+      </ul>
+  </div>
+    
+      <h3><strong>Resident and Fellow Pagers</strong></h3>
+  <div>
+      <div id="accordion-nest">
+      <h3>First year residents</h3>
+          <div class="groupContainer">
+              <button class="allGroup"><b>Add all First Years</b></button> <br>
+            <button class="phone" id="Babcock">Babcock 899-1825</button>
+            <button class="phone" id="Dahi">Dahi 899-2036</button>
+            <button class="phone" id="Dickenson">Dickenson 899-2008</button><br>
+            <button class="phone" id="Jones">Jones 899-2118</button>
+            <button class="phone" id="Luchsinger">Luchsinger 899-2004</button>
+            <button class="phone" id="Martin">Martin 899-1954</button><br>
+            <button class="phone" id="Prychyna">Prychyna 899-2179</button>
+            <button class="phone" id="Roller">Roller 899-2464</button>
+            <button class="phone" id="Rostambeigi">Rostambeigi 899-1621</button><br>
+            <button class="phone" id="Stampe">Stampe 899-1909</button>
+            <button class="phone" id="Stott">Stott 899-9670</button>        
+          </div>
+        <h3>Second year residents</h3>
+          <div class="groupContainer">
+              <button class="allGroup"><b>Add all Second Years</b></button> <br>              
+            <button class="phone" id="Boeke">Boeke 899-9682</button>
+            <button class="phone" id="Gill">Gill 899-9698</button>
+            <button class="phone" id="Hayward">Hayward 899-9663</button><br>
+            <button class="phone" id="Hoven">Hoven 899-9664</button>
+            <button class="phone" id="Jalaeian">Jalaeian 899-9665</button>
+            <button class="phone" id="Kralik">Kralik 899-9666</button><br>
+            <button class="phone" id="Payabvash">Payabvash 899-9668</button>
+            <button class="phone" id="Talaie">Talaie 899-7927</button>
+            <button class="phone" id="Tyan">Tyan 899-9671</button><br>
+        </div>
+              <h3>Third year residents</h3>
+          <div class="groupContainer">
+              <button class="allGroup"><b>Add all Third Years</b></button> <br>              
+            <button class="phone" id="Bergren">Bergren 899-4116</button>
+            <button class="phone" id="Bunney">Bunney 899-7913</button>
+            <button class="phone" id="Cusic">Cusic 899-7916</button><br>
+            <button class="phone" id="Donald">Donald 899-7918</button>
+            <button class="phone" id="Hanson">Hanson 899-7919</button>
+            <button class="phone" id="Iyer">Iyer 899-7922</button><br>
+            <button class="phone" id="Kalirao">Kalirao 899-7923</button>
+            <button class="phone" id="Rischall">Rischall 899-7924</button>
+            <button class="phone" id="Rosa">Rosa 899-7909</button><br> 
+            <button class="phone" id="Salmela">Salmela 899-7926</button>
+        </div>
+              <h3>Fourth year residents</h3>
+          <div class="groupContainer">
+              <button class="allGroup"><b>Add all Fourth Years</b></button> <br>              
+            <button class="phone" id="Abdihalim">Abdihalim 899-4112</button>
+            <button class="phone" id="Brady">Brady 899-4126</button>
+            <button class="phone" id="Craig">Craig 899-4127</button><br>
+            <button class="phone" id="Dekarske">Dekarske 899-4128</button>
+            <button class="phone" id="delPrado">delPrado 899-9669</button>
+            <button class="phone" id="Eluvathingal">Eluvathingal 899-2941</button><br>
+            <button class="phone" id="Hoffman">Hoffman 899-4130</button>
+            <button class="phone" id="Johnson">Johnson 899-4132</button>
+            <button class="phone" id="Meyers">Meyers 899-4129</button><br> 
+            <button class="phone" id="Shrestha">Shrestha 899-4134</button>        
+            <button class="phone" id="Wiltrout">Wiltrout 899-4142</button>   
+              </div>
+              <h3>Fellows</h3>
+          <div class="groupContainer">
+              <button class="allGroup"><b>Add all Fellows</b></button> <br>              
+              <ul>
+                  <li>Neuroradiology</li>
+            <button class="phone" id="Gawande">Gawande 899-1847</button>
+            <button class="phone" id="Krishna">Krishna 899-1956</button>
+            <button class="phone" id="Tore">Tore 899-2449</button><br>
+                 <li>Breast Imaging</li>
+            <button class="phone" id="Kieley">Kieley 899-1971</button>
+            <button class="phone" id="Voeltz">Voeltz 899-1894</button>
+                  <li>Interventional Radiology</li>
+            <button class="phone" id="Frank">Frank 899-2949</button>
+            <button class="phone" id="Pfeifer">Pfeifer 899-1834</button>
+            <button class="phone" id="Rogan">Rogan 899-1896</button><br>
+            <button class="phone" id="Siebert">Siebert 899-2981</button>  
+                  </ul>
+            </div>
+    
+        </div>
+  </div>
+    
+    
+    <h3><strong>Call Numbers, Tips, and Tricks</strong></h3>
+  <div> 
+      <ul>
+          <li>ED (East Bank) 3-2700</li>
+          <li>Peds ED (Amplatz) 365-9110 </li>
+          <li>Peds floors: 625-*100 with floor # inserted for *</li>
+          <li>U unlock password: iwork4fv! or p@cs</li>
+          <li>Vitrea: administrator vital$</li>
+          <li>Neuro Vitrea: VITREA 2 @ FUMC</li>
+            <button class="phone" id="NucMedTechOnCall">Nuclear Medicine On-call Tech 899-1370</button><br>
+            <button class="phone" id="UltrasoundCallTech">Ultrasound On-call Tech 899-6770</button>
+            <button class="phone" id="MRICallTech">MRI On-call Tech 899-5115</button>          
+
+          
+        <li><b>Common Job Codes:</b> - Dial 893 first (on campus), If off campus dial XXXX</li>
+          <li> Neurosurgery Resident 0054</li>
+          <li> Neurology Resident 8606</li>
+
+          
+          <li>Ascom access # - when off campus, dial 273-3555 and then enter Ascom#</li>
+          <li>Neuroradiology reading room code 4545</li>
+  
+      </ul>
+      </div>
+  
+
+  <h3><img src="files/hcmc.jpg"><strong>    HCMC Pager Numbers</strong></h3>
+  <div>
+    <ul>
+      <li>Place holder</li>
+        
+    </ul>
+  </div>
+</div>
+
+    
+    
+    
+    
+<div id="accordion3">
+
+  
+  <h3><img src="files/UofMicon.bmp"><strong>Neuro Reading Room</strong></h3>
+  <div>
+      <div id="accordion-nest2">
+        
+    
+        <h3>Neurosurgery Staff</h3>
+              <div>
+                    <button class="phone" id="haines">Haines 899-8995</button>
+                    <button class="phone" id="lam">Lam 899-2037</button>
+                    <button class="phone" id="tummala">Tummala 899-3350</button>
+        <br>
+                    <button class="phone" id="parr">Parr 899-4516</button>
+                    <button class="phone" id="hunt">Hunt 899-6387</button>
+                    <button class="phone" id="grande">Grande 899-7340</button>
+        <br>
+                    <button class="phone" id="guillaume">Guillaume 899-9454</button>
+        </div>
+        <h3>Neurosurgery Residents</h3>
+              <div>
+                    <button class="phone" id="vasquez">Vasquez 899-2954</button>
+                    <button class="phone" id="das">Das 899-4160</button>
+                    <button class="phone" id="siddiq">Siddiq 899-9573</button>
+        <br>
+                    <button class="phone" id="kainth">Kainth 899-5878</button>
+                    <button class="phone" id="terzic">Terzic 899-5888</button>
+                    <button class="phone" id="zhang">Zhang 899-2967</button>        
+        <br>
+                    <button class="phone" id="miller">Miller 899-4161</button>
+                    <button class="phone" id="goyal">Goyal 899-7762</button>
+                    <button class="phone" id="gupte">Gupte 899-4236</button>
+        <br>
+                    <button class="phone" id="hubbard">Hubbard 899-1040</button>
+                    <button class="phone" id="lim">Lim 899-1039</button>
+                    <button class="phone" id="darrow">Darrow 899-1992</button>   
+        <br>
+                    <button class="phone" id="quinn">Quinn 899-1946</button> 
+                  </div>
+        <h3>Neurology Staff</h3>
+              <div>
+                    <button class="phone" id="anderson">Anderson 899-2112</button>
+                    <button class="phone" id="carpenter">Carpenter 899-7442</button>
+                    <button class="phone" id="beaver">Beaver 899-8263</button>
+        <br>
+                    <button class="phone" id="santiago">Santiago 899-2943</button>
+                    <button class="phone" id="dahlquist">Dahlquist 899-1217</button>
+                    <button class="phone" id="tulloch">Tulloch 899-2270</button>
+        <br>
+                    <button class="phone" id="taylor">Taylor 899-5230</button>
+                    <button class="phone" id="walk">Walk 899-8712</button>
+                    <button class="phone" id="tuite">Tuite 899-2127</button>
+        <br>
+                    <button class="phone" id="henry">Henry 899-6373</button>
+                    <button class="phone" id="sha">Sha 899-6104</button>        
+                </div>
+        <h3>Neurology Residents 4th Year</h3>
+              <div>
+                    <button class="phone" id="irfan">Irfan 899-4180</button>
+                    <button class="phone" id="janson">Janson 899-6564</button>
+                    <button class="phone" id="jadhav">Jadhav 899-4183</button>
+        <br>
+                    <button class="phone" id="mayer">Mayer 899-4185</button>
+                    <button class="phone" id="roohani">Roohani 899-4187</button>
+                    <button class="phone" id="tariq">Tariq 899-4189</button>
+        <br>
+                    <button class="phone" id="tom">Tom 899-7936</button>
+                    <button class="phone" id="willging">Willging 899-4191</button>
+        <br>
+                  </div>
+        <h3>Neurology Residents 3rd Year</h3>
+              <div>
+                    <button class="phone" id="burkard">Burkard 899-9413</button>
+                    <button class="phone" id="colligan">Colligan 899-7764</button>
+                    <button class="phone" id="hartmann">Hartmann 899-7765</button>
+        <br>
+                    <button class="phone" id="hoak">Hoak 899-7767</button>
+                    <button class="phone" id="shevchenko">Shevchenko 899-7768</button>
+                    <button class="phone" id="young">Young 899-7769</button>
+            </div>
+        <h3>Neurology Reidents 2nd Year</h3>
+              <div>
+            <button class="phone" id="foster">Foster 899-9770</button>
+            <button class="phone" id="gao">Gao 899-9771</button>
+            <button class="phone" id="hassan">Hassan 899-9772</button>     
+        <br>
+            <button class="phone" id="rizvi">Rizvi 899-9773</button>
+            <button class="phone" id="sit">Sit 899-9774</button>
+            <button class="phone" id="Starks">Starks 899-9775</button>
+        </div>
+        <h3>Neurology Residents 1st year</h3>
+              <div>
+            <button class="phone" id="bhangav">Bhangav 899-1990</button>
+            <button class="phone" id="metzler">Metzler 899-2315</button>
+            <button class="phone" id="moussaouoi">Moussaouoi 899-1945</button>     
+        <br>
+            <button class="phone" id="ortiz">Ortiz 899-2242</button>
+            <button class="phone" id="patel">Patel 899-2261</button>
+            <button class="phone" id="stutz">Stutz 899-2268</button>
+            </div>
+        <h3>Peds Neurosurgery / Neuro-oncology / Neurology</h3>
+              <div>
+                    <button class="phone" id="moertel">Moertel 899-3380</button>
+                    <button class="phone" id="dahlheimer">Dahlheimer 899-9225</button>
+                    <button class="phone" id="guillaume">Guillaume 899-9454</button>
+        <br>
+                    <button class="phone" id="karachunski">Karachunski 899-7635</button>
+                    <button class="phone" id="macdonald">MacDonald 899-3566</button>
+                    <button class="phone" id="raymond">Raymond 899-1603</button>        
+                </div>
+
+        </div>
+ </div>       
+  <h3><img src="files/UofMicon.bmp"><strong>      Peds Reading Room</strong></h3>
+  <div>
+      <ul>
+        <li>NICU desk 273-7032</li> 
+        <li><a href="files/Fairview Clinics Phone List 012914.docx" target="_blank">Fairview Clinic Phone list</a></li>
+        <li><a href="files/RRPhoneLists.htm" target="_blank">Peds Radiology Phone list</a></li>
+      </ul>
+      
+  </div>
+      
+
+  <h3><img src="files/UofMicon.bmp"><strong>      GI Reading Room</strong></h3>
+  <div>
+    <ul>
+      <li>CT/MR Reading room P4 873-2791</li>
+
+        
+      </ul>
+  </div>
+      <h3><img src="files/UofMicon.bmp"><strong> Chest Reading Room</strong></h3>
+  <div>
+    <ul>
+      <li>Place Holder</li>
+
+    </ul>
+  </div>
+    
+          <h3><img src="files/UofMicon.bmp"><strong> MSK Reading Room</strong></h3>
+  <div>
+    <ul>
+      <li>Place Holder</li>
+
+    </ul>
+  </div>
+</div>
+
+    
+</body>
+</html>

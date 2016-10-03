@@ -1,0 +1,125 @@
+body {
+	color: rgb(122, 0, 25); font-family: Arial,Helvetica,sans-serif; background-color: white;
+}
+texarea {
+	font-family: Arial,Helvetica;
+}
+pre {
+	font-family: Courier; font-size: 100%;
+}
+code {
+	font-family: Courier; font-size: 100%;
+}
+.error {
+	color: darkred; font-size: large; background-color: white;
+}
+button {
+	width: 180px; text-align: center;
+}
+select {
+	width: 200px;
+}
+.clear {
+    clear:both;
+}
+
+.whiteish {
+	color: black; border-right-color: black; border-bottom-color: black; border-left-color: black; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; box-shadow: 5px 5px 5px #888888; background-color: rgb(255, 204, 51); display: inline-block;
+}
+#protocolQuestion {
+	border: 2px inset currentColor; border-image: none; text-align: center; color: white; background-color: rgb(122, 0, 25);
+}
+#urgentResult {
+	border: 2px inset currentColor; border-image: none; text-align: center; color: white; background-color: rgb(122, 0, 25);
+}
+#nonUrgentResult {
+	border: 2px inset currentColor; border-image: none; text-align: center; color: white; background-color: rgb(122, 0, 25);
+}
+div.inline {
+	padding: 1px 5px; border: 2px inset currentColor; border-image: none; text-align: center; color: white; float: left; background-color: rgb(122, 0, 25);
+}
+div.inlineCODE {
+	padding: 5px; border: 2px inset currentColor; border-image: none; text-align: center; color: black; float: left; background-color: red;
+}
+#pageSwitchTable {
+	padding: 0px 20px 10px; top: 0px; text-align: left; right: 10px; font-family: Verdana, Arial, sans-serif; font-size: 1.6em; margin-right: 5px; margin-left: 10px; border-right-color: rgb(136, 136, 136); border-bottom-color: rgb(136, 136, 136); border-left-color: rgb(136, 136, 136); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: absolute; top: 0; left:770; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; box-shadow: 3px 3px 3px #444;
+}
+#header {
+	top: 0px; height: 40px; position: relative; border-top-left-radius: 15px; border-top-right-radius: 15px; align-content: center; background-color: rgb(122, 0, 25);
+}
+h1 {
+	text-align: center; color: rgb(255, 204, 51); font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+#wrapper {
+	padding: 0px 5px 500px 10px; overflow: auto; font-family: Verdana, Arial, sans-serif; font-size: 0.8em; border-right-color: rgb(136, 136, 136); border-bottom-color: rgb(136, 136, 136); border-left-color: rgb(136, 136, 136); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: relative; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; box-shadow: 3px 3px 3px #444;
+}
+strong {
+	padding-left: 5px;
+}
+#textBox td {
+	color: rgb(51, 51, 51); font-family: Verdana, Arial, Helvetica; font-size: 11px;
+}
+input {
+	border: 1px solid black; border-image: none;
+}
+textarea {
+	border: 1px solid black; border-image: none;
+}
+#accordion {
+	left: 10px; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute; 
+}
+#accordion2 {
+	left: 50%; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute;
+}
+#accordion3 {
+	left: 30%; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute;
+}
+#clearButton {
+	border: 2px inset currentColor; border-image: none; width: 110px; text-align: center; color: white; background-color: rgb(122, 0, 25);
+}
+#PagerSearchButton {
+	border: 2px inset currentColor; border-image: none; width: 200px; text-align: center; color: black; background-color: rgb(122, 0, 25);
+}
+#PagerSearchButton2 {
+	border: 2px inset currentColor; border-image: none; width: 200px; text-align: center; color: black; background-color: rgb(122, 0, 25);
+}
+#pagerSearchTable {
+	color: rgb(122, 0, 25); padding-right: 10px; padding-left: 10px; margin-right: 15px; margin-left: 10px; border-right-color: black; border-bottom-color: black; border-left-color: black; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; box-shadow: 5px 5px 5px #888888; background-color: rgb(255, 204, 51); display: inline-block; 
+}
+#pagerSearchTable td {
+	color: rgb(122, 0, 25); font-family: Verdana, Arial, Helvetica; font-size: 15px; vertical-align: top;
+}
+body {
+	color: rgb(51, 51, 51); font-family: Verdana, Arial, Helvetica; font-size: 11px;
+}
+th {
+	color: rgb(122, 0, 25);
+}
+.ienlarger {
+	padding-right: 1px; padding-bottom: 1px; clear: none; float: left;
+}
+.ienlarger a {
+	text-decoration: none; display: block;
+}
+.ienlarger a:hover {
+	position: relative;
+}
+.ienlarger span img {
+	border: 1px solid rgb(255, 255, 255); border-image: none; margin-bottom: 8px;
+}
+.ienlarger a span {
+	padding: 1px; color: rgb(255, 204, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; text-decoration: none; display: none; position: absolute; background-color: rgb(0, 0, 0);
+}
+.ienlarger img {
+	border-width: 0px;
+}
+.ienlarger a:hover span {
+	top: 10px; right: 90px; display: block; z-index: 100;
+}
+.resize_thumb {
+	width: 150px; height: auto;
+}
+
+ul {
+    display: inline-block;
+}

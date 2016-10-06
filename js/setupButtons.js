@@ -28,7 +28,6 @@ function setupButtons(studyViewer) {
 
     // Invert
     $(buttons[1]).on('click touchstart', function() {
-		$("#invert").off('click');
 		var invertButton = $("#invert").get(0);
 		cornerstoneTools.preventGhostClick(invertButton);
 		

@@ -1,0 +1,110 @@
+{
+	"patientName" : "1660034500",
+	"patientId" : "1660034500",
+	"studyDate" : "20020217",
+	"modality" : "CT",
+	"studyDescription" : "Head^TRAUMA_HEAD (Adult)",
+	"numImages" : "75",
+	"studyId" : "PAT_0000",
+	"seriesList" : [
+		{
+			"seriesDescription": "Topogram  0.6  T20s",
+			"seriesNumber": "1",
+			"instanceList": [
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0000/IM_0001.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0000/IM_0002.dcm"}
+			]
+		},
+		{
+			"seriesDescription": "Trauma Head  4.8",
+			"seriesNumber": "2",
+			"instanceList": [
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0001.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0002.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0003.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0004.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0005.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0006.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0007.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0008.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0009.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0010.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0011.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0012.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0013.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0014.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0015.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0016.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0017.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0018.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0019.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0020.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0021.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0022.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0023.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0024.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0025.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0026.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0027.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0028.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0029.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0030.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0031.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0032.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0033.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0034.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0035.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0001/IM_0036.dcm"}
+			]
+		},
+		{
+			"seriesDescription": "Trauma Head  4.8 BONE",
+			"seriesNumber": "3",
+			"instanceList": [
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0001.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0002.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0003.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0004.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0005.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0006.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0007.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0008.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0009.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0010.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0011.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0012.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0013.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0014.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0015.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0016.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0017.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0018.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0019.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0020.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0021.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0022.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0023.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0024.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0025.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0026.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0027.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0028.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0029.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0030.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0031.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0032.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0033.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0034.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0035.dcm"},
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0002/IM_0036.dcm"}
+			]
+		},
+		{
+			"seriesDescription": "",
+			"seriesNumber": "4",
+			"instanceList": [
+				{"imageId" : "Assignment3-Neuro/PAT_0000/STD_0000/SER_0004/ED_0001.dcm"}
+			]
+		}
+	]
+}

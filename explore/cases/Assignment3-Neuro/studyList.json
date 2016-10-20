@@ -1,0 +1,40 @@
+{
+	"studyList": [
+		{
+		"patientName" : "1660034500",
+		"patientId" : "1660034500",
+		"studyDate" : "20020217",
+		"modality" : "CT",
+		"studyDescription" : "Head^TRAUMA_HEAD (Adult)",
+		"numImages" : 75,
+		"studyId" : "PAT_0000"
+		},
+		{
+		"patientName" : "2347319898",
+		"patientId" : "2347319898",
+		"studyDate" : "20121118",
+		"modality" : "MR",
+		"studyDescription" : "BRAIN^STROKE",
+		"numImages" : 540,
+		"studyId" : "PAT_0001"
+		},
+		{
+		"patientName" : "1223099574",
+		"patientId" : "1223099574",
+		"studyDate" : "20121030",
+		"modality" : "CT",
+		"studyDescription" : "Head^1_Stroke_Protocol (Adult)",
+		"numImages" : 133,
+		"studyId" : "PAT_0002"
+		},
+		{
+		"patientName" : "2600351250",
+		"patientId" : "2600351250",
+		"studyDate" : "19971209",
+		"modality" : "MR",
+		"studyDescription" : "BRAIN^TUMOR",
+		"numImages" : 211,
+		"studyId" : "PAT_0003"
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{ "data": [
+  {"University Reading Rooms": [
+
+                { "number": "tel:612-676-5140", "name": "University CSC Body Reading Room 612-676-5140"},
+                { "number": "tel:612-676-4265", "name": "University CSC Breast Center reading room 612-676-4265"},
+                { "number": "tel:612-676-5150", "name": "University CSC MSK Reading Room 612-676-5150"},
+                { "number": "tel:612-676-5130", "name": "University CSC Neuro Reading Room 612-676-5130"},
+                { "number": "tel:612273-5868", "name": "University Chest Reading Room 273-5868"},
+                { "number": "tel:612273-5871", "name": "University GI/GU Reading Room 273-5871"},
+                { "number": "tel:612273-3547", "name": "University Neuro Reading Room 273-3547"},
+                { "number": "tel:612273-5867", "name": "University Nuc Med Reading Room 273-5867"},
+                { "number": "tel:612273-4824", "name": "University Masonic Peds Reading Room 273-4824"},
+                { "number": "tel:612273-5306", "name": "University Ultrasound Reading Room 273-5306"},
+                { "number": "tel:612273-6749", "name": "University IR Reading Room 273-6749"},
+                { "number": "tel:612273-5044", "name": "University Non-Invasive Reading Room 273-5044"},
+                { "number": "tel:952-892-2053", "name": "Ridges Peds Reading room 952-892-2053"}
+              ]},
+
+{"CSC Tech areas": [
+                { "number": "tel:612-676-5195", "name": "CSC MRI (all) 612-676-5195"},
+                { "number": "tel:612-676-5190", "name": "CSC CT (all) 612-676-5190"},
+                { "number": "tel:612-676-5185", "name": "CSC US 612-676-5185"},
+                { "number": "tel:612-676-5165", "name": "CSC Vascular Lab 612-676-5165"},
+                { "number": "tel:612-676-5160", "name": "CSC X-Ray Desk 612-676-5160"}
+              ]},
+
+{"University Tech areas": [
+                { "number": "tel:612273-5690", "name": "University X-ray desk (Diane) 273-5690"},
+                { "number": "tel:612273-7432", "name": "University CT (64 and FLASH) 273-7432"},
+                { "number": "tel:612273-6829", "name": "University East Bank MRI 273-6829"},
+                { "number": "tel:612273-3532", "name": "University Aera 1.5T (Cardiac) MRI 273-3532"},
+                { "number": "tel:612273-8947", "name": "University PET/CT 273-8947"},
+                { "number": "tel:612273-1933", "name": "University Nuclear Medicine Techs 273-1933"},
+                { "number": "tel:612273-0643", "name": "University Ultrasound Techs 273-0643"},
+                { "number": "tel:612625-9942", "name": "University CSC MRI Techs 273-0643"},
+                { "number": "tel:612625-9943", "name": "University CSC CT Techs 273-0643"}
+              ]},
+
+
+{"University Care Areas": [
+                { "number": "tel:612273-4220", "name": "University IR Nursing Desk 273-4220"},
+                { "number": "tel:612273-8860", "name": "University 2A Nursing Desk 273-8860"},
+                { "number": "tel:612273-2700", "name": "University Emergency Dept 273-2700"},
+                { "number": "tel:612273-3100", "name": "University PACU (3A) 273-3100"}
+              ]},
+
+{"CCIR": [
+                { "number": "tel:612626-6586", "name": "CCIR PET/CT 626-6586"},
+                { "number": "tel:612626-6900", "name": "CCIR Main Desk 626-6900"},
+                { "number": "tel:612624-3310", "name": "CCIR Reading Room 624-3310"}
+]},
+
+{"Masonic Peds Hosp / West Bank": [
+                { "number": "tel:612273-4824", "name": "Masonic Peds Reading Room 273-4824"},
+                { "number": "tel:612273-4267", "name": "Masonic Peds IR Reading Room 273-4267"},
+                { "number": "tel:612273-4317", "name": "Masonic Peds Ultrasound 273-4317"},
+                { "number": "tel:612273-4260", "name": "Masonic Peds X-ray techs 273-4260"},
+                { "number": "tel:612273-4270", "name": "Masonic Peds IR Techs 273-4270"},
+                { "number": "tel:612273-5527", "name": "Masonic Peds CT (Peds - FLASH) 273-5527"},
+                { "number": "tel:612273-4623", "name": "Masonic Peds CT (Adult 64 slice) 273-4623"},
+                { "number": "tel:612273-3346", "name": "Masonic Peds 3T MRI 273-3346"},
+                { "number": "tel:612273-6646", "name": "Masonic Peds 1.5T MRI 273-6646"},
+                { "number": "tel:612273-4353", "name": "Masonic Peds Nuc Med 273-4353"},
+                { "number": "tel:612273-4885", "name": "Masonic Peds Film File 273-4885"},
+                { "number": "tel:612273-7032", "name": "Masonic Peds NICU 273-7032"},
+                { "number": "tel:612365-9110", "name": "Masonic Peds Emergency Dept 365-9110"},
+                { "number": "tel:612365-3100", "name": "Masonic PICU CVICU 365-3100"},
+                { "number": "tel:612365-2200", "name": "Masonic Peds Sedation 365-2200"}
+]},
+{"Maple Grove": [
+                { "number": "tel:763-898-1206", "name": "Maple Grove Reading room 763-898-1206"},
+                { "number": "tel:763-898-1213", "name": "Maple Grove CT MR 763-898-1213"},
+                { "number": "tel:763-898-1282", "name": "Maple Grove Nuc Med 763-898-1282"},
+                { "number": "tel:651-982-7563", "name": "Maple Grove PET CT Truck 651-982-7563"}
+]}
+]}

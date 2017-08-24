@@ -1,0 +1,42 @@
+
+.ui-title {    margin: 0.6em 10% 0.8em !important; }
+
+h1 { font-family: 'Orbitron', Arial, serif; font-weight: 1000, color: #ffcc33; }
+
+h4 { font-family: 'Orbitron', Arial, serif; font-weight: 400, color: #ffcc33; }
+
+.navButtons { font-family: 'Orbitron', Arial, serif; font-weight: 1000, color: #ffcc33; }
+
+hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.maroonTitle {background-color: #7a0019  }
+
+.ui-icon-UniversityButton {	background-image: url("../CallAssistant/files/favicon.ico"); }
+
+.toDesktop {text-align: center; color: #ffcc33; font-weight:400;}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+.listDividerGold {background-color: #ffcc33; }
+
+.listDividerBlue {background-color: #00bfff; }
+
+
+.UList {padding-top: 10px;}
+
+
+ul.ui-listview li:nth-child(even) a { background-color: gainsboro; }

@@ -1,0 +1,29 @@
+{ "data": [
+  { "HCMC Reading Rooms": [
+
+                { "number": "tel:612873-2791", "name": "HCMC CT MR Reading room P4 873-2791"},
+                { "number": "tel:612873-6033", "name": "HCMC Neuro 873-6033 "},
+                { "number": "tel:612873-4150", "name": "HCMC Nuc Med / Ultrasound 873-4150"},
+                { "number": "tel:612873-2083", "name": "HCMC Interventional 873-2083"},
+                { "number": "tel:612873-7836", "name": "HCMC Whittier 873-7836"},
+                { "number": "tel:612873-7107", "name": "HCMC ED Radiology Reading Room 873-7107"}
+              ]},
+
+ {"HCMC Tech areas": [
+                { "number": "tel:612873-9339", "name": "HCMC 3T MRI 873-9339"},
+                { "number": "tel:612873-3674", "name": "HCMC 1.5T MRI 873-3674"},
+                { "number": "tel:612873-3674", "name": "HCMC P4 CT 873-9313"},
+                { "number": "tel:612873-5783", "name": "HCMC IR Tech Area 873-5783"},
+                { "number": "tel:612873-2771", "name": "HCMC ED Radiology Desk 873-2771"}
+]},
+
+{"HCMC Misc Numbers": [
+                { "number": "tel:612873-2036", "name": "HCMC Pamela Thompson 873-2036"},
+                { "number": "tel:612873-2718", "name": "HCMC Hiltje Loyd 873-2718"},
+                { "number": "tel:612873-2083", "name": "HCMC Computer team pager 873-2083"},
+                { "number": "tel:612873-3138", "name": "HCMC Team Center A 873-3138"},
+                { "number": "tel:612873-2772", "name": "HCMC Team Center B 873-2772"},
+                { "number": "tel:612873-3160", "name": "HCMC Team Center C 873-3160"}
+]}
+]
+}

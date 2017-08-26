@@ -1,0 +1,170 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+  height:100%; /* force the BODY element to match the height of the HTML element */
+	font-family: "Source Sans Pro","sans-serif";
+}
+
+.left-column h1 {
+  letter-spacing: -2px;
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+}
+#container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:scroll;
+    z-index:-1; /* Remove this line if it's not going to be a background! */
+    margin: 0px;
+    left-margin: 0px;
+    right-margin: 0px;
+    left-padding: 0px;
+    right-padding: 0px;
+}
+
+.left-column {
+  height: 100%;
+  /*background: #80B763; */
+  background: rgb(85,58,99);
+  text-align: right;
+  color: #fff;
+}
+.left-column h1:nth-child(2) {
+  margin-top: -12px;
+}
+
+.right-column {
+  height: 100%;
+  background: #333;
+}
+.links {
+  color: #fff;
+}
+
+footer {
+  bottom: 5px;
+}
+
+nav#mainnav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+  margin-top:30px;
+}
+
+nav#mainnav li {
+	padding:0;
+	/*border-bottom: 1px solid #99C581;*/
+  border-bottom: 1px solid #f3eed9;
+	/*border-top: 1px solid #6FAB4F;*/
+  border-top: 1px solid #dbc7a7;
+}
+nav#mainnav li.selected-item  {
+	border-bottom:none;
+}
+nav#mainnav li.selected-item a,
+nav#mainnav li.selected-item a:hover {
+	/*color:#80B763;*/
+  color:#48633a;
+	font-weight:bold;
+	background: #fff;
+}
+nav#mainnav li a:hover {
+	/*background:#669D48;*/
+  background:#48633a;
+	color: #fff;
+	text-decoration:none;
+}
+nav#mainnav li a {
+	color: #f0f0f0;
+	display: block;
+	padding: 15px 17px;
+	text-align: right;
+	font-weight:  bold;
+	text-decoration: none;
+}
+
+.right-column fieldset {
+	display:block;
+	border-top:1px solid #e0e0e0;
+  background: #bbbbbb;
+  padding-left: 15px;
+}
+fieldset legend {
+	font-weight:bold;
+	padding-right:10px;
+  padding-top: 35px;
+  margin-bottom: 0px;
+	color:#999;
+}
+fieldset form {
+	padding-top:15px;
+}
+fieldset p label {
+	float:left;
+	width:150px;
+	font-family: "Source Sans Pro","sans-serif";
+}
+fieldset form input, fieldset form select, fieldset form textarea {
+	padding:5px;
+	color:#333333;
+	font-size:13px;
+	font-family: "Source Sans Pro","sans-serif";
+	border:1px solid #ddd;
+}
+fieldset form input.formbutton {
+border:none;
+    background-color: #80B763;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 22px;
+    font-size: 0.8em;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+}
+
+
+
+@media screen and (max-width: 740px) {
+
+	body { font-size: 0.9em;}
+
+
+	.width { width:auto; padding-left: 10px; padding-right: 10px; }
+
+	.left-column, .column-left { margin:0px; height:auto; }
+
+	.left-column, .column-left, header h1, header h2, nav#mainnav li a { text-align:center; }
+
+	section#content, aside#sidebar { position: relative; float: none; width: auto; margin-left: 0; }
+
+
+}
+
+
+@media screen and (max-width: 540px) {
+
+	body { font-size: 0.8em}
+
+	.left-column, .column-left > h1, header, header h1 a, header h1 a:hover { text-align: center; padding: 10px 0 0 0; font-size: 1.1em; height:auto; }
+
+	.left-column, .column-left { margin:0px; height:auto; }
+
+	nav#mainnav ul li a { margin-top: 0; padding: 1em; }
+
+
+}

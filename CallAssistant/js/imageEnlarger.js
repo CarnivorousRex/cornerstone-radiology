@@ -1,12 +1,17 @@
 $(document).ready(function (){
 
   $(".clickable").click(function(event) {
-    var temp = event.currentTarget.cloneNode();
-    $('.imageEnlarger').html(temp);
-    // append target="_blank" to the inner html
-    $('.imageEnlarger img').removeClass('col-xs-6').addClass('col-xs-12');
-    console.log(temp);
+    $('.imageEnlarger').html('<a id="imageLink" href="#" target="_blank"></a>');
+
+    $('#imageLink').html(event.currentTarget.cloneNode());
+    $('#imageLink img').removeClass('col-xs-6').addClass('col-xs-12');
+    $('#imageLink').attr('href', $(this).attr('src'));
   });
 
+  $('li').hover(function(){
+    $(this).find('img').removeClass('invisible');
+  }, function() {
+    $(this).find('img').addClass('invisible');
+  });
 
 });

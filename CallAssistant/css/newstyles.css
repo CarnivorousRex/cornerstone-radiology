@@ -18,13 +18,14 @@ body{
   font-size: 3em;
   font-weight: bold;
 }
+
 #container{
     position:absolute;
     top:0;
     bottom:0;
     left:0;
     right:0;
-    overflow:scroll;
+    /*overflow:scroll;*/
     z-index:-1; /* Remove this line if it's not going to be a background! */
     margin: 0px;
     left-margin: 0px;
@@ -39,24 +40,67 @@ body{
   background: rgb(85,58,99);
   text-align: right;
   color: #fff;
-}
-.left-column h1:nth-child(2) {
-  margin-top: -12px;
+  overflow: hidden;
+  padding-left: 5px;
 }
 
 .middle-column {
   height: 100%;
   background: #333;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .right-column {
-  height: 100%;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
   background: #333;
 }
 
+.middle-column .clickable {
+  height: 50px;
+  object-fit: contain;
+  float: right;
+
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.middle-column ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.middle-column ul li img, .middle-column li, li {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.middle-column li {
+  height:80px;
+}
+
+.middle-column li:hover {
+  font-size: 16px;
+  border: 10px white;
+  background: gray;
+}
+
+.middle-column li {
+  letter-spacing: -1px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+}
+
 .links {
+  font-size: 18px;
   color: #fff;
 }
 
@@ -147,18 +191,17 @@ border:none;
 
 }
 
-.subColumnLeft {
-    overflow: scroll;
-}
-
-.subColumnLeft > img {
-  width: 100%;
-}
-
-/*.right-column .imageEnlarger {
+.imageEnlarger {
   width: 100%;
   height: 100%;
-}*/
+}
+
+
+.imageEnlarger > img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 
 .clearfix {
   clear:both;

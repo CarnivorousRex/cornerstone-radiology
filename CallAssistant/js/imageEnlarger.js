@@ -4,7 +4,7 @@ $(document).ready(function (){
     $('.imageEnlarger').html('<a id="imageLink" href="#" target="_blank"></a>');
 
     $('#imageLink').html(event.currentTarget.cloneNode());
-    $('#imageLink img').removeClass('col-xs-6').addClass('col-xs-12');
+    $('#imageLink img').removeClass('col-xs-6 col-xs-4').addClass('col-xs-12');
     $('#imageLink').attr('href', $(this).attr('src'));
   });
 

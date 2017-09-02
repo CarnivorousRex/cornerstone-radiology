@@ -12,17 +12,23 @@ hr {
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
-    padding: 0; 
+    padding: 0;
 }
 
 .maroonTitle {background-color: #7a0019  }
 
+.ui-widget-content {
+  background: #ededee;
+}
+
 .ui-icon-UniversityButton {	background-image: url("../CallAssistant/files/favicon.ico"); }
- 
+
 .toDesktop {text-align: center; color: #ffcc33; font-weight:400;}
 
 a:link {
     text-decoration: none;
+    /*color: black;
+    border: 6px;*/
 }
 
 a:visited {
@@ -30,12 +36,12 @@ a:visited {
 }
 
 
-.listDivider {background-color: #ffcc33; }
+.listDivider, .listDividerGold {background-color: #ffcc33; }
 
-.listDividerHCMC {background-color: #00bfff; }
+.listDividerHCMC, .listDividerBlue {background-color: #00bfff; }
 
 
 .UList {padding-top: 10px;}
 
 
-ul.ui-listview li:nth-child(even) a { background-color: gainsboro; }
+ul.ui-listview li:nth-child(even) a { background-color: #c6c6c7; }

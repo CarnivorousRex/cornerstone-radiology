@@ -6,8 +6,8 @@
 		<link rel="stylesheet" href="css/newstyles.css" type="text/css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -31,7 +31,7 @@ ga('send', 'pageview');
         <ul>
         <li><a href="NEWindex.html">Home</a></li>
         <li class="selected-item"><a href="#">Paging Tool</a></li>
-        <li><a href="PhoneDirectory.html">Phone Directory</a></li>
+        <li><a href="phoneDirectory.html">Phone Directory</a></li>
         <li class="hidden-xs"><a href="recommendations.html">Recommendations</a></li>
         <li class="hidden-xs"><a href="chartsAndGraphics.html">Charts & Graphics</a></li>
         <li class="hidden-xs"><a href="links.html">Links</a></li>
@@ -43,13 +43,20 @@ ga('send', 'pageview');
   <fieldset>
 
     <legend>Paging Tool</legend>  <!-- where to put button ? -->
-    <form action="#" method="get">
-      <p><label for="name">To:</label>
-      <input type="text" name="name" id="name" value="" /><br /></p>
+		<div class="col-sm-6">
+    <form id="sendmessage" name="sendmessage" method="post" action="https://myairmail.com/cgi-bin/myair_send" onsubmit="return true;">
+      <p><label for="name">To: (please use 10 digit pager number)</label>
+      <input type="text" name="gw_pin" id="name" value="612899" minlength="10" maxlength="10" required</p>
       <p><label for="message">Message:</label>
-      <textarea cols="60" rows="11" name="message" id="message"></textarea><br /></p>
-      <p><input type="submit" name="send" class="formbutton" value="Send" /></p>
+      <textarea cols="60" rows="5" name="mesg_to_send" id="message" required onkeyup="countChar(this)"></textarea><br /></p>
+			<div class="col-xs-6">
+			<p><input type="submit" name="send" class="formbutton" value="Send" /></p>
+			</div>
+			<div class="col-xs-6">
+			<p>Character Count: <span id="charLength"></span></p>
+			</div>
     </form>
+		</div>
   </fieldset>
 
 
@@ -57,66 +64,33 @@ ga('send', 'pageview');
   <p>&copy; 2017</p>
 </footer>
 
-</div>
-    <!--
-		<section id="body" class="width">
-
-			<aside id="sidebar" class="column-left">
-				<header>
-					<h1><a href="#">Call Assistant</a></h1>
-					<h2>Numbers, Links, and Info</h2>
-				</header>
-				<nav id="mainnav">
-	  				<ul>
-						<li class="selected-item"><a href="index.html">Home</a></li>
-						<li><a href="pagingTool.html">Paging Tool</a></li>
-						<li><a href="#">Phone Directory</a></li>
-						<li><a href="#">Incidental Findings</a></li>
-						<li><a href="#">Charts & Graphics</a></li>
-						<li><a href="#">Links</a></li>
-	          </ul>
-				</nav>
-			</aside>
-
-			<section id="content" class="column-right">
-				<article>
-					<h2>Thanks for using Call Assistant!</h2>
-					<div class="article-info">
-						Updated 8/11/2017
-					</div>
-					<p>Placeholder</p>
-
-          <ul class="styledlist">
-						<li>Firefox</li>
-						<li>Opera</li>
-						<li>IE</li>
-						<li>Safari</li>
-						<li>Chrome</li>
-          </ul>
-
-					<a href="#" class="button">Read more</a>
-					<a href="#" class="button button-reversed">Comments</a>
-				</article>
-
-				<article class="expanded">
-					<h2>Another Article</h2>
-					<div class="article-info">
-						Posted on <time datetime="2017-08-11">Aug 11</time></a>
-					</div>
-					<p>Foo</p>
-					<h3>Lorem ipsum</h3>
-					<p>Morbi fermentum condimentum felis, commodo vestibulum sem mattis sed.</p>
+</div>  <!-- end of right-column -->
 
 
-					<a href="#" class="button">Read more</a>
-					<a href="#" class="button button-reversed">Comments</a>
-				</article> -->
-
-
-
-		</section>
-		<div class="clear"></div>
-	</section>
-</div>
+</div>  <!-- end of container -->
 </body>
+<script>
+$("#sendmessage").validate({
+  rules: {
+    message: {
+      required: true,
+      maxlength: 220
+    },
+		name: {
+
+			// maxlength: 10
+		}
+  }
+});
+
+function countChar(val) {
+	var len = val.value.length;
+	$('#charLength').text(len);
+	if (len >= 220) {
+		$('#charLength').addClass('redText');
+	} else {
+		$('#charLength').removeClass('redText');
+	}
+};
+</script>
 </html>

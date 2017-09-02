@@ -2,7 +2,7 @@
 
 var pageNames = '';
 
-   function foo() {
+function foo() {
        var currentTime = new Date();
        var amPM = 0;
        var hours = currentTime.getHours();
@@ -12,9 +12,7 @@ var pageNames = '';
        }
        if (hours < 10){
            hours = "0" + hours
-
        }
-
        if (hours < 12){
            amPM = "AM";
        }   else {
@@ -22,8 +20,6 @@ var pageNames = '';
        }
 
        var hoursMins = hours+":"+minutes+" "+amPM;
-
-  //     alert($('#pageTo').val()+" paged at " + hoursMins);
 
        var selectMenu = document.sendmessage.recentPages;
        if (selectMenu.options[0].value=="Testing") {
@@ -47,7 +43,7 @@ var pageNames = '';
        return true;
    }
 
-   var TEXT = 1;
+var TEXT = 1;
 var EMAIL = 2;
 var PHONE = 3;
 var USERNAME = 4;
@@ -55,42 +51,32 @@ var PASSWORD = 5;
 var EMPTY_PASSWORD = 6;
 
 $(document).ready(function () {
+   $('button.phone').click(function () {     //regular button click function
 
+       var last8 = (this.textContent).slice(-8);
 
+       if (pageNames == '') {
+        pageNames = (this.textContent).slice(0, -8);
+       } else {
+        pageNames = pageNames + " " + (this.textContent).slice(0, -8);
+       }
+                    if ($('#pageTo').val() != '') {
+          $('#pageTo').val($('#pageTo').val()+', (612)'+last8);
 
-         $('button.phone').click(function () {     //regular button click function
+       } else {
+                $('#pageTo').val("(612)"+last8);
+       }
+  })
 
-             var last8 = (this.textContent).slice(-8);
-
-             if (pageNames == '') {
-              pageNames = (this.textContent).slice(0, -8);
-             } else {
-              pageNames = pageNames + " " + (this.textContent).slice(0, -8);
-             }
-                          if ($('#pageTo').val() != '') {
-                $('#pageTo').val($('#pageTo').val()+', (612)'+last8);
-
-             } else {
-                      $('#pageTo').val("(612)"+last8);
-             }
-        })
-
-
-
-
-
-   $(".allGroup").click(function(){                 //group button click function
+  $(".allGroup").click(function(){                 //group button click function
    var $parent = $(this).closest('.groupContainer');  //The parent div
    $parent.find(".phone").trigger('click');  //This simulates each button click
-});
+  });
 
-
-
-
-    $('#clearButton').click(function() {
+  $('#clearButton').click(function() {
      $("#sendmessage")[0].reset();   //empty the form
         pageNames = '';                 //clear out the pageNames global variable
-    })
+  });
 
 
 //function addRecentPages() {
@@ -101,9 +87,7 @@ $(document).ready(function () {
 //return true;
 //}
 
-
-
-        $('#PagerSearchButton').click(function () {    //button on a Fairview computer
+$('#PagerSearchButton').click(function () {    //button on a Fairview computer
             var SearchStrings = $('#PagerLastName').val()+'&First='+$('#PagerFirstName').val();
         window.open("https://amcomweb.fairview.org/smartweb/pages/directory/PersonSearchResults.jsf");
 
@@ -329,65 +313,3 @@ function valForm(form)
 	return true;
 
 }
-
-function countCharacters()
-{
-	var cnt = 0;
-
-	if(document == null ||
-	   document.sendmessage == null ||
-	   document.sendmessage.count == null)
-		return 0;
-	if(document.sendmessage.subject_string != null)
-		cnt += document.sendmessage.subject_string.value.length;
-	if(document.sendmessage.mesg_to_send != null)
-		cnt += document.sendmessage.mesg_to_send.value.length;
-	if(document.sendmessage.from_string != null)
-		cnt += document.sendmessage.from_string.value.length;
-	if(document.sendmessage.resp_a_string != null)
-		cnt += document.sendmessage.resp_a_string.value.length;
-	if(document.sendmessage.resp_b_string != null)
-		cnt += document.sendmessage.resp_b_string.value.length;
-	if(document.sendmessage.resp_c_string != null)
-		cnt += document.sendmessage.resp_c_string.value.length;
-	if(document.sendmessage.resp_d_string != null)
-		cnt += document.sendmessage.resp_d_string.value.length;
-	if(document.sendmessage.resp_e_string != null)
-		cnt += document.sendmessage.resp_e_string.value.length;
-	if(document.sendmessage.resp_f_string != null)
-		cnt += document.sendmessage.resp_f_string.value.length;
-	return document.sendmessage.count.value = cnt;
-}
-
-$(function() {
-  $( "#accordion" ).accordion({
-        collapsible: true,
-        active:false,
-        heightStyle: "content"
-  });
-      $( "#accordion2" ).accordion({
-        collapsible: true,
-          active: false,
-          heightStyle: "content"
-  });
-      $( "#accordion3" ).accordion({
-        collapsible: true,
-        active:false,
-          heightStyle: "content"
-  });
-            $( "#accordion-nest" ).accordion({
-        collapsible: true,
-        active:false,
-          heightStyle: "content"
-            });
-            $( "#accordion-nest2" ).accordion({
-        collapsible: true,
-        active:false,
-          heightStyle: "content"
-            });
-            $( "#accordion-nest3" ).accordion({
-        collapsible: true,
-        active:false,
-          heightStyle: "content"
-            });
-});

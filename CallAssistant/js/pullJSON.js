@@ -23,7 +23,7 @@ var getJSON = function (url, dividerColor) {
             $.each(value, function (i,val) {
               for (item in val) {
                 console.log(val[item]);
-                $('#builtList').append("<li><a href='tel:" + val[item].number + "'>" + val[item].name + "</a></li>");
+                $('#builtList').append("<li><a href='tel:" + val[item].number + "' class='ui-link ui-btn'>" + val[item].name + "</a></li>");
               }
             });
             })
@@ -31,5 +31,5 @@ var getJSON = function (url, dividerColor) {
     });
 };
 
-getJSON("University.jsonp", "Gold");
-getJSON("HCMC.jsonp", "Blue");
+getJSON("js/University.json", "Gold");
+getJSON("js/HCMC.json", "Blue");

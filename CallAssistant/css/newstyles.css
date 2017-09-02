@@ -165,7 +165,7 @@ fieldset form {
 }
 fieldset p label {
 	float:left;
-	width:150px;
+	width:100%;
 	font-family: "Source Sans Pro","sans-serif";
 }
 fieldset form input, fieldset form select, fieldset form textarea {
@@ -175,6 +175,11 @@ fieldset form input, fieldset form select, fieldset form textarea {
 	font-family: "Source Sans Pro","sans-serif";
 	border:1px solid #ddd;
 }
+
+fieldset form input {
+  width: 100%;
+}
+
 fieldset form input.formbutton {
 border:none;
     background-color: #80B763;
@@ -187,8 +192,10 @@ border:none;
     letter-spacing: 0.25px;
     text-decoration: none;
     text-transform: uppercase;
+}
 
-
+#name-error, #message-error, .redText {
+  color: red;
 }
 
 .imageEnlarger {
@@ -203,6 +210,10 @@ border:none;
   max-height: 100%;
   object-fit: contain;
 }
+
+.listDividerGold {background-color: #ffcc33; }
+
+.listDividerBlue {background-color: #00bfff; }
 
 .clearfix {
   clear:both;

@@ -6,8 +6,9 @@
 		<link rel="stylesheet" href="css/newstyles.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<script src="js/imageEnlarger.js"></script>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -43,43 +44,115 @@ ga('send', 'pageview');
 	</div>
 
 			<div id="content" class="links middle-column col-sm-3 col-xs-12">
-          <h3>Incidental Findings - ACR White Papers</h3>
-          <h4><a href="http://www.jacr.org/article/S1546-1440(10)00330-3/pdf" target="_blank">Incidental Findings on Abdominal CT</a></h4>
-
 					<ul>
-						<li>Adrenal
+						<li class="oneLineHeight">Adrenal
 							<div class="clearfix"></div>
-							<img class="clickable invisible col-xs-6" src="files/adrenalIncidentalomas.png" alt="incidental adrenal masses">
+							<img class="clickable invisible col-xs-6" src="files/adrenalIncidentalomas.png" alt="incidental adrenal masses"
+							title="Figure 1. &#10;Management of Incidental Adrenal Masses: A White Paper of the ACR Incidental Findings Committee. &#10;J Am Coll Radiol. 2017 Aug;14(8):1038-1044."
+							>
+							<div class="clearfix"></div>
+							<div class="js-showDetails">
+								<button type="button" name="button" class="invisible">Show Citation</button>
+								<div class="initiallyHidden">
+									<div class="title">Management of Incidental Adrenal Masses: A White Paper of the ACR Incidental Findings Committee.</div>
+									<div class="citation">J Am Coll Radiol. 2017 Aug;14(8):1038-1044.</div>
+								</div>
+							</div>
 						</li>
 						<div class="clearfix"></div>
-						<li>Kidney
+						<li class="oneLineHeight">Kidney
 							<div class="clearfix"></div>
-							<img class="clickable invisible col-xs-6" src="files/CysticRenalMass.jpg" alt="cystic renal mass">
-							<img class="clickable invisible col-xs-6" src="files/SolidRenalMass.jpg" alt="solid renal mass">
+							<img class="clickable invisible col-xs-6" src="files/renalMass-contrastCTOnly.png" alt="noncontrast renal mass"
+							title="Fig 2. Contrast CT Only.&#10;Management of the Incidental Renal Mass on CT: A White Paper of the ACR Incidental Findings Committee.&#10;J Am Coll Radiol. 2017 Jun 22."
+							>
+							<img class="clickable invisible col-xs-6" src="files/renalMass-nonContrast.png" alt="noncontrast renal mass"
+							title="Fig 1. Noncontrast CT.&#10;Management of the Incidental Renal Mass on CT: A White Paper of the ACR Incidental Findings Committee.&#10;J Am Coll Radiol. 2017 Jun 22."
+							>
+							<img class="clickable invisible col-xs-6" src="files/renalMass-solidOrTooSmall.png" alt="noncontrast renal mass"
+							title="Fig 4. Solid or Too Small to Characterize.&#10;Management of the Incidental Renal Mass on CT: A White Paper of the ACR Incidental Findings Committee.&#10;J Am Coll Radiol. 2017 Jun 22."
+							>
+							<img class="clickable invisible col-xs-6" src="files/renalMass-cysticCompletelyCharacterized.png" alt="noncontrast renal mass"
+							title="Fig 3. Cystic Completely Characterized.&#10;Management of the Incidental Renal Mass on CT: A White Paper of the ACR Incidental Findings Committee.&#10;J Am Coll Radiol. 2017 Jun 22."
+							>
+							<div class="clearfix"></div>
+							<div class="js-showDetails">
+								<button type="button" name="button" class="invisible">Show Citation</button>
+								<div class="initiallyHidden">
+									<div class="title">Management of the Incidental Renal Mass on CT: A White Paper of the ACR Incidental Findings Committee.</div>
+									<div class="citation">J Am Coll Radiol. 2017 Aug;14(8):1038-1044.</div>
+								</div>
+							</div>
 						</li>
 						<div class="clearfix"></div>
-						<li>Liver
+						<li class="oneLineHeight">Liver
 							<div class="clearfix"></div>
-							<img class="clickable invisible col-xs-6" src="files/incidentalLiverMass.png" alt="incidental liver mass detected by CT">
+							<img class="clickable invisible col-xs-6" src="files/incidentalLiverMass.png" alt="incidental liver mass detected by CT"
+							title="Figure 3. Incidental Liver Mass Detected on CT&#10;Managing Incidental Findings on Abdominal CT&#10;J Am Coll Radiol. 2010 Oct;7(10):754-73."
+							>
+							<div class="clearfix"></div>
+							<div class="js-showDetails">
+								<button type="button" name="button" class="invisible">Show Citation</button>
+								<div class="initiallyHidden">
+									<div class="title">Managing Incidental Findings on Abdominal CT: White Paper of the ACR Incidental Findings Committee.</div>
+									<div class="citation">J Am Coll Radiol. 2010 Oct;7(10):754-73.</div>
+								</div>
+							</div>
 						</li>
 						<div class="clearfix"></div>
-						<li>Lung
+						<li class="oneLineHeight">Lung
 							<div class="clearfix"></div>
-							<img class="clickable invisible col-xs-6" src="files/Fleischner-new.jpg" alt="Fleischner subsolid nodules">
+							<img class="clickable invisible col-xs-6" src="files/Fleischner-new.jpg" alt="Fleischner subsolid nodules"
+							title="Guidelines for Management of Incidental Pulmonary Nodules Detected on CT Images.&#10;Radiology. 2017 Jul;284(1):228-243."
+							>
+							<div class="clearfix"></div>
+							<div class="js-showDetails">
+								<button type="button" name="button" class="invisible">Show Citation</button>
+								<div class="initiallyHidden">
+									<div class="title">Guidelines for Management of Incidental Pulmonary Nodules Detected on CT Images.</div>
+									<div class="citation">Radiology. 2017 Jul;284(1):228-243.</div>
+								</div>
+							</div>
 						</li>
 						<div class="clearfix"></div>
-						<li>Lymph Nodes
+						<li class="oneLineHeight">Lymph Nodes
 							<div class="clearfix"></div>
-							<img class="clickable invisible col-xs-6" src="files/lymphNodeIncidental.png" alt="incidental adrenal masses">
+							<img class="clickable invisible col-xs-6" src="files/lymphNodeIncidental.png" alt="incidental adrenal masses"
+							title="Fig 2. Incidental Lymph Node&#10;Managing Incidental Findings on Abdominal and Pelvic CT and MRI, Part 3: Splenic and Nodal Findings&#10;J Am Coll Radiol. 2013 Nov;10(11):833-9."
+							>
+							<div class="clearfix"></div>
+							<div class="js-showDetails">
+								<button type="button" name="button" class="invisible">Show Citation</button>
+								<div class="initiallyHidden">
+									<div class="title">Managing Incidental Findings on Abdominal and Pelvic CT and MRI, Part 3: White Paper of the ACR Incidental Findings Committee II on Splenic and Nodal Findings.</div>
+									<div class="citation">J Am Coll Radiol. 2017 Aug;14(8):1038-1044.</div>
+								</div>
+							</div>
 						</li>
-						<li>Ovary / Adnexa
+						<li class="oneLineHeight">Ovary / Adnexa
 							<div class="clearfix"></div>
 							<img class="clickable invisible col-xs-4" src="files/ovary3.jpeg" alt="ovary indeterminate to probaby malignant">
 							<img class="clickable invisible col-xs-4" src="files/ovary2.jpeg" alt="ovary likely benign">
 							<img class="clickable invisible col-xs-4" src="files/ovary1.jpeg" alt="ovary benign">
+							<img class="clickable invisible col-xs-4" src="files/adnexalCyst.png" alt="ovary recommendations">
+							<div class="clearfix"></div>
+							<div class="js-showDetails">
+								<button type="button" name="button" class="invisible">Show Citation</button>
+								<div class="initiallyHidden">
+									<ul>
+										<li>
+											<div class="title">Management of Asymptomatic Ovarian and Other Adnexal Cysts Imaged at US: Society of Radiologists in Ultrasound Consensus Conference Statement.</div>
+											<div class="citation">Radiology: Volume 256(3) September 2010</div>
+										</li>
+										<li>
+											<div class="title">Managing Incidental Findings on Abdominal and Pelvic CT and MRI, Part 1: White Paper of the ACR Incidental Findings Committee II on Adnexal Findings</div>
+											<div class="citation">J Am Coll Radiol 2013;10:675-681.</div>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</li>
 						<div class="clearfix"></div>
-						<li>Pancreas
+						<li class="oneLineHeight">Pancreas
 							<div class="clearfix"></div>
 							<img class="clickable invisible col-xs-4" src="files/pancreasCyst3.png" alt="ovary indeterminate to probaby malignant">
 							<img class="clickable invisible col-xs-4" src="files/pancreasCyst2.png" alt="ovary likely benign">
@@ -87,18 +160,44 @@ ga('send', 'pageview');
 							<div class="clearfix"></div>
 							<img class="clickable invisible col-xs-4" src="files/pancreasCyst5.png" alt="ovary likely benign">
 							<img class="clickable invisible col-xs-4" src="files/pancreasCyst4.png" alt="ovary benign">
-						</li>
-						<div class="clearfix"></div>
-						<li>Spleen
 							<div class="clearfix"></div>
-							<img class="clickable invisible col-xs-6" src="files/spleenIncidental.png" alt="incidental adrenal masses">
+							<div class="js-showDetails">
+								<button type="button" name="button" class="invisible">Show Citation</button>
+								<div class="initiallyHidden">
+									<div class="title">Management of Incidental Pancreatic Cysts: A White Paper of the ACR Incidental Findings Committee.</div>
+									<div class="citation">J Am Coll Radiol. 2017 Jul;14(7):911-923.</div>
+								</div>
+							</div>
 						</li>
 						<div class="clearfix"></div>
-						<li>Thyroid
+						<li class="oneLineHeight">Spleen
+							<div class="clearfix"></div>
+							<img class="clickable invisible col-xs-6" src="files/spleenIncidental.png" alt="incidental adrenal masses"
+							title="Fig 1. Incidental Spleen Lesion&#10;Managing Incidental Findings on Abdominal and Pelvic CT and MRI, Part 3: Splenic and Nodal Findings&#10;J Am Coll Radiol. 2013 Nov;10(11):833-9."
+							>
+							<div class="clearfix"></div>
+							<div class="js-showDetails">
+								<button type="button" name="button" class="invisible">Show Citation</button>
+								<div class="initiallyHidden">
+									<div class="title">Managing Incidental Findings on Abdominal and Pelvic CT and MRI, Part 3: White Paper of the ACR Incidental Findings Committee II on Splenic and Nodal Findings.</div>
+									<div class="citation">J Am Coll Radiol. 2017 Aug;14(8):1038-1044.</div>
+								</div>
+							</div>
+						</li>
+						<div class="clearfix"></div>
+						<li class="oneLineHeight">Thyroid
 							<div class="clearfix"></div>
 							<img class="clickable invisible col-xs-4" src="files/ACR_TI-RADS.png" alt="ACR TI-RADS">
 							<img class="clickable invisible col-xs-4" src="files/ThyroidNodules.jpg" alt="Ultrasound features of thyroid nodules">
 							<img class="clickable invisible col-xs-4" src="files/IncidentalThyroidNodules.jpg" alt="Incidental thyroid nodules by CT or MRI">
+							<div class="clearfix"></div>
+							<div class="js-showDetails">
+								<button type="button" name="button" class="invisible">Show Citation</button>
+								<div class="initiallyHidden">
+									<div class="title">Management of Incidental Adrenal Masses: A White Paper of the ACR Incidental Findings Committee.</div>
+									<div class="citation">J Am Coll Radiol. 2017 Aug;14(8):1038-1044.</div>
+								</div>
+							</div>
 						</li>
 						<div class="clearfix"></div>
 				</ul>
@@ -106,7 +205,9 @@ ga('send', 'pageview');
 
 			<div class="right-column col-sm-7">
 					<div class="imageEnlarger">
+						<h3>** Click enlarged images to launch in a new tab for a larger version **</h3>
 						<ul>
+
 							<li><h3>Latest ACR guidelines</h3>
 								<ul>
 									<li> Incidental adrenal lesions detected by CT or MRI</li>
@@ -124,7 +225,7 @@ ga('send', 'pageview');
 								</ul>
 						</ul>
 						<br>
-						<h3>** Click enlarged images to launch in a new tab for a larger version **</h3>
+
 					</div>
 				</a>
 			</div>

@@ -2,12 +2,14 @@
 
 
 html{
-    min-height:100%;/* make sure it is at least as tall as the viewport */
-    position:relative;
+    /*position:relative;*/
     overflow: hidden;
+    /*height:100%;*/
 }
+
+
 body{
-  height:100%; /* force the BODY element to match the height of the HTML element */
+  height:100%;
 	font-family: "Source Sans Pro","sans-serif";
   overflow: hidden;
 }
@@ -25,8 +27,7 @@ body{
     bottom:0;
     left:0;
     right:0;
-    /*overflow:scroll;*/
-    z-index:-1; /* Remove this line if it's not going to be a background! */
+    z-index:-1;
     margin: 0px;
     left-margin: 0px;
     right-margin: 0px;

@@ -27,17 +27,14 @@ $(document).ready(function (){
     $(this).find('button').html("Show Citation");
   });
 
-// Show the journal details when clicked
+// Show the citation details when clicked
   $('.js-showDetails').click(function() {
     if (!$('.initiallyHidden').is(':visible')) {
+      $(this).find('.initiallyHidden').show("slow");
       $(this).find('button').html("Hide Citation");
     } else {
       $(this).find('button').html("Show Citation");
+      $('.initiallyHidden').hide("slow");
     }
-    console.log($(this).find('.initiallyHidden'));
-    $(this).find('.initiallyHidden').toggle("blind", 500);
-
-
   });
-
 });

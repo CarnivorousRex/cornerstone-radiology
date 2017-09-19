@@ -118,6 +118,15 @@ body{
   font-size: 0.7em;
 }
 
+.recentPages {
+  width: 100%;
+  max-height: 120px;
+  background: gray;
+  overflow: scroll;
+}
+
+.recentPages div:nth-child(even) { background-color: #c6c6c7; }
+
 footer {
   bottom: 5px;
 }

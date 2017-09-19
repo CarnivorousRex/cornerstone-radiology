@@ -44,22 +44,34 @@ ga('send', 'pageview');
 
     <legend>Paging Tool</legend>  <!-- where to put button ? -->
 		<div class="col-sm-6">
-    <form id="sendmessage" name="sendmessage" method="post" action="https://myairmail.com/cgi-bin/myair_send" onsubmit="return true;">
+    <form id="sendmessage"
+		name="sendmessage"
+		method="post"
+		action="https://myairmail.com/cgi-bin/myair_send"
+		target="hideTheMyairmailPage"
+		onsubmit="return true;">
       <p><label for="name">To: (please use 10 digit pager number)</label>
       <input type="text" name="gw_pin" id="name" value="612899" minlength="10" maxlength="10" required</p>
       <p><label for="message">Message:</label>
       <textarea cols="60" rows="5" name="mesg_to_send" id="message" required onkeyup="countChar(this)"></textarea><br /></p>
 			<div class="col-xs-6">
-			<p><input type="submit" name="send" class="formbutton" value="Send" /></p>
+			<p><input type="submit" name="send" class="formbutton" value="Send" onclick="addToRecentPages()"/></p>
 			</div>
 			<div class="col-xs-6">
 			<p>Character Count: <span id="charLength"></span></p>
 			</div>
+			<div class="clearfix">
+
+			</div>
+			<div class="recentPages">
+
+			</div>
     </form>
 		</div>
+
   </fieldset>
 
-
+<iframe style='position: absolute; left:-10000px; top:8000px; width: 50px; border: 1px solid #000000;' name='hideTheMyairmailPage'></iframe>
 <footer class="clear">
   <p>&copy; 2017</p>
 </footer>
@@ -92,5 +104,31 @@ function countChar(val) {
 		$('#charLength').removeClass('redText');
 	}
 };
+
+function addToRecentPages() {
+
+	var currentTime = new Date();
+	var amPM = 0;
+	var hours = currentTime.getHours();
+	var minutes = currentTime.getMinutes();
+	if (minutes < 10){
+			minutes = "0" + minutes
+	}
+	if (hours < 10){
+			hours = "0" + hours
+	}
+
+	if (hours < 12){
+			amPM = "AM";
+	}   else {
+			amPM = "PM";
+			hours -= 12;
+	}
+
+	var hoursMins = hours+":"+minutes+" "+amPM;
+  var newPage = "<div>" + $('#name').val() + " at " + hoursMins + " " +$('#message').val() + "</div>";
+	$('.recentPages').prepend(newPage);
+}
+
 </script>
 </html>

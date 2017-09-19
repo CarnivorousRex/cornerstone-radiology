@@ -21,6 +21,8 @@ function foo() {
 
        var hoursMins = hours+":"+minutes+" "+amPM;
 
+       $('.recentPages').append(hoursMins);
+
        var selectMenu = document.sendmessage.recentPages;
        if (selectMenu.options[0].value=="Testing") {
            selectMenu.options.length=0

@@ -45,3 +45,11 @@ a:visited {
 
 
 ul.ui-listview li:nth-child(even) a { background-color: #c6c6c7; }
+
+
+.scrollingBox {
+  overflow: scroll;
+}
+/*
+[data-role=footer]{bottom:0;right:0;top:auto! important ;position:absolute !important; }
+[data-role=header]{top:0; position:absolute !important; bottom: auto !important;}*/

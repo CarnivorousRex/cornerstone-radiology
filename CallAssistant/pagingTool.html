@@ -1,4 +1,4 @@
-<!doctype html>
+	<!doctype html>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -40,6 +40,7 @@ ga('send', 'pageview');
   </div>
 
 <div class="right-column col-sm-10 col-xs-12">
+
   <fieldset>
 
     <legend>Paging Tool</legend>  <!-- where to put button ? -->
@@ -49,16 +50,19 @@ ga('send', 'pageview');
 		method="post"
 		action="https://myairmail.com/cgi-bin/myair_send"
 		target="hideTheMyairmailPage"
-		onsubmit="return true;">
-      <p><label for="name">To: (please use 10 digit pager number)</label>
-      <input type="text" name="gw_pin" id="name" value="612899" minlength="10" maxlength="10" required</p>
+		>
+
+<!-- onsubmit="return validateForm();" -->
+
+		  <p><label for="name">To: (please use 10 digit pager number)</label>
+      <!-- <input type="text" name="gw_pin" id="gw_pin" value="612899" required</p> -->
       <p><label for="message">Message:</label>
-      <textarea cols="60" rows="5" name="mesg_to_send" id="message" required onkeyup="countChar(this)"></textarea><br /></p>
+      <!-- <textarea cols="76" rows="5" name="mesg_to_send" id="mesg_to_send" required onkeyup="countChar(this)"></textarea><br /></p> -->
 			<div class="col-xs-6">
 			<p><input type="submit" name="send" class="formbutton" value="Send" onclick="addToRecentPages()"/></p>
 			</div>
 			<div class="col-xs-6">
-			<p>Character Count: <span id="charLength"></span></p>
+			<!-- <p>Character Count: <span id="charLength"></span></p> -->
 			</div>
 			<div class="clearfix">
 
@@ -71,10 +75,191 @@ ga('send', 'pageview');
 
   </fieldset>
 
+
+<!-- start of test -->
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Paging Tool</h3>
+</div>
+<div class="panel-body">
+<form id="signupForm1"
+class="form-horizontal col-xs-8"
+method="post"
+action="https://myairmail.com/cgi-bin/myair_send"
+target="_blank"
+onsubmit="addToRecentPages()"
+>
+<div class="form-group">
+<label class="col-sm-4 control-label" for="gw_pin">Pager Number</label>
+<div class="col-sm-5">
+<input type="text" class="form-control" id="gw_pin" name="gw_pin" placeholder="10 digit pager number" />
+</div>
+</div>
+<div class="form-group">
+<label class="col-sm-4 control-label" for="mesg_to_send">Message</label>
+<div class="col-sm-5">
+<textarea type="text" rows="4" class="form-control" id="mesg_to_send" name="mesg_to_send" placeholder="Message" onkeyup="countChar(this)"></textarea>
+</div>
+</div>
+
+<div class="form-group row">
+<label class="col-sm-4 control-label">Message Length</label>
+<div class="col-sm-5">
+	<label class="control-label">
+		<span id="charLength"></span>
+	</label>
+</div>
+</div>
+
+
+<div class="form-group">
+<div class="col-sm-9 col-sm-offset-4">
+<button type="submit" class="btn btn-primary" name="signup1" value="Send Message">Send Message</button>
+</div>
+</div>
+</form>
+<div class="col-xs-4">
+
+
+
+	<div data-role="fieldcontain">
+		<label for="select-choice-1" class="select"></label>
+		<select name="select-choice-1" id="select-choice-1">
+	        <option>Page a Radiologist</option>
+
+
+	        <optgroup label="Staff Rads - Alphabetical">
+	            <option value="6128992484">Allen 899-2484</option>
+	            <option value="6128998106">Cayci 899-8106</option>
+							<option value="6128996112">Church 899-6112</option>
+	            <option value="6128997591">Dietz,C 899-7591</option>
+	            <option value="6128991242">Dietz,K 899-1242</option>
+	            <option value="6128996139">D'Souza 899-6139</option>
+	            <option value="6122326052">Ellerman 612-232-6052</option>
+	            <option value="6128991424">Emory 899-1424</option>
+	            <option value="6128992441">Flanagan 899-2441</option>
+	            <option value="6128992949">Frank 899-2949</option>
+							<option value="6128996090">Friese 899-6090</option>
+	            <option value="6128997632">Froelich 899-7632</option>
+	            <option value="6128996027">Golzarian 899-6027</option>
+							<option value="6128996525">Gill 899-6525</option>
+	            <option value="6128999239">Hoggard 899-9239</option>
+	            <option value="6128999238">Holm 899-9238</option>
+							<option value="6128999664">Hoven 899-9664</option>
+	            <option value="6128997349">Hunter 899-7349</option>
+	            <option value="6128997775">Jagadeesan 899-7775</option>
+	            <option value="6128999695">Jones 899-9695</option>
+	            <option value="6128998333">Kirkham 899-8333</option>
+	            <option value="6128997869">Kuehn-Hajder 899-7869</option>
+	            <option value="6128996959">Marette 899-6959</option>
+	            <option value="6128991392">McKinney 899-1392</option>
+	            <option value="6128991226">Murati 899-1226</option>
+	            <option value="6128998005">Nascene 899-8005</option>
+	            <option value="6128995090">Nelson 899-5090</option>
+	            <option value="6128998198">Ott 899-8198</option>
+	            <option value="6128992179">Prychyna 899-2179</option>
+							<option value="6128996144">Rischall 899-6144</option>
+	            <option value="6128996482">Rosa 899-6482</option>
+	            <option value="6128995809">Rosenberg 899-5809</option>
+	            <option value="6128991186">Rykken 899-1186</option>
+	            <option value="6128995080">Sanghvi 899-5080</option>
+	            <option value="6128994134">Shrestha 899-4134</option>
+	            <option value="6128992526">Spilseth 899-2526</option>
+	            <option value="6128997950">Steinberger 899-7950</option>
+	            <option value="6128999670">Stott 899-9670</option>
+	            <option value="6128994003">Takahashi 899-4003</option>
+	            <option value="6128997927">Talaie 899-7927</option>
+	            <option value="6128991271">Taylor 899-1271</option>
+	            <option value="6128992661">Wasserman 899-2661</option>
+	            <option value="6128998966">Wong 899-8966</option>
+	            <option value="6128994899">Young 899-4899</option>
+
+
+
+	<optgroup label="Third Year Residents">
+	            <option value=“6128994876”>Ames 899-4876</option>
+	            <option value=“6128994884”>Craig 899-4884</option>
+	            <option value=“6128994879”>Dianat 899-4879</option><br>
+	            <option value=“6128994883”>Mortazavi 899-4883</option>
+	            <option value=“6128994872”>Pogatchnik 899-4872</option>
+	            <option value=“6128994889”>Richards 899-4889</option><br>
+	            <option value=“6128994886”>Self 899-4886</option>
+	            <option value=“6128994877”>Sharma 899-4877</option>
+	            <option value=“6128994893”>Smith,Chris 899-4893</option><br>
+	            <option value=“6128994892”>Tanwar 899-4892</option>
+	            <option value=“6128994894”>Wickre 899-4894</option>
+	        </optgroup>
+
+
+
+
+	<optgroup label="Fourth Year Residents">
+	            <option value=“6128993774”>Al-Samaraee 899-3774</option>
+	            <option value=“6128993812”>Beatty 899-3812</option>
+	            <option value=“6128993800”>Benson 899-3800</option><br>
+	            <option value=“6128993780”>Boegel 899-3780</option>
+	            <option value=“6128993817”>Butler 899-3817</option>
+	            <option value=“6128993788”>Crawford 899-3788</option><br>
+	            <option value=“6128993768”>Hakkola 899-3768</option>
+	            <option value=“6128993813”>Markese 899-3813</option>
+	            <option value=“6128993784”>Nigam 899-3784</option><br>
+	            <option value=“6128993803”>Page 899-3803</option>
+	            <option value=“6128993814”>Rivard 899-3814</option>
+	            <option value=“6128991621”>Rostambeigi 899-1621</option><br>
+	            <option value=“6128993797”>Schat 899-3797</option>
+	        </optgroup>
+
+
+	<optgroup label="IR Fellows">
+	            <option value=“6128992008”>Dickenson 899-2008</option>
+	            <option value=“6128992004”>Luchsinger 899-2004</option>
+	            <option value=“6128992464”>Roller 899-2464</option>
+	            <option value=“6128991909”>Stampe 899-1909</option>
+
+	        </optgroup>
+
+	<optgroup label="Neuroradiology Fellows">
+							<option value=“6128999410”>Chacko-Achanaril 899-9410</option>
+							<option value=“6128996479”>Folkertsma 899-6479</option>
+	            <option value=“6128995832”>Ozutemiz 899-5832</option>
+
+	</optgroup>
+
+	<optgroup label="Nuclear Medicine Fellow">
+	            <option value=“6128994898”>Gencturk 899-4898</option>
+	        </optgroup>
+	<optgroup label="Breast Imaging Fellows">
+	            <option value=“6128999670”>Stott 899-9670</option>
+	            <option value=“6128992179”>Prychyna 899-2179</option>
+	        </optgroup>
+
+
+
+		</select>
+
+
+
+
+
+	</div>
+
+
+
+</div>
+</div>
+</div>
+
+<!-- end of test -->
+
+
 <iframe style='position: absolute; left:-10000px; top:8000px; width: 50px; border: 1px solid #000000;' name='hideTheMyairmailPage'></iframe>
 <footer class="clear">
   <p>&copy; 2017</p>
 </footer>
+
+
+
 
 </div>  <!-- end of right-column -->
 
@@ -82,28 +267,85 @@ ga('send', 'pageview');
 </div>  <!-- end of container -->
 </body>
 <script>
-$("#sendmessage").validate({
-  rules: {
-    message: {
-      required: true,
-      maxlength: 220
-    },
-		name: {
-
-			// maxlength: 10
-		}
-  }
-});
 
 function countChar(val) {
+	console.log(val.value.length);
 	var len = val.value.length;
 	$('#charLength').text(len);
-	if (len >= 220) {
+	if (len >= 220 || len < 1) {
 		$('#charLength').addClass('redText');
 	} else {
 		$('#charLength').removeClass('redText');
 	}
 };
+
+function addToRecentPages() {
+console.log("in the add to recent pages thing");
+	var currentTime = new Date();
+	var amPM = 0;
+	var hours = currentTime.getHours();
+	var minutes = currentTime.getMinutes();
+	if (minutes < 10){
+			minutes = "0" + minutes
+	}
+	if (hours < 10){
+			hours = "0" + hours
+	}
+
+	if (hours < 12){
+			amPM = "AM";
+	}   else {
+			amPM = "PM";
+			if (hours > 12) {
+				hours -= 12;
+			}
+			if (hours < 10) {
+				hours = '0' + hours;
+			}
+	}
+
+	var hoursMins = hours+":"+minutes+" "+amPM;
+  var newPage = "<div>" + $('#gw_pin').val() + " at " + hoursMins + " " +$('#mesg_to_send').val() + "</div>";
+	$('.recentPages').prepend(newPage);
+
+var retrievedObject = localStorage.getItem('pages') || null;
+
+if (!retrievedObject) { var retrievedObject = []; }
+
+retrievedObject = JSON.parse(retrievedObject);
+
+console.log(retrievedObject);
+
+retrievedObject.unshift($('#gw_pin').val() + " at " + hoursMins + " " +$('#mesg_to_send').val());
+
+localStorage.setItem('pages', JSON.stringify(retrievedObject));
+
+}
+
+$( document ).ready( function () {
+	$('#charLength').text(0);
+	$('#charLength').addClass('redText');
+$("#sendmessage").validate({
+  rules: {
+    mesg_to_send: {
+      required: true,
+			minlength: 1,
+      maxlength: 240
+    },
+		gw_pin: {
+			required: true,
+			minlength: 10,
+			maxlength: 10
+		}
+  },
+	messages: {
+		mesg_to_send: {
+			required: "Please enter a message",
+			minlength: "Must enter a message",
+		}
+	}
+});
+
 
 function addToRecentPages() {
 
@@ -122,13 +364,94 @@ function addToRecentPages() {
 			amPM = "AM";
 	}   else {
 			amPM = "PM";
-			hours -= 12;
+			if (hours > 12) {
+				hours -= 12;
+			}
+			if (hours < 10) {
+				hours = '0' + hours;
+			}
 	}
 
 	var hoursMins = hours+":"+minutes+" "+amPM;
-  var newPage = "<div>" + $('#name').val() + " at " + hoursMins + " " +$('#message').val() + "</div>";
+  var newPage = "<div>" + $('#gw_pin').val() + " at " + hoursMins + " " +$('#mesg_to_send').val() + "</div>";
 	$('.recentPages').prepend(newPage);
+
+var retrievedObject = localStorage.getItem('pages') || null;
+
+if (!retrievedObject) { var retrievedObject = []; }
+
+retrievedObject = JSON.parse(retrievedObject);
+
+console.log(retrievedObject);
+
+retrievedObject.unshift($('#gw_pin').val() + " at " + hoursMins + " " +$('#mesg_to_send').val());
+
+localStorage.setItem('pages', JSON.stringify(retrievedObject));
+
 }
 
+$( "#signupForm1" ).validate( {
+	rules: {
+		gw_pin: {
+			required: true,
+			minlength: 10
+		},
+		mesg_to_send: {
+			required: true,
+			minlength: 1,
+			maxlength:240
+		},
+	},
+	messages: {
+
+	},
+	submitHandler: function(form) {
+		console.log("in the submit handler");
+		addToRecentPages();
+		form.submit();
+	},
+	errorElement: "em",
+	errorPlacement: function ( error, element ) {
+		// Add the `help-block` class to the error element
+		error.addClass( "help-block" );
+
+		// Add `has-feedback` class to the parent div.form-group
+		// in order to add icons to inputs
+		element.parents( ".col-sm-5" ).addClass( "has-feedback" );
+
+		if ( element.prop( "type" ) === "checkbox" ) {
+			error.insertAfter( element.parent( "label" ) );
+		} else {
+			error.insertAfter( element );
+		}
+
+		// Add the span element, if doesn't exists, and apply the icon classes to it.
+		if ( !element.next( "span" )[ 0 ] ) {
+			$( "<span class='glyphicon glyphicon-remove form-control-feedback'></span>" ).insertAfter( element );
+		}
+	},
+	success: function ( label, element ) {
+		// Add the span element, if doesn't exists, and apply the icon classes to it.
+		if ( !$( element ).next( "span" )[ 0 ] ) {
+			$( "<span class='glyphicon glyphicon-ok form-control-feedback'></span>" ).insertAfter( $( element ) );
+		}
+	},
+	highlight: function ( element, errorClass, validClass ) {
+		$( element ).parents( ".col-sm-5" ).addClass( "has-error" ).removeClass( "has-success" );
+		$( element ).next( "span" ).addClass( "glyphicon-remove" ).removeClass( "glyphicon-ok" );
+	},
+	unhighlight: function ( element, errorClass, validClass ) {
+		$( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
+		$( element ).next( "span" ).addClass( "glyphicon-ok" ).removeClass( "glyphicon-remove" );
+	}
+} );
+
+//pushes the selected option into the To: field for the paging tool
+$('#select-choice-1').change(function() {
+	$('#gw_pin').val($(this).val());
+
+});
+
+});
 </script>
 </html>

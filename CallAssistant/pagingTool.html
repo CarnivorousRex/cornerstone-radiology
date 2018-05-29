@@ -118,6 +118,16 @@ onsubmit="addToRecentPages()"
 <button type="submit" class="btn btn-primary" name="signup1" value="Send Message">Send Message</button>
 </div>
 </div>
+
+
+<div class="form-group">
+<div class="col-sm-9 col-sm-offset-4">
+<button class="btn btn-success" name="test" value="Test">Test</button>
+</div>
+</div>
+
+
+
 </form>
 <div class="col-xs-4">
 
@@ -281,6 +291,7 @@ function countChar(val) {
 
 function addToRecentPages() {
 console.log("in the add to recent pages thing");
+console.log("the form is valid: " + $('#form').validate().checkForm());
 	var currentTime = new Date();
 	var amPM = 0;
 	var hours = currentTime.getHours();
@@ -347,48 +358,6 @@ $("#sendmessage").validate({
 });
 
 
-function addToRecentPages() {
-
-	var currentTime = new Date();
-	var amPM = 0;
-	var hours = currentTime.getHours();
-	var minutes = currentTime.getMinutes();
-	if (minutes < 10){
-			minutes = "0" + minutes
-	}
-	if (hours < 10){
-			hours = "0" + hours
-	}
-
-	if (hours < 12){
-			amPM = "AM";
-	}   else {
-			amPM = "PM";
-			if (hours > 12) {
-				hours -= 12;
-			}
-			if (hours < 10) {
-				hours = '0' + hours;
-			}
-	}
-
-	var hoursMins = hours+":"+minutes+" "+amPM;
-  var newPage = "<div>" + $('#gw_pin').val() + " at " + hoursMins + " " +$('#mesg_to_send').val() + "</div>";
-	$('.recentPages').prepend(newPage);
-
-var retrievedObject = localStorage.getItem('pages') || null;
-
-if (!retrievedObject) { var retrievedObject = []; }
-
-retrievedObject = JSON.parse(retrievedObject);
-
-console.log(retrievedObject);
-
-retrievedObject.unshift($('#gw_pin').val() + " at " + hoursMins + " " +$('#mesg_to_send').val());
-
-localStorage.setItem('pages', JSON.stringify(retrievedObject));
-
-}
 
 $( "#signupForm1" ).validate( {
 	rules: {

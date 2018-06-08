@@ -118,14 +118,93 @@ body{
   font-size: 0.7em;
 }
 
-.recentPages {
+.recentPage {
+  display: table-cell;
   width: 100%;
   max-height: 120px;
   background: gray;
   overflow: scroll;
+  /* overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto; */
+
 }
 
+  /* .table-striped {
+    max-height: 200px;
+    overflow: scroll;
+  }
+
+  tbody.pagesTable {
+    width: 100%;
+    max-height: 120px;
+    overflow: scroll;
+    position: absolute;
+  } */
+  tr {
+  width: 100%;
+
+  }
+
+  table{
+   height:300px;              // <-- Select the height of the table
+   width: 100%;
+  }
+  tbody{
+    overflow-y: scroll;
+    height: 200px;            //  <-- Select the height of the body
+    width: 100%;
+    position: absolute;
+  }
+
+
+
+
+
+
+
+  .tableFixHead {
+     /* overflow-y: auto; height: 100px; } */
+  /* .scroll { */
+    max-height: 120px;
+    overflow: scroll;
+  }
+  /* table { border-collapse: collapse; width: 100%; }
+  th, td { padding: 8px 16px; }
+  th { background:#eee; } */
+
+
+
+
+
+
+/* .recentPages .pastPage {
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  white-space:normal;
+  word-break: break-word;
+} */
+
 .recentPages div:nth-child(even) { background-color: #c6c6c7; }
+
+.panel-default {
+  margin-top: 10px !important;
+  margin-bottom: 80px !important;
+  height: 98%;
+}
+
+.panel-body {
+  background: #bbbbbb;
+  height:95%;
+  margin: 0px 2px 0px 2px;
+}
+
+.scroll {
+  max-height: 60%;
+  overflow: scroll;
+}
 
 footer {
   bottom: 5px;

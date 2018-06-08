@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -41,28 +43,29 @@ ga('send', 'pageview');
 
 <div class="right-column col-sm-10 col-xs-12">
 
-  <fieldset>
+  <!-- <fieldset>
 
-    <legend>Paging Tool</legend>  <!-- where to put button ? -->
+    <legend>Paging Tool</legend>
 		<div class="col-sm-6">
     <form id="sendmessage"
 		name="sendmessage"
 		method="post"
 		action="https://myairmail.com/cgi-bin/myair_send"
 		target="hideTheMyairmailPage"
+		onsubmit="return validateForm();"
 		>
 
-<!-- onsubmit="return validateForm();" -->
+
 
 		  <p><label for="name">To: (please use 10 digit pager number)</label>
-      <!-- <input type="text" name="gw_pin" id="gw_pin" value="612899" required</p> -->
+
       <p><label for="message">Message:</label>
-      <!-- <textarea cols="76" rows="5" name="mesg_to_send" id="mesg_to_send" required onkeyup="countChar(this)"></textarea><br /></p> -->
+
 			<div class="col-xs-6">
 			<p><input type="submit" name="send" class="formbutton" value="Send" onclick="addToRecentPages()"/></p>
 			</div>
 			<div class="col-xs-6">
-			<!-- <p>Character Count: <span id="charLength"></span></p> -->
+
 			</div>
 			<div class="clearfix">
 
@@ -73,7 +76,7 @@ ga('send', 'pageview');
     </form>
 		</div>
 
-  </fieldset>
+  </fieldset> -->
 
 
 <!-- start of test -->
@@ -88,7 +91,6 @@ class="form-horizontal col-xs-8"
 method="post"
 action="https://myairmail.com/cgi-bin/myair_send"
 target="_blank"
-onsubmit="addToRecentPages()"
 >
 <div class="form-group">
 <label class="col-sm-4 control-label" for="gw_pin">Pager Number</label>
@@ -120,12 +122,48 @@ onsubmit="addToRecentPages()"
 </div>
 
 
-<div class="form-group">
+<!-- <div class="form-group">
 <div class="col-sm-9 col-sm-offset-4">
 <button class="btn btn-success" name="test" value="Test">Test</button>
 </div>
-</div>
+</div> -->
+Last 20 pages:
+<!-- <div class="form-group scroll">
+<div class="recentPages">
 
+</div>
+</div> -->
+
+<div class="form-group ">
+
+<table class="table" style="margin-bottom:5px">
+	<thead>
+		<tr>
+			<th scope="col" class="col-md-3">Pager Number</th>
+			<th scope="col" class="col-md-3">Date and Time</th>
+			<th scope="col" class="col-md-6">Message</th>
+		</tr>
+	</thead>
+</table>
+<div class="tableFixHead scroll">
+
+
+	<table class="table table-striped">
+		<!-- <thead>
+			<tr>
+				<th scope="col" class="col-md-3">Pager Number</th>
+				<th scope="col" class="col-md-3">Date and Time</th>
+				<th scope="col" class="col-md-6">Message</th>
+			</tr>
+		</thead> -->
+
+	<tbody class="pagesTable">
+
+	</tbody>
+
+	</table>
+	</div>
+</div>
 
 
 </form>
@@ -135,11 +173,11 @@ onsubmit="addToRecentPages()"
 
 	<div data-role="fieldcontain">
 		<label for="select-choice-1" class="select"></label>
-		<select name="select-choice-1" id="select-choice-1">
+		<select name="select-choice-1" id="select-choice-1" class="selectpicker" data-live-search="true">
 	        <option>Page a Radiologist</option>
 
 
-	        <optgroup label="Staff Rads - Alphabetical">
+	        <!-- <optgroup label="Staff Rads - Alphabetical"> -->
 	            <option value="6128992484">Allen 899-2484</option>
 	            <option value="6128998106">Cayci 899-8106</option>
 							<option value="6128996112">Church 899-6112</option>
@@ -264,9 +302,9 @@ onsubmit="addToRecentPages()"
 
 
 <iframe style='position: absolute; left:-10000px; top:8000px; width: 50px; border: 1px solid #000000;' name='hideTheMyairmailPage'></iframe>
-<footer class="clear">
+<!-- <footer class="clear">
   <p>&copy; 2017</p>
-</footer>
+</footer> -->
 
 
 
@@ -289,9 +327,13 @@ function countChar(val) {
 	}
 };
 
+
+
 function addToRecentPages() {
 console.log("in the add to recent pages thing");
-console.log("the form is valid: " + $('#form').validate().checkForm());
+// if (!$('#signupForm1').validate().checkForm()) return;
+
+console.log("the form is valid: " + $('#signupForm1').validate().checkForm());
 	var currentTime = new Date();
 	var amPM = 0;
 	var hours = currentTime.getHours();
@@ -314,10 +356,29 @@ console.log("the form is valid: " + $('#form').validate().checkForm());
 				hours = '0' + hours;
 			}
 	}
-
+let foo = $('#gw_pin').val();
 	var hoursMins = hours+":"+minutes+" "+amPM;
-  var newPage = "<div>" + $('#gw_pin').val() + " at " + hoursMins + " " +$('#mesg_to_send').val() + "</div>";
+	if ($("#select-choice-1 option[value=" + foo + "]").text()) {
+	var pagerName = $("#select-choice-1 option[value=" + foo + "]").text() || $('#gw_pin').val();
+	console.log(pagerName);
+} else {
+	var pagerName = $('#gw_pin').val();
+}
+  var newPage = "<div>" + pagerName + " at " + hoursMins + " " +$('#mesg_to_send').val() + "</div>";
 	$('.recentPages').prepend(newPage);
+// $('.pagesTable').prepend("<tr><th scope='row'>"+ pagerName +"</th><td>"+ currentTime.getMonth() +"/"+ currentTime.getDate() + " at "+hoursMins+"</td><td>" + $('#mesg_to_send').val() + "</td></tr>");
+
+var dateTime = (currentTime.getMonth()+1) +'/'+ currentTime.getDate();
+var message = $('#mesg_to_send').val();
+
+var newRow = $("<tr>");
+var cols = "";
+cols += '<th scope="row" class="col-md-3">'+ pagerName +'</th>';
+cols += '<td class="col-md-3">'+ dateTime + ' at '+hoursMins+'</td>';
+cols += '<td class="col-md-6">' + $('#mesg_to_send').val() + '</td>';
+newRow.append(cols);
+console.log(newRow);
+$(".pagesTable").prepend(newRow);
 
 var retrievedObject = localStorage.getItem('pages') || null;
 
@@ -326,16 +387,75 @@ if (!retrievedObject) { var retrievedObject = []; }
 retrievedObject = JSON.parse(retrievedObject);
 
 console.log(retrievedObject);
+console.log("length of retrievedObject array: ", retrievedObject.length);
+for (i=0; i<20; i++) {
+	$('.recentPages').append("<div>" + retrievedObject[i] + "</div>");
 
-retrievedObject.unshift($('#gw_pin').val() + " at " + hoursMins + " " +$('#mesg_to_send').val());
+// $('.pagesTable').append("<tr><th scope='row'>"+ pagerName +"</th><td>"+ currentTime.getMonth() +"/"+ currentTime.getDate() + " at "+hoursMins+"</td><td>" + $('#mesg_to_send').val() + "</td></tr>");
+}
+
+var newPageObject = {
+	pagerNumber: pagerName,
+	dateTime: dateTime + " at " + hoursMins,
+	message: message
+};
+
+console.log(newPageObject);
+
+retrievedObject.unshift(newPageObject);
+
+// retrievedObject.unshift($('#gw_pin').val() + " at " + hoursMins + " " +$('#mesg_to_send').val());
+
+
+if (retrievedObject.length > 10) {
+	retrievedObject = retrievedObject.slice(0,10);
+}
 
 localStorage.setItem('pages', JSON.stringify(retrievedObject));
 
+};
+
+function populatePageList() {
+	var retrievedObject = localStorage.getItem('pages') || null;
+
+	if (!retrievedObject) { var retrievedObject = []; }
+
+	retrievedObject = JSON.parse(retrievedObject);
+
+var arrayLength = retrievedObject.length;
+
+console.log(retrievedObject);
+
+// if ($("#select-choice-1 option[value=" + foo + "]").text()) {
+// var pagerName = $("#select-choice-1 option[value=" + foo + "]").text() || $('#gw_pin').val();
+// console.log(pagerName);
+// } else {
+// var pagerName = $('#gw_pin').val();
+// }
+
+	for (i=0; i<arrayLength; i++) {
+		// $('.recentPages').append("<div class='pastPage'>" + retrievedObject[i] + "</div>");
+
+		var newRow = $("<tr>");
+		var cols = "";
+		cols += '<th scope="row" class="col-md-3">'+ retrievedObject[i].pagerNumber +'</th>';
+		cols += '<td class="col-md-3">'+ retrievedObject[i].dateTime +'</td>';
+		cols += '<td class="col-md-6">' + retrievedObject[i].message + '</td>';
+		newRow.append(cols);
+		console.log(newRow);
+		$(".pagesTable").prepend(newRow);
+
+	}
 }
 
 $( document ).ready( function () {
 	$('#charLength').text(0);
 	$('#charLength').addClass('redText');
+
+	populatePageList();
+
+
+
 $("#sendmessage").validate({
   rules: {
     mesg_to_send: {
@@ -418,8 +538,12 @@ $( "#signupForm1" ).validate( {
 //pushes the selected option into the To: field for the paging tool
 $('#select-choice-1').change(function() {
 	$('#gw_pin').val($(this).val());
-
 });
+
+// $('.tableFixHead').on('scroll', function() {
+//   $('thead', this).css('transform', 'translateY('+ this.scrollTop +'px)');
+// });
+
 
 });
 </script>

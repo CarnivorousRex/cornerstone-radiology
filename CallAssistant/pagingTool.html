@@ -418,9 +418,11 @@ localStorage.setItem('pages', JSON.stringify(retrievedObject));
 function populatePageList() {
 	var retrievedObject = localStorage.getItem('pages') || null;
 
-	if (!retrievedObject) { var retrievedObject = []; }
-
+	if (!retrievedObject) {
+		var retrievedObject = [];
+	} else {
 	retrievedObject = JSON.parse(retrievedObject);
+	}
 
 var arrayLength = retrievedObject.length;
 
@@ -443,7 +445,7 @@ console.log(retrievedObject);
 		cols += '<td class="col-md-6">' + retrievedObject[i].message + '</td>';
 		newRow.append(cols);
 		console.log(newRow);
-		$(".pagesTable").prepend(newRow);
+		$(".pagesTable").append(newRow);
 
 	}
 }

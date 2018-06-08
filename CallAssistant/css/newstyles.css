@@ -147,12 +147,12 @@ body{
   }
 
   table{
-   height:300px;              // <-- Select the height of the table
+   height:300px;
    width: 100%;
   }
   tbody{
     overflow-y: scroll;
-    height: 200px;            //  <-- Select the height of the body
+    height: 200px;           
     width: 100%;
     position: absolute;
   }

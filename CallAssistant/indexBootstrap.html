@@ -17,11 +17,17 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<!-- <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script src="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"></script> -->
-	<!-- <script src="//code.jquery.com/jquery-1.9.1.js"></script> -->
-	<!-- <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
 	<script type="text/javascript" language="javascript" src="common-nestWIP.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
 	<script>
 		var pageNames = '';
@@ -41,12 +47,12 @@
 	</script>
 </head>
 
-<body>
-	<div id="header">
+<body id="body" class="container" style="margin:2px;">
+	<div id="header" class="col-xs-12" style="margin:0px; width:100%">
 		<h1>University of Minnesota Radiology Assistant</h1>
 	</div>
 	<div class="wrapper">
-		<div id="textBox">
+		<div id="textBox" class="col-md-6 noPadding">
 			<form id="sendmessage" name="sendmessage" method="post" action="https://myairmail.com/cgi-bin/myair_send" target="test" onsubmit="return valForm(this);">
 
 				<iframe style='position: absolute; left:-10000px; top:400px; width: 50px; border: 1px solid #000000;' name='test'></iframe>
@@ -236,9 +242,8 @@
 			</form>
 		</div>
 
-		<div>
-			<div id="pageSwitchTable" style="position:absolute;top:35px;left:405px; width:auto; right:auto">
-				<br>
+		<div class="col-md-3">
+			<div id="">
 				<h7> <strong>   <a>Links:</a> </strong> </h7>
 				<br>
 				<h7> <a href="https://goo.gl/forms/GNvv1Kswk1sFeZeA3" target="_blank">Radiology exam QC</a>
@@ -309,7 +314,7 @@
 
 
 
-		<div id="pageSwitchTable">
+		<div id="" class="col-md-3">
 
 			<h7> <strong>   <a>Graphics:</a> </strong> </h7>
 			<br>
@@ -432,7 +437,7 @@ Berland, LL, et al. Managing Incidental Findings on Abdominal CT: White Paper of
 			<div class="ienlarger">
 				<a href="files/Contrast_reaction.png" target="_blank">
 					<h7>Contrast Reactions</h7><span>
-    <img src="files/Contrast_reaction_small.png" alt="large"><br>
+    <img src="files/Contrast_reaction.png" alt="large"><br>
         </span></a>
 			</div>
 			<div class="clear"></div>
@@ -440,7 +445,7 @@ Berland, LL, et al. Managing Incidental Findings on Abdominal CT: White Paper of
 			<div class="ienlarger">
 				<a href="files/vascularTerritories.jpg" target="_blank">
 					<h7>Vascular Territories - Brain</h7><span>
-    <img src="files/vascularTerritories-small.jpg" alt="large"><br>
+    <img src="files/vascularTerritories.jpg" alt="large"><br>
         </span></a>
 			</div>
 			<div class="clear"></div>
@@ -475,14 +480,14 @@ Berland, LL, et al. Managing Incidental Findings on Abdominal CT: White Paper of
 			<div class="ienlarger">
 				<a href="files/Shunt1-big.jpg" target="_blank">
 					<h7>Shunt Valves 1 - </h7><span>
-    	<img src="files/Shunt1-small.jpg" alt="large"><br>
+    	<img src="files/Shunt1-big.jpg" alt="large"><br>
         S.S. Lollis et al. AJNR Am J Neuroradiol 2010;31:1343-1346
 </span></a>
 			</div>
 			<div class="ienlarger">
 				<a href="files/Shunt2-big.jpg" target="_blank">
 					<h7> Shunt Valves 2</h7><span>
-    	<img src="files/Shunt2-small.jpg" alt="large"><br>
+    	<img src="files/Shunt2-big.jpg" alt="large"><br>
         S.S. Lollis et al. AJNR Am J Neuroradiol 2010;31:1343-1346
 </span></a>
 			</div>
@@ -497,7 +502,7 @@ Berland, LL, et al. Managing Incidental Findings on Abdominal CT: White Paper of
 			<div class="ienlarger">
 				<a href="files/liver-sizes.jpg" target="_blank">
 					<h7>Liver Size by US</h7><span>
-			    <img src="files/liver-sizes-small.jpg" alt="large" />
+			    <img src="files/liver-sizes.jpg" alt="large" />
 					</span></a>
 			</div>
 			<div class="clear"></div>
@@ -555,8 +560,8 @@ Berland, LL, et al. Managing Incidental Findings on Abdominal CT: White Paper of
 
 
 
-
-	<div id="accordion">
+<div class="footer">
+	<div id="accordion" class="col-md-4 noPadding" style="left:0%;">
 		<h3><img src="files/UofMicon.bmp"><strong>University Reading Room Phone numbers</strong></h3>
 		<div>
 			<ul>
@@ -679,7 +684,7 @@ Berland, LL, et al. Managing Incidental Findings on Abdominal CT: White Paper of
 
 
 
-	<div id="accordion2">
+	<div id="accordion2" class="col-md-4 noPadding" style="left:33.33%;">
 		<h3><img src="files/UofMicon.bmp"><strong>University Rads Pagers</strong></h3>
 		<div>
 			<ul>
@@ -855,6 +860,7 @@ Berland, LL, et al. Managing Incidental Findings on Abdominal CT: White Paper of
 				<br>
 				<hr>
 				<hr>
+
 				<hr>PACS Admin On Call 952-836-3580
 				<hr>Technology Service Center 672-6805
 			</ul>
@@ -947,7 +953,7 @@ Berland, LL, et al. Managing Incidental Findings on Abdominal CT: White Paper of
 
 
 
-	<div id="accordion3">
+	<div id="accordion3" class="col-md-4 noPadding" style="left:66.67%;">
 		<h3><img src="files/UofMicon.bmp"><strong>Neuro Reading Room</strong></h3>
 		<div>
 			<div id="accordion-nest2">
@@ -1084,6 +1090,7 @@ Berland, LL, et al. Managing Incidental Findings on Abdominal CT: White Paper of
 			</ul>
 		</div>
 	</div>
+</div>    <!-- end of footer -->
 </body>
 
 </html>

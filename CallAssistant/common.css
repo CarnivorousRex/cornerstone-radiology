@@ -25,8 +25,8 @@ select {
 
 .whiteish {
 	color: black; border-right-color: black; border-bottom-color: black; border-left-color: black; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; box-shadow: 5px 5px 5px #888888; background: linear-gradient(to bottom right, rgb(255, 204, 51) 50%, yellow);
-	
-	
+
+
 }
 #protocolQuestion {
 	border: 2px inset currentColor; border-image: none; text-align: center; color: white; background-color: rgb(122, 0, 25);
@@ -47,10 +47,27 @@ div.inlineCODE {
 	padding: 0px 20px 10px; top: 0px; text-align: left; right: 10px; font-family: Verdana, Arial, sans-serif; font-size: 1.6em; margin-right: 5px; margin-left: 10px; border-right-color: rgb(136, 136, 136); border-bottom-color: rgb(136, 136, 136); border-left-color: rgb(136, 136, 136); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: absolute; top: 48; right:0; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; box-shadow: 3px 3px 3px #444;
 }
 #header {
-	top: 0px; height: 40px; position: relative; border-top-left-radius: 10px; border-top-right-radius: 10px; align-content: center; background-color: rgb(122, 0, 25); background: radial-gradient(circle, rgb(122, 0, 25) 70%, black);
+	top: 0px;
+	height: 40px;
+	position: relative;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	align-content: center;
+	background-color: rgb(122, 0, 25);
+	background: radial-gradient(circle, rgb(122, 0, 25) 70%, black);
 }
 h1 {
 	text-align: center; color: rgb(255, 204, 51); font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+#body.container {
+	    width: 100%;
+}
+
+#header h1 {
+	margin:0px;
+	color: rgb(255, 204, 51);
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy
 }
 #wrapper {
 	padding: 0px 5px 500px 10px; overflow: auto; font-family: Verdana, Arial, sans-serif; font-size: 0.8em; border-right-color: rgb(136, 136, 136); border-bottom-color: rgb(136, 136, 136); border-left-color: rgb(136, 136, 136); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: relative; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; box-shadow: 3px 3px 3px #444;
@@ -67,8 +84,22 @@ input {
 textarea {
 	border: 1px solid black; border-image: none;
 }
+
+ul > hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div.noPadding {
+	padding: 0px;
+}
+
+.ui-accordion-content > ul {
+	padding-inline-start: 5px;
+}
+
 #accordion {
-	left: 10px; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute; 
+	left: 10px; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute;
 }
 #accordion2 {
 	left: 50%; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute;
@@ -108,6 +139,7 @@ th {
 }
 .ienlarger span img {
 	border: 1px solid rgb(255, 255, 255); border-image: none; margin-bottom: 8px;
+	max-width: 600px; max-height: 500px;
 }
 .ienlarger a span {
 	padding: 1px; color: rgb(255, 204, 0); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; text-decoration: none; display: none; position: absolute; background-color: rgb(0, 0, 0);

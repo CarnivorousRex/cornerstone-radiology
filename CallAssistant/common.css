@@ -102,10 +102,10 @@ div.noPadding {
 	left: 10px; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute;
 }
 #accordion2 {
-	left: 50%; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute;
+	left: 55%; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute;
 }
 #accordion3 {
-	left: 30%; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute;
+	left: 33%; bottom: 0px; line-height: 1; font-size: 0.9em; margin-top: 0em; position: absolute;
 }
 #clearButton {
 	border: 2px inset currentColor; border-image: none; width: 110px; text-align: center; color: white; background-color: rgb(122, 0, 25);
@@ -152,4 +152,8 @@ th {
 }
 .resize_thumb {
 	width: 150px; height: auto;
+}
+
+button.phone:hover {
+	background-color: rgb(255, 204, 51);
 }

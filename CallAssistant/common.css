@@ -44,7 +44,6 @@ div.inlineCODE {
 	padding: 5px; border: 2px inset currentColor; border-image: none; text-align: center; color: black; float: left; background-color: red;
 }
 #pageSwitchTable {
-	/* z-index: -1; */
 	background-color: darkgray;
 	padding: 0px 20px 10px; top: 0px; text-align: left; right: 10px; font-family: Verdana, Arial, sans-serif; font-size: 1.6em; margin-right: 5px; margin-left: 10px; border-right-color: rgb(136, 136, 136); border-bottom-color: rgb(136, 136, 136); border-left-color: rgb(136, 136, 136); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: absolute; top: 48; right:0; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; box-shadow: 3px 3px 3px #444;
 }

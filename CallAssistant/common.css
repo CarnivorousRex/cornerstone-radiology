@@ -51,7 +51,7 @@ div.inlineCODE {
 	border-bottom-color: rgb(136, 136, 136); border-left-color: rgb(136, 136, 136);
 	border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;
 	border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
-	position: absolute; top: 48px; right:0;
+	position: absolute; top: 48px; right:4px;
 	border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;
 	box-shadow: 3px 3px 3px #444;
 }
